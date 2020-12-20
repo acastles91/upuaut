@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/antonio/OpenSourceCelluloid/pcb/upuaut/upuaut/upuaut_2Nils.sch</source>
+    <date>Sa 14 Mär 2020 14:50:29 CET</date>
+    <tool>Eeschema 5.1.5-52549c5~84~ubuntu19.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date>2019-09-28</date>
+        <source>upuaut_2Nils.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="Murata-Ceramic-Capacitor-50v1-22uF1">
+      <value>C</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D9BC72F</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>POTENTIOMETER-LED</value>
+      <footprint>OpenCelluloid:PDB12-H4301-Potentiometer</footprint>
+      <libsource lib="upuaut-rescue" part="POTENTIOMETER-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D9A8B2C</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>Connector-LED</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <libsource lib="upuaut-rescue" part="Connector-LED-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D9F5B71</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>Motor-Connector</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal</footprint>
+      <libsource lib="upuaut-rescue" part="Motor-Connector-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA0DAEF</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>Connector-Sensor</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal</footprint>
+      <libsource lib="upuaut-rescue" part="Connector-Sensor-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D952343</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA2303C</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.01uF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA2DBC6</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>0.01uF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA44D27</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>OKI-78SR-12v</value>
+      <footprint>Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical</footprint>
+      <libsource lib="upuaut-rescue" part="OKI-78SR-12v-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D950615</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA2729B</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA88D5A</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>R_POT</value>
+      <footprint>Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA9B5DE</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAB1103</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>LM386</value>
+      <footprint>OpenCelluloid:LM386</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm386.pdf</datasheet>
+      <libsource lib="Amplifier_Audio" part="LM386" description="Low Voltage Audio Power Amplifier, DIP-8/SOIC-8/SSOP-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D9FF0BC</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>CP1</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAC79EF</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10pF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DACA11A</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DACC5FA</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB215D6</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_THT:LED_Rectangular_W3.0mm_H2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB3B71E</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB4004C</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DBF7288</tstamp>
+    </comp>
+    <comp ref="U14">
+      <value>Connector-Trigger</value>
+      <footprint>OpenCelluloid:WAGO_PCB_Klemme_2Pol</footprint>
+      <libsource lib="upuaut-rescue" part="Connector-LED-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC134F1</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAFCC9E</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>10,1V</value>
+      <footprint>Diode_THT:D_T-1_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB00E0C</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB1A166</tstamp>
+    </comp>
+    <comp ref="U18">
+      <value>PC817</value>
+      <footprint>Package_DIP:DIP-4_W7.62mm</footprint>
+      <datasheet>http://www.soselectronic.cz/a_info/resource/d/pc817.pdf</datasheet>
+      <libsource lib="Isolator" part="PC817" description="DC Optocoupler, Vce 35V, CTR 50-300%, DIP-4"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB1D19A</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LDH-45B-1050</value>
+      <footprint>OpenCelluloid:MeanWell-LDH-45B-1050</footprint>
+      <libsource lib="upuaut-rescue" part="LDH-45B-1050-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB766BC</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>Connector-AudioJack</value>
+      <footprint>OpenCelluloid:WAGO_PCB_Klemme_3Pol</footprint>
+      <libsource lib="upuaut-rescue" part="Connector-Sensor-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DBEC6B0</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>33k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD0D1A6</tstamp>
+    </comp>
+    <comp ref="U19">
+      <value>Connector-FAN</value>
+      <footprint>OpenCelluloid:WAGO_PCB_Klemme_2Pol</footprint>
+      <libsource lib="upuaut-rescue" part="Connector-LED-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD1768C</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>PC817</value>
+      <footprint>Package_DIP:DIP-4_W7.62mm</footprint>
+      <datasheet>http://www.soselectronic.cz/a_info/resource/d/pc817.pdf</datasheet>
+      <libsource lib="Isolator" part="PC817" description="DC Optocoupler, Vce 35V, CTR 50-300%, DIP-4"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD4FC81</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD50902</tstamp>
+    </comp>
+    <comp ref="U20">
+      <value>Connector_FAN_PWM</value>
+      <footprint>OpenCelluloid:WAGO_PCB_Klemme_3Pol</footprint>
+      <libsource lib="upuaut-rescue" part="Connector-Sensor-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE2D389</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>PEC12R-ENCODER</value>
+      <footprint>OpenCelluloid:Potentiometer-BOURNS</footprint>
+      <libsource lib="upuaut_2Nils-rescue" part="PEC12R-ENCODER-openCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E202B1B</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E239A6A</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E484507</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E49EC61</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E4BDA67</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_THT:LED_Rectangular_W3.0mm_H2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E591697</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E59169F</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LED_THT:LED_Rectangular_W3.0mm_H2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E595ADF</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E595AE7</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LED</value>
+      <footprint>LED_THT:LED_Rectangular_W3.0mm_H2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E59A243</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E59A24B</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>LED</value>
+      <footprint>LED_THT:LED_Rectangular_W3.0mm_H2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E59ECE9</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E59ECF1</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>LED</value>
+      <footprint>LED_THT:LED_Rectangular_W3.0mm_H2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5A3AF4</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5A3AFC</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>LED</value>
+      <footprint>LED_THT:LED_Rectangular_W3.0mm_H2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5A8EFF</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5A8F07</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>K12AB-Switch</value>
+      <footprint>OpenCelluloid:K12AB-Switch</footprint>
+      <libsource lib="OpenSourceCelluloid" part="K12AB-Switch" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E72C35F</tstamp>
+    </comp>
+    <comp ref="U16">
+      <value>K12AB-Switch</value>
+      <footprint>OpenCelluloid:K12AB-Switch</footprint>
+      <libsource lib="OpenSourceCelluloid" part="K12AB-Switch" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E72C94C</tstamp>
+    </comp>
+    <comp ref="U17">
+      <value>K12AB-Switch</value>
+      <footprint>OpenCelluloid:K12AB-Switch</footprint>
+      <libsource lib="OpenSourceCelluloid" part="K12AB-Switch" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E72D7A6</tstamp>
+    </comp>
+    <comp ref="U21">
+      <value>K12AB-Switch</value>
+      <footprint>OpenCelluloid:K12AB-Switch</footprint>
+      <libsource lib="OpenSourceCelluloid" part="K12AB-Switch" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E72DD92</tstamp>
+    </comp>
+    <comp ref="TEENSY1">
+      <value>TEENSY_3.2</value>
+      <footprint>teensy:TEENSY_3.2</footprint>
+      <fields>
+        <field name="Description">DEV TEENSY 3.2 13736</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">1568-1231-ND</field>
+      </fields>
+      <libsource lib="extra-kicad-libraries" part="TEENSY_3.2" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E26D477</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>STEPSTICK</value>
+      <footprint>OpenCelluloidArduino:STEPSTICK</footprint>
+      <libsource lib="upuaut-rescue" part="STEPSTICK-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB37A4E</tstamp>
+    </comp>
+    <comp ref="47uF1">
+      <value>C</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E891989</tstamp>
+    </comp>
+    <comp ref="Murata-Ceramic-Capacitor-50v1-22uF2">
+      <value>C</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E8B4EB3</tstamp>
+    </comp>
+    <comp ref="47uF2">
+      <value>C</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E8B4ED1</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>POWER IN</value>
+      <footprint>OpenCelluloid:WAGO_PCB_Klemme_1Pol</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E2BED17</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>OKI-78SR-5v-OpenSourceCelluloid</value>
+      <footprint>Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical</footprint>
+      <libsource lib="upuaut-rescue" part="OKI-78SR-5v-OpenSourceCelluloid" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5ADC9C</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x10_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x10_Male" description="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6A580C</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x10_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x10_Male" description="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6D3417</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x10_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x10_Male" description="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6EB32E</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>IRF5305</value>
+      <footprint>OpenCelluloid:IRF5305</footprint>
+      <datasheet>http://www.irf.com/product-info/datasheets/data/irf7606pbf.pdf</datasheet>
+      <libsource lib="OpenSourceCelluloid" part="IRF5305" description="-3.6A Id, -30V Vds, HexFET P-MOS Power MOSFET, Ronon 0.09R, Micro8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E72D7CB</tstamp>
+    </comp>
+    <comp ref="U15">
+      <value>Power-Button</value>
+      <footprint>OpenCelluloid:WAGO_PCB_Klemme_3Pol</footprint>
+      <libsource lib="OpenSourceCelluloid" part="Power-Button" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E7B71F3</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>POWER IN</value>
+      <footprint>OpenCelluloid:WAGO_PCB_Klemme_1Pol</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E2BFAD3</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Audio" part="LM386">
+      <description>Low Voltage Audio Power Amplifier, DIP-8/SOIC-8/SSOP-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm386.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>MSSOP*P0.65mm*</fp>
+        <fp>TSSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM386</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GAIN" type="input"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="~" type="output"/>
+        <pin num="6" name="V+" type="power_in"/>
+        <pin num="7" name="BYPASS" type="input"/>
+        <pin num="8" name="GAIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x01_Male">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x10_Male">
+      <description>Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x10_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP1">
+      <description>Polarized capacitor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_POT">
+      <description>Potentiometer</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Isolator" part="PC817">
+      <aliases>
+        <alias>EL817</alias>
+      </aliases>
+      <description>DC Optocoupler, Vce 35V, CTR 50-300%, DIP-4</description>
+      <docs>http://www.soselectronic.cz/a_info/resource/d/pc817.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PC817</field>
+        <field name="Footprint">Package_DIP:DIP-4_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OpenSourceCelluloid" part="IRF5305">
+      <description>-3.6A Id, -30V Vds, HexFET P-MOS Power MOSFET, Ronon 0.09R, Micro8</description>
+      <docs>http://www.irf.com/product-info/datasheets/data/irf7606pbf.pdf</docs>
+      <footprints>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRF5305</field>
+        <field name="Footprint">Package_SO:MSOP-8_3x3mm_P0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="input"/>
+        <pin num="2" name="G" type="passive"/>
+        <pin num="3" name="D" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="OpenSourceCelluloid" part="K12AB-Switch">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">K12AB-Switch</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="input"/>
+        <pin num="2" name="B" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="OpenSourceCelluloid" part="Power-Button">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Power-Button</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="LED" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="extra-kicad-libraries" part="TEENSY_3.2">
+      <fields>
+        <field name="Reference">TEENSY</field>
+        <field name="Value">TEENSY_3.2</field>
+        <field name="Footprint">footprints:TEENSY_3.2</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">1568-1231-ND</field>
+        <field name="Description">DEV TEENSY 3.2 13736</field>
+      </fields>
+      <pins>
+        <pin num="0" name="D0/RX1/TOUCH" type="BiDi"/>
+        <pin num="1" name="D1/TX1/TOUCH" type="BiDi"/>
+        <pin num="2" name="D2" type="BiDi"/>
+        <pin num="3" name="D3/PWM/CANTX" type="BiDi"/>
+        <pin num="4" name="D4/PWM/CANRX" type="BiDi"/>
+        <pin num="5" name="D5/PWM/TX1B" type="BiDi"/>
+        <pin num="6" name="D6/PWM" type="BiDi"/>
+        <pin num="7" name="D7/RX3/DOUTB" type="BiDi"/>
+        <pin num="8" name="D8/TX3/DINB" type="BiDi"/>
+        <pin num="9" name="D9/RX2/PWM/ICP/CSB/I2SBCLK" type="BiDi"/>
+        <pin num="10" name="D10/TX2/CS/PWM/ICP" type="BiDi"/>
+        <pin num="11" name="D11/DOUT/I2SMCLK" type="BiDi"/>
+        <pin num="12" name="D12/DIN" type="BiDi"/>
+        <pin num="13" name="D13/LED/SCK/I2SRX" type="BiDi"/>
+        <pin num="14" name="D14/A0/SCKB" type="BiDi"/>
+        <pin num="15" name="D15/A1/TOUCH/CSB" type="BiDi"/>
+        <pin num="16" name="D16/A2/TOUCH" type="BiDi"/>
+        <pin num="17" name="D17/A3/TOUCH" type="BiDi"/>
+        <pin num="18" name="D18/A4/SDA0/TOUCH" type="BiDi"/>
+        <pin num="19" name="D19/A5/SCL0/TOUCH" type="BiDi"/>
+        <pin num="20" name="D20/A6/PWM/CSB" type="BiDi"/>
+        <pin num="21" name="D21/A7/PWM/RX1B/CSB" type="BiDi"/>
+        <pin num="22" name="D22/A8/TOUCH/PWM/ICP/I2STX" type="BiDi"/>
+        <pin num="23" name="D23/A9/TOUCH/PWM/ICP/I2SLRCLK" type="BiDi"/>
+        <pin num="24" name="D24/ICP/I2SBCLKB" type="BiDi"/>
+        <pin num="25" name="D25/PWM/TOUCH/I2SLRCLK2" type="BiDi"/>
+        <pin num="26" name="D26/A15/RX2B" type="BiDi"/>
+        <pin num="27" name="D27/A16" type="BiDi"/>
+        <pin num="28" name="D28/A17/I2SMCLKB" type="BiDi"/>
+        <pin num="29" name="D29/A18/SCL1" type="BiDi"/>
+        <pin num="30" name="D30/A19/SDA1" type="BiDi"/>
+        <pin num="31" name="D31/A20/TX2B" type="BiDi"/>
+        <pin num="32" name="D32/TOUCH/PWM" type="BiDi"/>
+        <pin num="33" name="D33/TOUCH/ICP" type="BiDi"/>
+        <pin num="3V3" name="3.3v_(250_mA_max)" type="power_out"/>
+        <pin num="A10" name="A10" type="BiDi"/>
+        <pin num="A11" name="A11" type="BiDi"/>
+        <pin num="A12" name="A12" type="BiDi"/>
+        <pin num="A13" name="A13" type="BiDi"/>
+        <pin num="AGND" name="AGND" type="power_in"/>
+        <pin num="AREF" name="AREF" type="passive"/>
+        <pin num="DAC" name="A14/DAC" type="output"/>
+        <pin num="GND" name="GND" type="power_in"/>
+        <pin num="PROG" name="PROG" type="passive"/>
+        <pin num="V_IN" name="Vin_(3.6_to_6.0_V)" type="power_in"/>
+        <pin num="V_U" name="V_USB" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="upuaut-rescue" part="Connector-LED-OpenSourceCelluloid">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Connector-LED-OpenSourceCelluloid</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="input"/>
+        <pin num="2" name="-" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="upuaut-rescue" part="Connector-Sensor-OpenSourceCelluloid">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Connector-Sensor-OpenSourceCelluloid</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="SIGNAL" type="input"/>
+        <pin num="3" name="+" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="upuaut-rescue" part="LDH-45B-1050-OpenSourceCelluloid">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LDH-45B-1050-OpenSourceCelluloid</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PWM-DIM" type="input"/>
+        <pin num="2" name="A-DIM" type="input"/>
+        <pin num="3" name="DIM-" type="input"/>
+        <pin num="4" name="Vin-" type="input"/>
+        <pin num="5" name="Vin+" type="input"/>
+        <pin num="6" name="VOUT-" type="output"/>
+        <pin num="7" name="VOUT+" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="upuaut-rescue" part="Motor-Connector-OpenSourceCelluloid">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Motor-Connector-OpenSourceCelluloid</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RED" type="input"/>
+        <pin num="2" name="BLUE" type="input"/>
+        <pin num="3" name="GREEN" type="input"/>
+        <pin num="4" name="BLACK" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="upuaut-rescue" part="OKI-78SR-12v-OpenSourceCelluloid">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OKI-78SR-12v-OpenSourceCelluloid</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="VOUT" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="upuaut-rescue" part="OKI-78SR-5v-OpenSourceCelluloid">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OKI-78SR-5v-OpenSourceCelluloid</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="VOUT" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="upuaut-rescue" part="POTENTIOMETER-OpenSourceCelluloid">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">POTENTIOMETER-OpenSourceCelluloid</field>
+      </fields>
+      <pins>
+        <pin num="1" name="5V" type="input"/>
+        <pin num="2" name="SIGNAL" type="output"/>
+        <pin num="3" name="GND" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="upuaut-rescue" part="STEPSTICK-OpenSourceCelluloid">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STEPSTICK-OpenSourceCelluloid</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DIR" type="input"/>
+        <pin num="2" name="STEP" type="input"/>
+        <pin num="4" name="MISO" type="BiDi"/>
+        <pin num="5" name="CS" type="input"/>
+        <pin num="6" name="SCK" type="BiDi"/>
+        <pin num="7" name="MOSI" type="BiDi"/>
+        <pin num="8" name="~ENABLE" type="input"/>
+        <pin num="9" name="VM" type="power_in"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="M2B" type="power_out"/>
+        <pin num="12" name="M2A" type="power_out"/>
+        <pin num="13" name="M1A" type="power_out"/>
+        <pin num="14" name="M1B" type="power_out"/>
+        <pin num="15" name="VIO" type="power_in"/>
+        <pin num="16" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="upuaut_2Nils-rescue" part="PEC12R-ENCODER-openCelluloid">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PEC12R-ENCODER-openCelluloid</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CHANNEL-A" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="CHANNEL-B" type="input"/>
+        <pin num="4" name="VCC" type="input"/>
+        <pin num="5" name="BUTTON" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Audio">
+      <uri>/usr/share/kicad/library/Amplifier_Audio.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Isolator">
+      <uri>/usr/share/kicad/library/Isolator.lib</uri>
+    </library>
+    <library logical="OpenSourceCelluloid">
+      <uri>/home/antonio/OpenSourceCelluloid/pcb/polaria/OpenSourceCelluloid.lib</uri>
+    </library>
+    <library logical="extra-kicad-libraries">
+      <uri>/home/antonio/OpenSourceCelluloid/pcb/kicad-libraries/components.lib</uri>
+    </library>
+    <library logical="upuaut-rescue">
+      <uri>/home/antonio/OpenSourceCelluloid/pcb/upuaut/upuaut/upuaut-rescue.lib</uri>
+    </library>
+    <library logical="upuaut_2Nils-rescue">
+      <uri>/home/antonio/OpenSourceCelluloid/pcb/upuaut/upuaut/upuaut_2Nils-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="CHIP-SELECT">
+      <node ref="U12" pin="5"/>
+      <node ref="TEENSY1" pin="19"/>
+    </net>
+    <net code="2" name="DIRECTION">
+      <node ref="U12" pin="1"/>
+      <node ref="TEENSY1" pin="4"/>
+    </net>
+    <net code="3" name="BLACK">
+      <node ref="U6" pin="4"/>
+      <node ref="U12" pin="11"/>
+    </net>
+    <net code="4" name="GREEN">
+      <node ref="U6" pin="3"/>
+      <node ref="U12" pin="12"/>
+    </net>
+    <net code="5" name="RED">
+      <node ref="U12" pin="13"/>
+      <node ref="U6" pin="1"/>
+    </net>
+    <net code="6" name="BLUE">
+      <node ref="U6" pin="2"/>
+      <node ref="U12" pin="14"/>
+    </net>
+    <net code="7" name="Net-(U12-Pad4)">
+      <node ref="U12" pin="4"/>
+    </net>
+    <net code="8" name="Net-(U12-Pad6)">
+      <node ref="U12" pin="6"/>
+    </net>
+    <net code="9" name="Net-(U12-Pad7)">
+      <node ref="U12" pin="7"/>
+    </net>
+    <net code="10" name="ENABLE">
+      <node ref="TEENSY1" pin="7"/>
+      <node ref="U12" pin="8"/>
+    </net>
+    <net code="11" name="+24V">
+      <node ref="U8" pin="1"/>
+      <node ref="Murata-Ceramic-Capacitor-50v1-22uF2" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="U7" pin="1"/>
+      <node ref="U12" pin="9"/>
+      <node ref="U2" pin="5"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="Murata-Ceramic-Capacitor-50v1-22uF1" pin="1"/>
+    </net>
+    <net code="12" name="GND">
+      <node ref="R3" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="U18" pin="2"/>
+      <node ref="U11" pin="4"/>
+      <node ref="R7" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U8" pin="2"/>
+      <node ref="U19" pin="2"/>
+      <node ref="D5" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="D7" pin="1"/>
+      <node ref="D6" pin="1"/>
+      <node ref="U20" pin="1"/>
+      <node ref="U10" pin="2"/>
+      <node ref="U13" pin="1"/>
+      <node ref="U2" pin="4"/>
+      <node ref="C6" pin="2"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="Murata-Ceramic-Capacitor-50v1-22uF1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U7" pin="2"/>
+      <node ref="U11" pin="2"/>
+      <node ref="J5" pin="1"/>
+      <node ref="J5" pin="10"/>
+      <node ref="J5" pin="2"/>
+      <node ref="J5" pin="3"/>
+      <node ref="J5" pin="4"/>
+      <node ref="J5" pin="6"/>
+      <node ref="J5" pin="7"/>
+      <node ref="J5" pin="8"/>
+      <node ref="J5" pin="9"/>
+      <node ref="Murata-Ceramic-Capacitor-50v1-22uF2" pin="2"/>
+      <node ref="J5" pin="5"/>
+      <node ref="U12" pin="10"/>
+      <node ref="47uF2" pin="2"/>
+      <node ref="U16" pin="2"/>
+      <node ref="U17" pin="2"/>
+      <node ref="U21" pin="2"/>
+      <node ref="TEENSY1" pin="GND"/>
+      <node ref="U12" pin="16"/>
+      <node ref="U9" pin="2"/>
+      <node ref="D8" pin="1"/>
+      <node ref="47uF1" pin="2"/>
+    </net>
+    <net code="13" name="GNDA">
+      <node ref="U1" pin="1"/>
+      <node ref="TEENSY1" pin="AGND"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U5" pin="3"/>
+    </net>
+    <net code="14" name="Net-(TEENSY1-Pad28)">
+      <node ref="TEENSY1" pin="28"/>
+    </net>
+    <net code="15" name="Net-(TEENSY1-PadDAC)">
+      <node ref="TEENSY1" pin="DAC"/>
+    </net>
+    <net code="16" name="Net-(TEENSY1-PadA11)">
+      <node ref="TEENSY1" pin="A11"/>
+    </net>
+    <net code="17" name="Net-(TEENSY1-PadA13)">
+      <node ref="TEENSY1" pin="A13"/>
+    </net>
+    <net code="18" name="Net-(TEENSY1-Pad33)">
+      <node ref="TEENSY1" pin="33"/>
+    </net>
+    <net code="19" name="Net-(TEENSY1-Pad32)">
+      <node ref="TEENSY1" pin="32"/>
+    </net>
+    <net code="20" name="Net-(TEENSY1-Pad31)">
+      <node ref="TEENSY1" pin="31"/>
+    </net>
+    <net code="21" name="Net-(TEENSY1-Pad30)">
+      <node ref="TEENSY1" pin="30"/>
+    </net>
+    <net code="22" name="Net-(TEENSY1-Pad29)">
+      <node ref="TEENSY1" pin="29"/>
+    </net>
+    <net code="23" name="Net-(TEENSY1-Pad3V3)">
+      <node ref="TEENSY1" pin="3V3"/>
+    </net>
+    <net code="24" name="Net-(TEENSY1-PadV_U)">
+      <node ref="TEENSY1" pin="V_U"/>
+    </net>
+    <net code="25" name="Net-(TEENSY1-PadAREF)">
+      <node ref="TEENSY1" pin="AREF"/>
+    </net>
+    <net code="26" name="Net-(TEENSY1-Pad0)">
+      <node ref="TEENSY1" pin="0"/>
+    </net>
+    <net code="27" name="Net-(TEENSY1-Pad1)">
+      <node ref="TEENSY1" pin="1"/>
+    </net>
+    <net code="28" name="+12V">
+      <node ref="J3" pin="7"/>
+      <node ref="J3" pin="6"/>
+      <node ref="J3" pin="5"/>
+      <node ref="J3" pin="4"/>
+      <node ref="J3" pin="3"/>
+      <node ref="J3" pin="10"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J3" pin="8"/>
+      <node ref="J3" pin="9"/>
+      <node ref="47uF1" pin="1"/>
+      <node ref="U15" pin="3"/>
+      <node ref="U4" pin="4"/>
+      <node ref="U20" pin="3"/>
+      <node ref="J3" pin="2"/>
+      <node ref="U7" pin="3"/>
+    </net>
+    <net code="29" name="Net-(TEENSY1-Pad27)">
+      <node ref="TEENSY1" pin="27"/>
+    </net>
+    <net code="30" name="+5V">
+      <node ref="U1" pin="3"/>
+      <node ref="U10" pin="4"/>
+      <node ref="TEENSY1" pin="V_IN"/>
+      <node ref="R12" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U12" pin="15"/>
+      <node ref="R14" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R13" pin="2"/>
+      <node ref="47uF2" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="J4" pin="9"/>
+      <node ref="U11" pin="6"/>
+      <node ref="J4" pin="1"/>
+      <node ref="J4" pin="10"/>
+      <node ref="J4" pin="2"/>
+      <node ref="U8" pin="3"/>
+      <node ref="R5" pin="2"/>
+      <node ref="J4" pin="8"/>
+      <node ref="J4" pin="7"/>
+      <node ref="J4" pin="6"/>
+      <node ref="J4" pin="3"/>
+      <node ref="J4" pin="4"/>
+      <node ref="J4" pin="5"/>
+    </net>
+    <net code="31" name="START-STOP">
+      <node ref="TEENSY1" pin="2"/>
+      <node ref="U16" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="32" name="LED1">
+      <node ref="R6" pin="2"/>
+      <node ref="TEENSY1" pin="12"/>
+    </net>
+    <net code="33" name="LED2">
+      <node ref="R15" pin="2"/>
+      <node ref="TEENSY1" pin="13"/>
+    </net>
+    <net code="34" name="LED3">
+      <node ref="TEENSY1" pin="14"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="35" name="LED4">
+      <node ref="R17" pin="2"/>
+      <node ref="TEENSY1" pin="15"/>
+    </net>
+    <net code="36" name="LED5">
+      <node ref="R18" pin="2"/>
+      <node ref="TEENSY1" pin="16"/>
+    </net>
+    <net code="37" name="LED6">
+      <node ref="R19" pin="2"/>
+      <node ref="TEENSY1" pin="17"/>
+    </net>
+    <net code="38" name="LED7">
+      <node ref="R20" pin="2"/>
+      <node ref="TEENSY1" pin="18"/>
+    </net>
+    <net code="39" name="Net-(D8-Pad2)">
+      <node ref="R20" pin="1"/>
+      <node ref="D8" pin="2"/>
+    </net>
+    <net code="40" name="Net-(TEENSY1-PadA10)">
+      <node ref="TEENSY1" pin="A10"/>
+    </net>
+    <net code="41" name="Net-(TEENSY1-PadA12)">
+      <node ref="TEENSY1" pin="A12"/>
+    </net>
+    <net code="42" name="Net-(TEENSY1-PadPROG)">
+      <node ref="TEENSY1" pin="PROG"/>
+    </net>
+    <net code="43" name="Net-(TEENSY1-Pad24)">
+      <node ref="TEENSY1" pin="24"/>
+    </net>
+    <net code="44" name="Net-(TEENSY1-Pad25)">
+      <node ref="TEENSY1" pin="25"/>
+    </net>
+    <net code="45" name="Net-(TEENSY1-Pad26)">
+      <node ref="TEENSY1" pin="26"/>
+    </net>
+    <net code="46" name="ENCO-BUTTON">
+      <node ref="R3" pin="2"/>
+      <node ref="TEENSY1" pin="20"/>
+      <node ref="U10" pin="5"/>
+    </net>
+    <net code="47" name="FAN">
+      <node ref="R2" pin="1"/>
+      <node ref="TEENSY1" pin="22"/>
+    </net>
+    <net code="48" name="SENSOR">
+      <node ref="TEENSY1" pin="23"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="49" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="U15" pin="2"/>
+    </net>
+    <net code="50" name="Net-(J1-Pad1)">
+      <node ref="U15" pin="1"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="51" name="LED+">
+      <node ref="U3" pin="1"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="52" name="LED-">
+      <node ref="U3" pin="2"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="53" name="DIRECTION-SWITCH">
+      <node ref="U9" pin="1"/>
+      <node ref="TEENSY1" pin="8"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="54" name="Net-(D2-Pad2)">
+      <node ref="R6" pin="1"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="55" name="AUDIO-SIGNAL">
+      <node ref="U13" pin="3"/>
+      <node ref="U13" pin="2"/>
+      <node ref="C5" pin="2"/>
+    </net>
+    <net code="56" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="57" name="Net-(C4-Pad1)">
+      <node ref="U11" pin="5"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="58" name="Net-(C6-Pad1)">
+      <node ref="U11" pin="7"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="59" name="Net-(C3-Pad2)">
+      <node ref="C3" pin="2"/>
+      <node ref="U11" pin="8"/>
+    </net>
+    <net code="60" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="61" name="Net-(C4-Pad2)">
+      <node ref="R7" pin="1"/>
+      <node ref="C4" pin="2"/>
+    </net>
+    <net code="62" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="U18" pin="1"/>
+    </net>
+    <net code="63" name="SHUTTER">
+      <node ref="R10" pin="1"/>
+      <node ref="TEENSY1" pin="21"/>
+    </net>
+    <net code="64" name="POTI-LED">
+      <node ref="U5" pin="2"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="65" name="Net-(R12-Pad1)">
+      <node ref="R12" pin="1"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="66" name="SOUND-TRIGGER">
+      <node ref="TEENSY1" pin="9"/>
+      <node ref="RV1" pin="1"/>
+    </net>
+    <net code="67" name="Net-(RV1-Pad2)">
+      <node ref="U11" pin="3"/>
+      <node ref="RV1" pin="2"/>
+    </net>
+    <net code="68" name="Net-(R8-Pad1)">
+      <node ref="U11" pin="1"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="69" name="Net-(U14-Pad2)">
+      <node ref="U14" pin="2"/>
+      <node ref="U18" pin="3"/>
+    </net>
+    <net code="70" name="Net-(C3-Pad1)">
+      <node ref="R8" pin="2"/>
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="71" name="SPEED-SELECT">
+      <node ref="U21" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="TEENSY1" pin="10"/>
+    </net>
+    <net code="72" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="73" name="CAPTURE">
+      <node ref="R13" pin="1"/>
+      <node ref="U17" pin="1"/>
+      <node ref="TEENSY1" pin="11"/>
+    </net>
+    <net code="74" name="Net-(D6-Pad2)">
+      <node ref="D6" pin="2"/>
+      <node ref="R18" pin="1"/>
+    </net>
+    <net code="75" name="Net-(D7-Pad2)">
+      <node ref="R19" pin="1"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="76" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="77" name="Net-(D5-Pad2)">
+      <node ref="R17" pin="1"/>
+      <node ref="D5" pin="2"/>
+    </net>
+    <net code="78" name="Net-(U19-Pad1)">
+      <node ref="U19" pin="1"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="79" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="80" name="Net-(U14-Pad1)">
+      <node ref="U14" pin="1"/>
+      <node ref="U18" pin="4"/>
+    </net>
+    <net code="81" name="STEP">
+      <node ref="U20" pin="2"/>
+      <node ref="TEENSY1" pin="3"/>
+      <node ref="U12" pin="2"/>
+    </net>
+    <net code="82" name="CHANNEL-A">
+      <node ref="U10" pin="1"/>
+      <node ref="TEENSY1" pin="6"/>
+      <node ref="R1" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="83" name="CHANNEL-B">
+      <node ref="U10" pin="3"/>
+      <node ref="TEENSY1" pin="5"/>
+      <node ref="R9" pin="2"/>
+      <node ref="C2" pin="1"/>
+    </net>
+  </nets>
+</export>

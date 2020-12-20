@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>upuaut-cache.lib - upuaut - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="upuaut Atom Feed" href="../atom.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>upuaut</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a></td></tr></table>
+<hr/>
+<div id="content">
+<p> upuaut-cache.lib (6272B)</p><hr/><pre id="blob">
+<a href="#l1" class="line" id="l1">      1</a> EESchema-LIBRARY Version 2.4
+<a href="#l2" class="line" id="l2">      2</a> #encoding utf-8
+<a href="#l3" class="line" id="l3">      3</a> #
+<a href="#l4" class="line" id="l4">      4</a> # Device_C
+<a href="#l5" class="line" id="l5">      5</a> #
+<a href="#l6" class="line" id="l6">      6</a> DEF Device_C C 0 10 N Y 1 F N
+<a href="#l7" class="line" id="l7">      7</a> F0 &quot;C&quot; 25 100 50 H V L CNN
+<a href="#l8" class="line" id="l8">      8</a> F1 &quot;Device_C&quot; 25 -100 50 H V L CNN
+<a href="#l9" class="line" id="l9">      9</a> F2 &quot;&quot; 38 -150 50 H I C CNN
+<a href="#l10" class="line" id="l10">     10</a> F3 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l11" class="line" id="l11">     11</a> $FPLIST
+<a href="#l12" class="line" id="l12">     12</a>  C_*
+<a href="#l13" class="line" id="l13">     13</a> $ENDFPLIST
+<a href="#l14" class="line" id="l14">     14</a> DRAW
+<a href="#l15" class="line" id="l15">     15</a> P 2 0 1 20 -80 -30 80 -30 N
+<a href="#l16" class="line" id="l16">     16</a> P 2 0 1 20 -80 30 80 30 N
+<a href="#l17" class="line" id="l17">     17</a> X ~ 1 0 150 110 D 50 50 1 1 P
+<a href="#l18" class="line" id="l18">     18</a> X ~ 2 0 -150 110 U 50 50 1 1 P
+<a href="#l19" class="line" id="l19">     19</a> ENDDRAW
+<a href="#l20" class="line" id="l20">     20</a> ENDDEF
+<a href="#l21" class="line" id="l21">     21</a> #
+<a href="#l22" class="line" id="l22">     22</a> # OpenSourceCelluloid-arduino_Arduino_Nano_Socket
+<a href="#l23" class="line" id="l23">     23</a> #
+<a href="#l24" class="line" id="l24">     24</a> DEF OpenSourceCelluloid-arduino_Arduino_Nano_Socket XA 0 40 Y Y 1 F N
+<a href="#l25" class="line" id="l25">     25</a> F0 &quot;XA&quot; 100 0 60 V V C CNN
+<a href="#l26" class="line" id="l26">     26</a> F1 &quot;OpenSourceCelluloid-arduino_Arduino_Nano_Socket&quot; -100 0 60 V V C CNN
+<a href="#l27" class="line" id="l27">     27</a> F2 &quot;&quot; 1800 3750 60 H I C CNN
+<a href="#l28" class="line" id="l28">     28</a> F3 &quot;&quot; 1800 3750 60 H I C CNN
+<a href="#l29" class="line" id="l29">     29</a> $FPLIST
+<a href="#l30" class="line" id="l30">     30</a>  Arduino_Nano_Socket
+<a href="#l31" class="line" id="l31">     31</a> $ENDFPLIST
+<a href="#l32" class="line" id="l32">     32</a> DRAW
+<a href="#l33" class="line" id="l33">     33</a> T 900 -400 100 60 0 0 0 Analogue Normal 0 C C
+<a href="#l34" class="line" id="l34">     34</a> T 900 -500 250 60 0 0 0 I²C Normal 0 C C
+<a href="#l35" class="line" id="l35">     35</a> T 900 500 -750 60 0 0 0 Misc. Normal 0 C C
+<a href="#l36" class="line" id="l36">     36</a> T 900 -500 -700 60 0 0 0 Power Normal 0 C C
+<a href="#l37" class="line" id="l37">     37</a> T 900 -500 850 60 0 0 0 Serial Normal 0 C C
+<a href="#l38" class="line" id="l38">     38</a> T 900 500 350 60 0 1 0 GPIO Normal 0 C C
+<a href="#l39" class="line" id="l39">     39</a> S -1000 1050 1000 -1050 0 0 0 f
+<a href="#l40" class="line" id="l40">     40</a> P 2 0 0 0 -600 250 -550 250 N
+<a href="#l41" class="line" id="l41">     41</a> P 2 0 0 0 -600 850 -550 850 N
+<a href="#l42" class="line" id="l42">     42</a> P 2 0 0 0 650 -750 550 -750 N
+<a href="#l43" class="line" id="l43">     43</a> P 3 0 0 0 -800 -900 -500 -900 -500 -850 N
+<a href="#l44" class="line" id="l44">     44</a> P 3 0 0 0 -500 -550 -500 -500 -800 -500 N
+<a href="#l45" class="line" id="l45">     45</a> P 4 0 0 0 -650 300 -600 300 -600 200 -650 200 N
+<a href="#l46" class="line" id="l46">     46</a> P 4 0 0 0 -650 900 -600 900 -600 800 -650 800 N
+<a href="#l47" class="line" id="l47">     47</a> P 3 0 1 0 -850 500 -400 500 -400 350 N
+<a href="#l48" class="line" id="l48">     48</a> P 3 0 1 0 -750 -300 -400 -300 -400 -150 N
+<a href="#l49" class="line" id="l49">     49</a> P 3 0 1 0 600 -200 500 -200 500 200 N
+<a href="#l50" class="line" id="l50">     50</a> P 3 0 1 0 650 900 500 900 500 500 N
+<a href="#l51" class="line" id="l51">     51</a> P 4 0 1 0 700 -700 650 -700 650 -800 700 -800 N
+<a href="#l52" class="line" id="l52">     52</a> X 3.3V 3V3 -1300 -700 300 R 50 50 1 1 W
+<a href="#l53" class="line" id="l53">     53</a> X 5V 5V -1300 -800 300 R 50 50 1 1 W
+<a href="#l54" class="line" id="l54">     54</a> X A0 A0 -1300 -200 300 R 50 50 1 1 B
+<a href="#l55" class="line" id="l55">     55</a> X A1 A1 -1300 -100 300 R 50 50 1 1 B
+<a href="#l56" class="line" id="l56">     56</a> X A2 A2 -1300 0 300 R 50 50 1 1 B
+<a href="#l57" class="line" id="l57">     57</a> X A3 A3 -1300 100 300 R 50 50 1 1 B
+<a href="#l58" class="line" id="l58">     58</a> X A4_SDA A4 -1300 200 300 R 50 50 1 1 B
+<a href="#l59" class="line" id="l59">     59</a> X A5_SCL A5 -1300 300 300 R 50 50 1 1 B C
+<a href="#l60" class="line" id="l60">     60</a> X A6 A6 -1300 400 300 R 50 50 1 1 I
+<a href="#l61" class="line" id="l61">     61</a> X A7 A7 -1300 500 300 R 50 50 1 1 I
+<a href="#l62" class="line" id="l62">     62</a> X AREF AREF -1300 -300 300 R 50 50 1 1 I
+<a href="#l63" class="line" id="l63">     63</a> X D0_RX0 D0 -1300 900 300 R 50 50 1 1 B
+<a href="#l64" class="line" id="l64">     64</a> X D1_TX0 D1 -1300 800 300 R 50 50 1 1 B
+<a href="#l65" class="line" id="l65">     65</a> X D10_CS D10 1300 100 300 L 50 50 1 1 B
+<a href="#l66" class="line" id="l66">     66</a> X D11_MOSI D11 1300 0 300 L 50 50 1 1 B
+<a href="#l67" class="line" id="l67">     67</a> X D12_MISO D12 1300 -100 300 L 50 50 1 1 B
+<a href="#l68" class="line" id="l68">     68</a> X D13_SCK D13 1300 -200 300 L 50 50 1 1 B C
+<a href="#l69" class="line" id="l69">     69</a> X D2_INT0 D2 1300 900 300 L 50 50 1 1 B
+<a href="#l70" class="line" id="l70">     70</a> X D3_INT1 D3 1300 800 300 L 50 50 1 1 B
+<a href="#l71" class="line" id="l71">     71</a> X D4 D4 1300 700 300 L 50 50 1 1 B
+<a href="#l72" class="line" id="l72">     72</a> X D5 D5 1300 600 300 L 50 50 1 1 B
+<a href="#l73" class="line" id="l73">     73</a> X D6 D6 1300 500 300 L 50 50 1 1 B
+<a href="#l74" class="line" id="l74">     74</a> X D7 D7 1300 400 300 L 50 50 1 1 B
+<a href="#l75" class="line" id="l75">     75</a> X D8 D8 1300 300 300 L 50 50 1 1 B
+<a href="#l76" class="line" id="l76">     76</a> X D9 D9 1300 200 300 L 50 50 1 1 B
+<a href="#l77" class="line" id="l77">     77</a> X GND GND1 -1300 -500 300 R 50 50 1 1 W
+<a href="#l78" class="line" id="l78">     78</a> X GND GND2 -1300 -600 300 R 50 50 1 1 W
+<a href="#l79" class="line" id="l79">     79</a> X RESET RST1 1300 -700 300 L 50 50 1 1 C L
+<a href="#l80" class="line" id="l80">     80</a> X RESET RST2 1300 -800 300 L 50 50 1 1 C L
+<a href="#l81" class="line" id="l81">     81</a> X VIN VIN -1300 -900 300 R 50 50 1 1 W
+<a href="#l82" class="line" id="l82">     82</a> ENDDRAW
+<a href="#l83" class="line" id="l83">     83</a> ENDDEF
+<a href="#l84" class="line" id="l84">     84</a> #
+<a href="#l85" class="line" id="l85">     85</a> # OpenSourceCelluloid_Connector-LED
+<a href="#l86" class="line" id="l86">     86</a> #
+<a href="#l87" class="line" id="l87">     87</a> DEF OpenSourceCelluloid_Connector-LED U 0 40 Y Y 1 F N
+<a href="#l88" class="line" id="l88">     88</a> F0 &quot;U&quot; 50 -50 50 H V C CNN
+<a href="#l89" class="line" id="l89">     89</a> F1 &quot;OpenSourceCelluloid_Connector-LED&quot; 50 50 50 H V C CNN
+<a href="#l90" class="line" id="l90">     90</a> F2 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l91" class="line" id="l91">     91</a> F3 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l92" class="line" id="l92">     92</a> DRAW
+<a href="#l93" class="line" id="l93">     93</a> S -50 -100 150 -200 0 1 0 N
+<a href="#l94" class="line" id="l94">     94</a> X + 1 -150 -150 100 R 50 50 1 1 I
+<a href="#l95" class="line" id="l95">     95</a> X - 2 250 -150 100 L 50 50 1 1 I
+<a href="#l96" class="line" id="l96">     96</a> ENDDRAW
+<a href="#l97" class="line" id="l97">     97</a> ENDDEF
+<a href="#l98" class="line" id="l98">     98</a> #
+<a href="#l99" class="line" id="l99">     99</a> # OpenSourceCelluloid_LDH-45B-1050
+<a href="#l100" class="line" id="l100">    100</a> #
+<a href="#l101" class="line" id="l101">    101</a> DEF OpenSourceCelluloid_LDH-45B-1050 U 0 40 Y Y 1 F N
+<a href="#l102" class="line" id="l102">    102</a> F0 &quot;U&quot; 300 150 50 H V C CNN
+<a href="#l103" class="line" id="l103">    103</a> F1 &quot;OpenSourceCelluloid_LDH-45B-1050&quot; 250 50 50 H V C CNN
+<a href="#l104" class="line" id="l104">    104</a> F2 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l105" class="line" id="l105">    105</a> F3 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l106" class="line" id="l106">    106</a> DRAW
+<a href="#l107" class="line" id="l107">    107</a> S -100 0 700 -600 0 1 0 N
+<a href="#l108" class="line" id="l108">    108</a> X VIN 1 -200 -100 100 R 50 50 1 1 I
+<a href="#l109" class="line" id="l109">    109</a> X VIN- 2 -200 -200 100 R 50 50 1 1 I
+<a href="#l110" class="line" id="l110">    110</a> X DIM- 3 -200 -300 100 R 50 50 1 1 I
+<a href="#l111" class="line" id="l111">    111</a> X A-DIM 4 -200 -400 100 R 50 50 1 1 I
+<a href="#l112" class="line" id="l112">    112</a> X PWM-DIM 5 -200 -500 100 R 50 50 1 1 I
+<a href="#l113" class="line" id="l113">    113</a> X VOUT- 6 800 -500 100 L 50 50 1 1 I
+<a href="#l114" class="line" id="l114">    114</a> X VOUT+ 7 800 -400 100 L 50 50 1 1 I
+<a href="#l115" class="line" id="l115">    115</a> ENDDRAW
+<a href="#l116" class="line" id="l116">    116</a> ENDDEF
+<a href="#l117" class="line" id="l117">    117</a> #
+<a href="#l118" class="line" id="l118">    118</a> # OpenSourceCelluloid_Motor-Connector
+<a href="#l119" class="line" id="l119">    119</a> #
+<a href="#l120" class="line" id="l120">    120</a> DEF OpenSourceCelluloid_Motor-Connector U 0 40 Y Y 1 F N
+<a href="#l121" class="line" id="l121">    121</a> F0 &quot;U&quot; 150 50 50 H V C CNN
+<a href="#l122" class="line" id="l122">    122</a> F1 &quot;OpenSourceCelluloid_Motor-Connector&quot; 150 150 50 H V C CNN
+<a href="#l123" class="line" id="l123">    123</a> F2 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l124" class="line" id="l124">    124</a> F3 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l125" class="line" id="l125">    125</a> DRAW
+<a href="#l126" class="line" id="l126">    126</a> S -100 0 450 -300 0 1 0 N
+<a href="#l127" class="line" id="l127">    127</a> X RED 1 -200 -100 100 R 50 50 1 1 I
+<a href="#l128" class="line" id="l128">    128</a> X BLUE 2 -200 -200 100 R 50 50 1 1 I
+<a href="#l129" class="line" id="l129">    129</a> X GREEN 3 550 -200 100 L 50 50 1 1 I
+<a href="#l130" class="line" id="l130">    130</a> X BLACK 4 550 -100 100 L 50 50 1 1 I
+<a href="#l131" class="line" id="l131">    131</a> ENDDRAW
+<a href="#l132" class="line" id="l132">    132</a> ENDDEF
+<a href="#l133" class="line" id="l133">    133</a> #
+<a href="#l134" class="line" id="l134">    134</a> # OpenSourceCelluloid_OKI-78SR-12v
+<a href="#l135" class="line" id="l135">    135</a> #
+<a href="#l136" class="line" id="l136">    136</a> DEF OpenSourceCelluloid_OKI-78SR-12v U 0 40 Y Y 1 F N
+<a href="#l137" class="line" id="l137">    137</a> F0 &quot;U&quot; 0 250 50 H V C CNN
+<a href="#l138" class="line" id="l138">    138</a> F1 &quot;OpenSourceCelluloid_OKI-78SR-12v&quot; 0 350 50 H V C CNN
+<a href="#l139" class="line" id="l139">    139</a> F2 &quot;&quot; 0 -50 50 H I C CNN
+<a href="#l140" class="line" id="l140">    140</a> F3 &quot;&quot; 0 -100 50 H I C CNN
+<a href="#l141" class="line" id="l141">    141</a> DRAW
+<a href="#l142" class="line" id="l142">    142</a> S -200 150 200 -250 0 1 0 N
+<a href="#l143" class="line" id="l143">    143</a> X VIN 1 -300 50 100 R 50 50 1 1 I
+<a href="#l144" class="line" id="l144">    144</a> X GND 2 0 -350 100 U 50 50 1 1 I
+<a href="#l145" class="line" id="l145">    145</a> X VOUT 3 300 50 100 L 50 50 1 1 I
+<a href="#l146" class="line" id="l146">    146</a> ENDDRAW
+<a href="#l147" class="line" id="l147">    147</a> ENDDEF
+<a href="#l148" class="line" id="l148">    148</a> #
+<a href="#l149" class="line" id="l149">    149</a> # OpenSourceCelluloid_POTENTIOMETER
+<a href="#l150" class="line" id="l150">    150</a> #
+<a href="#l151" class="line" id="l151">    151</a> DEF OpenSourceCelluloid_POTENTIOMETER U 0 40 Y Y 1 F N
+<a href="#l152" class="line" id="l152">    152</a> F0 &quot;U&quot; 200 200 50 H V C CNN
+<a href="#l153" class="line" id="l153">    153</a> F1 &quot;OpenSourceCelluloid_POTENTIOMETER&quot; 200 100 50 H V C CNN
+<a href="#l154" class="line" id="l154">    154</a> F2 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l155" class="line" id="l155">    155</a> F3 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l156" class="line" id="l156">    156</a> DRAW
+<a href="#l157" class="line" id="l157">    157</a> S -50 0 500 -350 0 1 0 N
+<a href="#l158" class="line" id="l158">    158</a> X 5V 1 -150 -100 100 R 50 50 1 1 I
+<a href="#l159" class="line" id="l159">    159</a> X SIGNAL 2 200 -450 100 U 50 50 1 1 I
+<a href="#l160" class="line" id="l160">    160</a> X GND 3 600 -100 100 L 50 50 1 1 I
+<a href="#l161" class="line" id="l161">    161</a> ENDDRAW
+<a href="#l162" class="line" id="l162">    162</a> ENDDEF
+<a href="#l163" class="line" id="l163">    163</a> #
+<a href="#l164" class="line" id="l164">    164</a> # OpenSourceCelluloid_TMC2660-BOB-SOCKET
+<a href="#l165" class="line" id="l165">    165</a> #
+<a href="#l166" class="line" id="l166">    166</a> DEF OpenSourceCelluloid_TMC2660-BOB-SOCKET U 0 40 Y Y 1 F N
+<a href="#l167" class="line" id="l167">    167</a> F0 &quot;U&quot; 0 100 50 H V C CNN
+<a href="#l168" class="line" id="l168">    168</a> F1 &quot;OpenSourceCelluloid_TMC2660-BOB-SOCKET&quot; 0 200 50 H V C CNN
+<a href="#l169" class="line" id="l169">    169</a> F2 &quot;&quot; -150 -50 50 H I C CNN
+<a href="#l170" class="line" id="l170">    170</a> F3 &quot;&quot; -150 -50 50 H I C CNN
+<a href="#l171" class="line" id="l171">    171</a> DRAW
+<a href="#l172" class="line" id="l172">    172</a> S 400 -1100 -400 0 0 1 0 N
+<a href="#l173" class="line" id="l173">    173</a> X VCC_IO 1 -500 -100 100 R 50 50 1 1 I
+<a href="#l174" class="line" id="l174">    174</a> X SG_TST 10 -500 -1000 100 R 50 50 1 1 I
+<a href="#l175" class="line" id="l175">    175</a> X GND 11 500 -1000 100 L 50 50 1 1 I
+<a href="#l176" class="line" id="l176">    176</a> X DIR 12 500 -900 100 L 50 50 1 1 I
+<a href="#l177" class="line" id="l177">    177</a> X STEP 13 500 -800 100 L 50 50 1 1 I
+<a href="#l178" class="line" id="l178">    178</a> X GND 14 500 -700 100 L 50 50 1 1 I
+<a href="#l179" class="line" id="l179">    179</a> X B2 15 500 -600 100 L 50 50 1 1 I
+<a href="#l180" class="line" id="l180">    180</a> X B1 16 500 -500 100 L 50 50 1 1 I
+<a href="#l181" class="line" id="l181">    181</a> X A2 17 500 -400 100 L 50 50 1 1 I
+<a href="#l182" class="line" id="l182">    182</a> X A1 18 500 -300 100 L 50 50 1 1 I
+<a href="#l183" class="line" id="l183">    183</a> X GND 19 500 -200 100 L 50 50 1 1 I
+<a href="#l184" class="line" id="l184">    184</a> X GND 2 -500 -200 100 R 50 50 1 1 I
+<a href="#l185" class="line" id="l185">    185</a> X VS 20 500 -100 100 L 50 50 1 1 I
+<a href="#l186" class="line" id="l186">    186</a> X SDO 3 -500 -300 100 R 50 50 1 1 I
+<a href="#l187" class="line" id="l187">    187</a> X SDI 4 -500 -400 100 R 50 50 1 1 I
+<a href="#l188" class="line" id="l188">    188</a> X SCK 5 -500 -500 100 R 50 50 1 1 I
+<a href="#l189" class="line" id="l189">    189</a> X CSN 6 -500 -600 100 R 50 50 1 1 I
+<a href="#l190" class="line" id="l190">    190</a> X GND 7 -500 -700 100 R 50 50 1 1 I
+<a href="#l191" class="line" id="l191">    191</a> X DRV_ENV 8 -500 -800 100 R 50 50 1 1 I
+<a href="#l192" class="line" id="l192">    192</a> X CLK16 9 -500 -900 100 R 50 50 1 1 I
+<a href="#l193" class="line" id="l193">    193</a> ENDDRAW
+<a href="#l194" class="line" id="l194">    194</a> ENDDEF
+<a href="#l195" class="line" id="l195">    195</a> #
+<a href="#l196" class="line" id="l196">    196</a> # power_+24V
+<a href="#l197" class="line" id="l197">    197</a> #
+<a href="#l198" class="line" id="l198">    198</a> DEF power_+24V #PWR 0 0 Y Y 1 F P
+<a href="#l199" class="line" id="l199">    199</a> F0 &quot;#PWR&quot; 0 -150 50 H I C CNN
+<a href="#l200" class="line" id="l200">    200</a> F1 &quot;power_+24V&quot; 0 140 50 H V C CNN
+<a href="#l201" class="line" id="l201">    201</a> F2 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l202" class="line" id="l202">    202</a> F3 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l203" class="line" id="l203">    203</a> DRAW
+<a href="#l204" class="line" id="l204">    204</a> P 2 0 1 0 -30 50 0 100 N
+<a href="#l205" class="line" id="l205">    205</a> P 2 0 1 0 0 0 0 100 N
+<a href="#l206" class="line" id="l206">    206</a> P 2 0 1 0 0 100 30 50 N
+<a href="#l207" class="line" id="l207">    207</a> X +24V 1 0 0 0 U 50 50 1 1 W N
+<a href="#l208" class="line" id="l208">    208</a> ENDDRAW
+<a href="#l209" class="line" id="l209">    209</a> ENDDEF
+<a href="#l210" class="line" id="l210">    210</a> #
+<a href="#l211" class="line" id="l211">    211</a> # power_GND
+<a href="#l212" class="line" id="l212">    212</a> #
+<a href="#l213" class="line" id="l213">    213</a> DEF power_GND #PWR 0 0 Y Y 1 F P
+<a href="#l214" class="line" id="l214">    214</a> F0 &quot;#PWR&quot; 0 -250 50 H I C CNN
+<a href="#l215" class="line" id="l215">    215</a> F1 &quot;power_GND&quot; 0 -150 50 H V C CNN
+<a href="#l216" class="line" id="l216">    216</a> F2 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l217" class="line" id="l217">    217</a> F3 &quot;&quot; 0 0 50 H I C CNN
+<a href="#l218" class="line" id="l218">    218</a> DRAW
+<a href="#l219" class="line" id="l219">    219</a> P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+<a href="#l220" class="line" id="l220">    220</a> X GND 1 0 0 0 D 50 50 1 1 W N
+<a href="#l221" class="line" id="l221">    221</a> ENDDRAW
+<a href="#l222" class="line" id="l222">    222</a> ENDDEF
+<a href="#l223" class="line" id="l223">    223</a> #
+<a href="#l224" class="line" id="l224">    224</a> #End Library
+</pre>
+</div>
+</body>
+</html>
