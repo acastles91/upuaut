@@ -6,7 +6,7 @@ El proyecto se abre desde el archivo `upuaut_2Nils.pro`. El esquemático corresp
 
 En el esquemático se puede ver arriba a la izquierda el Teensy 3.2 que controla todo. Las conexiones están hechas sobre todo con `labels`. `START-STOP`, `DIRECTION-SWITCH`, `CAPTURE` y `SPEED-SELECT` son botones con interrupt. El código lo puede ver en [este repositorio](https://github.com/acastles91/Upu). El loop es en términos generales algo así:
 
-```cpp
+```
 volatile Request requestStream = checkInputStreamOF(Serial, prevRequest);
   if(requestStream != prevRequest){
     switchStateOF(requestStream,
@@ -50,7 +50,8 @@ volatile Request requestStream = checkInputStreamOF(Serial, prevRequest);
                 debouncers,
                 stateObj,
                 bounceStartStop);
-     }```
+     }
+```
      Escribí una clase que se llama `Request`. Las funciones `checkInputStreamOF()` y `checkInputButtonsOF()` tienen como `return value` un `Request`. Existe de antes un `Request` llamado `prevRequest`. Este `Request` es el valor del último `Request` del cual el programa tiene conocimiento. Si las funciones dan como `return value` algo diferente al `Request` anterior, o sea `prevRequest`, se llama la función `switchStateOF()`. Esta función cambia el estado de la máquina: la pone en movimiento, la frena, le cambia la velocidad etc. Lo fundamental es que este cambio de estado depende de la clase de `Request` que se haga, que se hace con los botones de la máquina en el caso de `checkInputButtonsOF()` o de paquetes a través del `Serial` en `checkInputStreamOF()`. Cuando hay un cambio de estado de los botones `checkInputButtonOF()` genera un `Request` distinto a `prevRequest`, y los botones tienen que tener interrupt para poder guardar este cambio de nuevo valor sin importar en qué momento del loop suceda. 
 
      Aparte de los botones, el Teensy tiene conectados distintos Leds que no son muy importantes para la funcionalidad. Otro punto central de la máquina es el `SENSOR`. Este sensor también tiene un `interrupt`. No recuerdo bien cómo lo solucioné en su momento, pero la idea es que el sensor de la máquina está posicionado enfrente del opturador del proyector y detecta si el opturador está o no abierto. El sensor tiene que detectar la posición del opturador independientemente de los pasos del motor. El sensor lee cambios de estado, de abierto a cerrado. Tiene que ser o 0 o 1. Todavía no estoy muy convencido del sensor que estoy usando pero eso lo podemos ver después.Cuando hay un cambio de estado el sensor le suma 1 a un contador. Cuando el contador llega a 4 el controlador manda un paquete serial al computador para que capture el frame y el contador vuelve a 0. El numero 4 tiene que ver con la forma física del opturador. Esta función de mandar el paquete tiene que ser inmediata, independiente del lugar del loop en que suceda. 
