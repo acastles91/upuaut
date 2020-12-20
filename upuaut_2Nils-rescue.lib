@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# PEC12R-ENCODER-openCelluloid
+#
+DEF PEC12R-ENCODER-openCelluloid U 0 40 Y Y 1 F N
+F0 "U" 100 -300 50 H V C CNN
+F1 "PEC12R-ENCODER-openCelluloid" 100 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -500 -50 750 -550 0 1 0 N
+X CHANNEL-A 1 -600 -100 100 R 50 50 1 1 I
+X GND 2 -600 -200 100 R 50 50 1 1 I
+X CHANNEL-B 3 -600 -300 100 R 50 50 1 1 I
+X VCC 4 850 -200 100 L 50 50 1 1 I
+X BUTTON 5 850 -100 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Power-Button-OpenSourceCelluloid
+#
+DEF Power-Button-OpenSourceCelluloid U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Power-Button-OpenSourceCelluloid" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 450 250 50 0 1 0 N
+X A 1 -150 550 100 D 50 50 1 1 P
+X B 2 0 550 100 D 50 50 1 1 P
+X LED 3 150 550 100 D 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

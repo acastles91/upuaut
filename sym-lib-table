@@ -1,4 +1,7 @@
 (sym_lib_table
   (lib (name OpenSourceCelluloid)(type Legacy)(uri /home/antonio/OpenSourceCelluloid/pcb/polaria/OpenSourceCelluloid.lib)(options "")(descr ""))
   (lib (name OpenSourceCelluloid-arduino)(type Legacy)(uri /home/antonio/OpenSourceCelluloid/pcb/upuaut/upuaut/arduino-kicad-library/arduino.lib)(options "")(descr ""))
+  (lib (name upuaut-rescue)(type Legacy)(uri ${KIPRJMOD}/upuaut-rescue.lib)(options "")(descr ""))
+  (lib (name extra-kicad-libraries)(type Legacy)(uri /home/antonio/OpenSourceCelluloid/pcb/kicad-libraries/components.lib)(options "")(descr ""))
+  (lib (name upuaut_2Nils-rescue)(type Legacy)(uri ${KIPRJMOD}/upuaut_2Nils-rescue.lib)(options "")(descr ""))
 )

@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>First Session - upuaut - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="upuaut Atom Feed" href="../atom.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>upuaut</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/914e9fb6fcd862579354a3c325213ed5867c7bf3.html">914e9fb6fcd862579354a3c325213ed5867c7bf3</a>
+<b>parent</b> <a href="../commit/bef1538c8b6a5143b20c4383ec674a400f399f14.html">bef1538c8b6a5143b20c4383ec674a400f399f14</a>
+<b>Author:</b> Antonio Castles Gomez &lt;<a href="mailto:info@antoniocastles.net">info@antoniocastles.net</a>&gt;
+<b>Date:</b>   Tue,  1 Oct 2019 17:55:19 +0200
+
+First Session
+
+<b>Diffstat:</b>
+<table><tr><td class="M">M</td><td><a href="#h0">upuaut-cache.lib</a></td><td> | </td><td class="num">157</td><td><span class="i">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h1">upuaut.bak</a></td><td> | </td><td class="num">358</td><td><span class="i">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="d">--</span></td></tr>
+<tr><td class="A">A</td><td><a href="#h2">upuaut.net</a></td><td> | </td><td class="num">297</td><td><span class="i">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h3">upuaut.sch</a></td><td> | </td><td class="num">355</td><td><span class="i">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="d">--</span></td></tr>
+</table></pre><pre>4 files changed, 1152 insertions(+), 15 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/upuaut-cache.lib.html">upuaut-cache.lib</a> b/<a href="../file/upuaut-cache.lib.html">upuaut-cache.lib</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -1,6 +1,24 @@
+</a> EESchema-LIBRARY Version 2.4
+ #encoding utf-8
+ #
+<a href="#h0-0-3" id="h0-0-3" class="i">+# Device_C
+</a><a href="#h0-0-4" id="h0-0-4" class="i">+#
+</a><a href="#h0-0-5" id="h0-0-5" class="i">+DEF Device_C C 0 10 N Y 1 F N
+</a><a href="#h0-0-6" id="h0-0-6" class="i">+F0 &quot;C&quot; 25 100 50 H V L CNN
+</a><a href="#h0-0-7" id="h0-0-7" class="i">+F1 &quot;Device_C&quot; 25 -100 50 H V L CNN
+</a><a href="#h0-0-8" id="h0-0-8" class="i">+F2 &quot;&quot; 38 -150 50 H I C CNN
+</a><a href="#h0-0-9" id="h0-0-9" class="i">+F3 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-0-10" id="h0-0-10" class="i">+$FPLIST
+</a><a href="#h0-0-11" id="h0-0-11" class="i">+ C_*
+</a><a href="#h0-0-12" id="h0-0-12" class="i">+$ENDFPLIST
+</a><a href="#h0-0-13" id="h0-0-13" class="i">+DRAW
+</a><a href="#h0-0-14" id="h0-0-14" class="i">+P 2 0 1 20 -80 -30 80 -30 N
+</a><a href="#h0-0-15" id="h0-0-15" class="i">+P 2 0 1 20 -80 30 80 30 N
+</a><a href="#h0-0-16" id="h0-0-16" class="i">+X ~ 1 0 150 110 D 50 50 1 1 P
+</a><a href="#h0-0-17" id="h0-0-17" class="i">+X ~ 2 0 -150 110 U 50 50 1 1 P
+</a><a href="#h0-0-18" id="h0-0-18" class="i">+ENDDRAW
+</a><a href="#h0-0-19" id="h0-0-19" class="i">+ENDDEF
+</a><a href="#h0-0-20" id="h0-0-20" class="i">+#
+</a> # OpenSourceCelluloid-arduino_Arduino_Nano_Socket
+ #
+ DEF OpenSourceCelluloid-arduino_Arduino_Nano_Socket XA 0 40 Y Y 1 F N
+<a href="#h0-1" id="h0-1" class="h">@@ -64,4 +82,143 @@ X VIN VIN -1300 -900 300 R 50 50 1 1 W
+</a> ENDDRAW
+ ENDDEF
+ #
+<a href="#h0-1-3" id="h0-1-3" class="i">+# OpenSourceCelluloid_Connector-LED
+</a><a href="#h0-1-4" id="h0-1-4" class="i">+#
+</a><a href="#h0-1-5" id="h0-1-5" class="i">+DEF OpenSourceCelluloid_Connector-LED U 0 40 Y Y 1 F N
+</a><a href="#h0-1-6" id="h0-1-6" class="i">+F0 &quot;U&quot; 50 -50 50 H V C CNN
+</a><a href="#h0-1-7" id="h0-1-7" class="i">+F1 &quot;OpenSourceCelluloid_Connector-LED&quot; 50 50 50 H V C CNN
+</a><a href="#h0-1-8" id="h0-1-8" class="i">+F2 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-9" id="h0-1-9" class="i">+F3 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-10" id="h0-1-10" class="i">+DRAW
+</a><a href="#h0-1-11" id="h0-1-11" class="i">+S -50 -100 150 -200 0 1 0 N
+</a><a href="#h0-1-12" id="h0-1-12" class="i">+X + 1 -150 -150 100 R 50 50 1 1 I
+</a><a href="#h0-1-13" id="h0-1-13" class="i">+X - 2 250 -150 100 L 50 50 1 1 I
+</a><a href="#h0-1-14" id="h0-1-14" class="i">+ENDDRAW
+</a><a href="#h0-1-15" id="h0-1-15" class="i">+ENDDEF
+</a><a href="#h0-1-16" id="h0-1-16" class="i">+#
+</a><a href="#h0-1-17" id="h0-1-17" class="i">+# OpenSourceCelluloid_LDH-45B-1050
+</a><a href="#h0-1-18" id="h0-1-18" class="i">+#
+</a><a href="#h0-1-19" id="h0-1-19" class="i">+DEF OpenSourceCelluloid_LDH-45B-1050 U 0 40 Y Y 1 F N
+</a><a href="#h0-1-20" id="h0-1-20" class="i">+F0 &quot;U&quot; 300 150 50 H V C CNN
+</a><a href="#h0-1-21" id="h0-1-21" class="i">+F1 &quot;OpenSourceCelluloid_LDH-45B-1050&quot; 250 50 50 H V C CNN
+</a><a href="#h0-1-22" id="h0-1-22" class="i">+F2 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-23" id="h0-1-23" class="i">+F3 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-24" id="h0-1-24" class="i">+DRAW
+</a><a href="#h0-1-25" id="h0-1-25" class="i">+S -100 0 700 -600 0 1 0 N
+</a><a href="#h0-1-26" id="h0-1-26" class="i">+X VIN 1 -200 -100 100 R 50 50 1 1 I
+</a><a href="#h0-1-27" id="h0-1-27" class="i">+X VIN- 2 -200 -200 100 R 50 50 1 1 I
+</a><a href="#h0-1-28" id="h0-1-28" class="i">+X DIM- 3 -200 -300 100 R 50 50 1 1 I
+</a><a href="#h0-1-29" id="h0-1-29" class="i">+X A-DIM 4 -200 -400 100 R 50 50 1 1 I
+</a><a href="#h0-1-30" id="h0-1-30" class="i">+X PWM-DIM 5 -200 -500 100 R 50 50 1 1 I
+</a><a href="#h0-1-31" id="h0-1-31" class="i">+X VOUT- 6 800 -500 100 L 50 50 1 1 I
+</a><a href="#h0-1-32" id="h0-1-32" class="i">+X VOUT+ 7 800 -400 100 L 50 50 1 1 I
+</a><a href="#h0-1-33" id="h0-1-33" class="i">+ENDDRAW
+</a><a href="#h0-1-34" id="h0-1-34" class="i">+ENDDEF
+</a><a href="#h0-1-35" id="h0-1-35" class="i">+#
+</a><a href="#h0-1-36" id="h0-1-36" class="i">+# OpenSourceCelluloid_Motor-Connector
+</a><a href="#h0-1-37" id="h0-1-37" class="i">+#
+</a><a href="#h0-1-38" id="h0-1-38" class="i">+DEF OpenSourceCelluloid_Motor-Connector U 0 40 Y Y 1 F N
+</a><a href="#h0-1-39" id="h0-1-39" class="i">+F0 &quot;U&quot; 150 50 50 H V C CNN
+</a><a href="#h0-1-40" id="h0-1-40" class="i">+F1 &quot;OpenSourceCelluloid_Motor-Connector&quot; 150 150 50 H V C CNN
+</a><a href="#h0-1-41" id="h0-1-41" class="i">+F2 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-42" id="h0-1-42" class="i">+F3 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-43" id="h0-1-43" class="i">+DRAW
+</a><a href="#h0-1-44" id="h0-1-44" class="i">+S -100 0 450 -300 0 1 0 N
+</a><a href="#h0-1-45" id="h0-1-45" class="i">+X RED 1 -200 -100 100 R 50 50 1 1 I
+</a><a href="#h0-1-46" id="h0-1-46" class="i">+X BLUE 2 -200 -200 100 R 50 50 1 1 I
+</a><a href="#h0-1-47" id="h0-1-47" class="i">+X GREEN 3 550 -200 100 L 50 50 1 1 I
+</a><a href="#h0-1-48" id="h0-1-48" class="i">+X BLACK 4 550 -100 100 L 50 50 1 1 I
+</a><a href="#h0-1-49" id="h0-1-49" class="i">+ENDDRAW
+</a><a href="#h0-1-50" id="h0-1-50" class="i">+ENDDEF
+</a><a href="#h0-1-51" id="h0-1-51" class="i">+#
+</a><a href="#h0-1-52" id="h0-1-52" class="i">+# OpenSourceCelluloid_OKI-78SR-12v
+</a><a href="#h0-1-53" id="h0-1-53" class="i">+#
+</a><a href="#h0-1-54" id="h0-1-54" class="i">+DEF OpenSourceCelluloid_OKI-78SR-12v U 0 40 Y Y 1 F N
+</a><a href="#h0-1-55" id="h0-1-55" class="i">+F0 &quot;U&quot; 0 250 50 H V C CNN
+</a><a href="#h0-1-56" id="h0-1-56" class="i">+F1 &quot;OpenSourceCelluloid_OKI-78SR-12v&quot; 0 350 50 H V C CNN
+</a><a href="#h0-1-57" id="h0-1-57" class="i">+F2 &quot;&quot; 0 -50 50 H I C CNN
+</a><a href="#h0-1-58" id="h0-1-58" class="i">+F3 &quot;&quot; 0 -100 50 H I C CNN
+</a><a href="#h0-1-59" id="h0-1-59" class="i">+DRAW
+</a><a href="#h0-1-60" id="h0-1-60" class="i">+S -200 150 200 -250 0 1 0 N
+</a><a href="#h0-1-61" id="h0-1-61" class="i">+X VIN 1 -300 50 100 R 50 50 1 1 I
+</a><a href="#h0-1-62" id="h0-1-62" class="i">+X GND 2 0 -350 100 U 50 50 1 1 I
+</a><a href="#h0-1-63" id="h0-1-63" class="i">+X VOUT 3 300 50 100 L 50 50 1 1 I
+</a><a href="#h0-1-64" id="h0-1-64" class="i">+ENDDRAW
+</a><a href="#h0-1-65" id="h0-1-65" class="i">+ENDDEF
+</a><a href="#h0-1-66" id="h0-1-66" class="i">+#
+</a><a href="#h0-1-67" id="h0-1-67" class="i">+# OpenSourceCelluloid_POTENTIOMETER
+</a><a href="#h0-1-68" id="h0-1-68" class="i">+#
+</a><a href="#h0-1-69" id="h0-1-69" class="i">+DEF OpenSourceCelluloid_POTENTIOMETER U 0 40 Y Y 1 F N
+</a><a href="#h0-1-70" id="h0-1-70" class="i">+F0 &quot;U&quot; 200 200 50 H V C CNN
+</a><a href="#h0-1-71" id="h0-1-71" class="i">+F1 &quot;OpenSourceCelluloid_POTENTIOMETER&quot; 200 100 50 H V C CNN
+</a><a href="#h0-1-72" id="h0-1-72" class="i">+F2 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-73" id="h0-1-73" class="i">+F3 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-74" id="h0-1-74" class="i">+DRAW
+</a><a href="#h0-1-75" id="h0-1-75" class="i">+S -50 0 500 -350 0 1 0 N
+</a><a href="#h0-1-76" id="h0-1-76" class="i">+X 5V 1 -150 -100 100 R 50 50 1 1 I
+</a><a href="#h0-1-77" id="h0-1-77" class="i">+X SIGNAL 2 200 -450 100 U 50 50 1 1 I
+</a><a href="#h0-1-78" id="h0-1-78" class="i">+X GND 3 600 -100 100 L 50 50 1 1 I
+</a><a href="#h0-1-79" id="h0-1-79" class="i">+ENDDRAW
+</a><a href="#h0-1-80" id="h0-1-80" class="i">+ENDDEF
+</a><a href="#h0-1-81" id="h0-1-81" class="i">+#
+</a><a href="#h0-1-82" id="h0-1-82" class="i">+# OpenSourceCelluloid_TMC2660-BOB-SOCKET
+</a><a href="#h0-1-83" id="h0-1-83" class="i">+#
+</a><a href="#h0-1-84" id="h0-1-84" class="i">+DEF OpenSourceCelluloid_TMC2660-BOB-SOCKET U 0 40 Y Y 1 F N
+</a><a href="#h0-1-85" id="h0-1-85" class="i">+F0 &quot;U&quot; 0 100 50 H V C CNN
+</a><a href="#h0-1-86" id="h0-1-86" class="i">+F1 &quot;OpenSourceCelluloid_TMC2660-BOB-SOCKET&quot; 0 200 50 H V C CNN
+</a><a href="#h0-1-87" id="h0-1-87" class="i">+F2 &quot;&quot; -150 -50 50 H I C CNN
+</a><a href="#h0-1-88" id="h0-1-88" class="i">+F3 &quot;&quot; -150 -50 50 H I C CNN
+</a><a href="#h0-1-89" id="h0-1-89" class="i">+DRAW
+</a><a href="#h0-1-90" id="h0-1-90" class="i">+S 400 -1100 -400 0 0 1 0 N
+</a><a href="#h0-1-91" id="h0-1-91" class="i">+X VCC_IO 1 -500 -100 100 R 50 50 1 1 I
+</a><a href="#h0-1-92" id="h0-1-92" class="i">+X SG_TST 10 -500 -1000 100 R 50 50 1 1 I
+</a><a href="#h0-1-93" id="h0-1-93" class="i">+X GND 11 500 -1000 100 L 50 50 1 1 I
+</a><a href="#h0-1-94" id="h0-1-94" class="i">+X DIR 12 500 -900 100 L 50 50 1 1 I
+</a><a href="#h0-1-95" id="h0-1-95" class="i">+X STEP 13 500 -800 100 L 50 50 1 1 I
+</a><a href="#h0-1-96" id="h0-1-96" class="i">+X GND 14 500 -700 100 L 50 50 1 1 I
+</a><a href="#h0-1-97" id="h0-1-97" class="i">+X B2 15 500 -600 100 L 50 50 1 1 I
+</a><a href="#h0-1-98" id="h0-1-98" class="i">+X B1 16 500 -500 100 L 50 50 1 1 I
+</a><a href="#h0-1-99" id="h0-1-99" class="i">+X A2 17 500 -400 100 L 50 50 1 1 I
+</a><a href="#h0-1-100" id="h0-1-100" class="i">+X A1 18 500 -300 100 L 50 50 1 1 I
+</a><a href="#h0-1-101" id="h0-1-101" class="i">+X GND 19 500 -200 100 L 50 50 1 1 I
+</a><a href="#h0-1-102" id="h0-1-102" class="i">+X GND 2 -500 -200 100 R 50 50 1 1 I
+</a><a href="#h0-1-103" id="h0-1-103" class="i">+X VS 20 500 -100 100 L 50 50 1 1 I
+</a><a href="#h0-1-104" id="h0-1-104" class="i">+X SDO 3 -500 -300 100 R 50 50 1 1 I
+</a><a href="#h0-1-105" id="h0-1-105" class="i">+X SDI 4 -500 -400 100 R 50 50 1 1 I
+</a><a href="#h0-1-106" id="h0-1-106" class="i">+X SCK 5 -500 -500 100 R 50 50 1 1 I
+</a><a href="#h0-1-107" id="h0-1-107" class="i">+X CSN 6 -500 -600 100 R 50 50 1 1 I
+</a><a href="#h0-1-108" id="h0-1-108" class="i">+X GND 7 -500 -700 100 R 50 50 1 1 I
+</a><a href="#h0-1-109" id="h0-1-109" class="i">+X DRV_ENV 8 -500 -800 100 R 50 50 1 1 I
+</a><a href="#h0-1-110" id="h0-1-110" class="i">+X CLK16 9 -500 -900 100 R 50 50 1 1 I
+</a><a href="#h0-1-111" id="h0-1-111" class="i">+ENDDRAW
+</a><a href="#h0-1-112" id="h0-1-112" class="i">+ENDDEF
+</a><a href="#h0-1-113" id="h0-1-113" class="i">+#
+</a><a href="#h0-1-114" id="h0-1-114" class="i">+# power_+24V
+</a><a href="#h0-1-115" id="h0-1-115" class="i">+#
+</a><a href="#h0-1-116" id="h0-1-116" class="i">+DEF power_+24V #PWR 0 0 Y Y 1 F P
+</a><a href="#h0-1-117" id="h0-1-117" class="i">+F0 &quot;#PWR&quot; 0 -150 50 H I C CNN
+</a><a href="#h0-1-118" id="h0-1-118" class="i">+F1 &quot;power_+24V&quot; 0 140 50 H V C CNN
+</a><a href="#h0-1-119" id="h0-1-119" class="i">+F2 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-120" id="h0-1-120" class="i">+F3 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-121" id="h0-1-121" class="i">+DRAW
+</a><a href="#h0-1-122" id="h0-1-122" class="i">+P 2 0 1 0 -30 50 0 100 N
+</a><a href="#h0-1-123" id="h0-1-123" class="i">+P 2 0 1 0 0 0 0 100 N
+</a><a href="#h0-1-124" id="h0-1-124" class="i">+P 2 0 1 0 0 100 30 50 N
+</a><a href="#h0-1-125" id="h0-1-125" class="i">+X +24V 1 0 0 0 U 50 50 1 1 W N
+</a><a href="#h0-1-126" id="h0-1-126" class="i">+ENDDRAW
+</a><a href="#h0-1-127" id="h0-1-127" class="i">+ENDDEF
+</a><a href="#h0-1-128" id="h0-1-128" class="i">+#
+</a><a href="#h0-1-129" id="h0-1-129" class="i">+# power_GND
+</a><a href="#h0-1-130" id="h0-1-130" class="i">+#
+</a><a href="#h0-1-131" id="h0-1-131" class="i">+DEF power_GND #PWR 0 0 Y Y 1 F P
+</a><a href="#h0-1-132" id="h0-1-132" class="i">+F0 &quot;#PWR&quot; 0 -250 50 H I C CNN
+</a><a href="#h0-1-133" id="h0-1-133" class="i">+F1 &quot;power_GND&quot; 0 -150 50 H V C CNN
+</a><a href="#h0-1-134" id="h0-1-134" class="i">+F2 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-135" id="h0-1-135" class="i">+F3 &quot;&quot; 0 0 50 H I C CNN
+</a><a href="#h0-1-136" id="h0-1-136" class="i">+DRAW
+</a><a href="#h0-1-137" id="h0-1-137" class="i">+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+</a><a href="#h0-1-138" id="h0-1-138" class="i">+X GND 1 0 0 0 D 50 50 1 1 W N
+</a><a href="#h0-1-139" id="h0-1-139" class="i">+ENDDRAW
+</a><a href="#h0-1-140" id="h0-1-140" class="i">+ENDDEF
+</a><a href="#h0-1-141" id="h0-1-141" class="i">+#
+</a> #End Library
+<b>diff --git a/<a id="h1" href="../file/upuaut.bak.html">upuaut.bak</a> b/<a href="../file/upuaut.bak.html">upuaut.bak</a></b>
+<a href="#h1-0" id="h1-0" class="h">@@ -1,4 +1,5 @@
+</a> EESchema Schematic File Version 4
+<a href="#h1-0-1" id="h1-0-1" class="i">+LIBS:upuaut-cache
+</a> EELAYER 29 0
+ EELAYER END
+ $Descr A4 11693 8268
+<a href="#h1-1" id="h1-1" class="h">@@ -14,14 +15,355 @@ Comment3 &quot;&quot;
+</a> Comment4 &quot;&quot;
+ $EndDescr
+ $Comp
+<a href="#h1-1-3" id="h1-1-3" class="d">-L OpenSourceCelluloid:QRE1113 U?
+</a><a href="#h1-1-4" id="h1-1-4" class="d">-U 1 1 5D8F7C27
+</a><a href="#h1-1-5" id="h1-1-5" class="d">-P 3550 3050
+</a><a href="#h1-1-6" id="h1-1-6" class="d">-F 0 &quot;U?&quot; H 3550 3175 50  0000 C CNN
+</a><a href="#h1-1-7" id="h1-1-7" class="d">-F 1 &quot;QRE1113&quot; H 3550 3084 50  0000 C CNN
+</a><a href="#h1-1-8" id="h1-1-8" class="d">-F 2 &quot;&quot; H 3550 3050 50  0001 C CNN
+</a><a href="#h1-1-9" id="h1-1-9" class="d">-F 3 &quot;&quot; H 3550 3050 50  0001 C CNN
+</a><a href="#h1-1-10" id="h1-1-10" class="d">-	1    3550 3050
+</a><a href="#h1-1-11" id="h1-1-11" class="i">+L OpenSourceCelluloid-arduino:Arduino_Nano_Socket XA1
+</a><a href="#h1-1-12" id="h1-1-12" class="i">+U 1 1 5D926447
+</a><a href="#h1-1-13" id="h1-1-13" class="i">+P 5500 3150
+</a><a href="#h1-1-14" id="h1-1-14" class="i">+F 0 &quot;XA1&quot; H 5500 4387 60  0000 C CNN
+</a><a href="#h1-1-15" id="h1-1-15" class="i">+F 1 &quot;Arduino_Nano_Socket&quot; H 5500 4281 60  0000 C CNN
+</a><a href="#h1-1-16" id="h1-1-16" class="i">+F 2 &quot;&quot; H 7300 6900 60  0001 C CNN
+</a><a href="#h1-1-17" id="h1-1-17" class="i">+F 3 &quot;https://store.arduino.cc/arduino-nano&quot; H 7300 6900 60  0001 C CNN
+</a><a href="#h1-1-18" id="h1-1-18" class="i">+	1    5500 3150
+</a> 	1    0    0    -1  
+ $EndComp
+<a href="#h1-1-21" id="h1-1-21" class="i">+Text GLabel 6800 2450 2    50   Input ~ 0
+</a><a href="#h1-1-22" id="h1-1-22" class="i">+DIRECTION
+</a><a href="#h1-1-23" id="h1-1-23" class="i">+Text GLabel 6800 2550 2    50   Input ~ 0
+</a><a href="#h1-1-24" id="h1-1-24" class="i">+STEP
+</a><a href="#h1-1-25" id="h1-1-25" class="i">+Text GLabel 6800 2650 2    50   Input ~ 0
+</a><a href="#h1-1-26" id="h1-1-26" class="i">+ENABLE
+</a><a href="#h1-1-27" id="h1-1-27" class="i">+Text GLabel 6800 3150 2    50   Input ~ 0
+</a><a href="#h1-1-28" id="h1-1-28" class="i">+MOSI-SDI
+</a><a href="#h1-1-29" id="h1-1-29" class="i">+Text GLabel 6800 3250 2    50   Input ~ 0
+</a><a href="#h1-1-30" id="h1-1-30" class="i">+MISO-SDO
+</a><a href="#h1-1-31" id="h1-1-31" class="i">+Text GLabel 6800 3350 2    50   Input ~ 0
+</a><a href="#h1-1-32" id="h1-1-32" class="i">+CLOCK
+</a><a href="#h1-1-33" id="h1-1-33" class="i">+$Comp
+</a><a href="#h1-1-34" id="h1-1-34" class="i">+L OpenSourceCelluloid:OKI-78SR-12v U3
+</a><a href="#h1-1-35" id="h1-1-35" class="i">+U 1 1 5D950615
+</a><a href="#h1-1-36" id="h1-1-36" class="i">+P 10150 4150
+</a><a href="#h1-1-37" id="h1-1-37" class="i">+F 0 &quot;U3&quot; H 10150 4465 50  0000 C CNN
+</a><a href="#h1-1-38" id="h1-1-38" class="i">+F 1 &quot;OKI-78SR-12v&quot; H 10150 4374 50  0000 C CNN
+</a><a href="#h1-1-39" id="h1-1-39" class="i">+F 2 &quot;&quot; H 10150 4100 50  0001 C CNN
+</a><a href="#h1-1-40" id="h1-1-40" class="i">+F 3 &quot;&quot; H 10150 4050 50  0001 C CNN
+</a><a href="#h1-1-41" id="h1-1-41" class="i">+	1    10150 4150
+</a><a href="#h1-1-42" id="h1-1-42" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-43" id="h1-1-43" class="i">+$EndComp
+</a><a href="#h1-1-44" id="h1-1-44" class="i">+Text GLabel 10450 4100 2    50   Input ~ 0
+</a><a href="#h1-1-45" id="h1-1-45" class="i">+12V
+</a><a href="#h1-1-46" id="h1-1-46" class="i">+Text GLabel 4200 3950 0    50   Input ~ 0
+</a><a href="#h1-1-47" id="h1-1-47" class="i">+5V
+</a><a href="#h1-1-48" id="h1-1-48" class="i">+Text GLabel 4200 4050 0    50   Input ~ 0
+</a><a href="#h1-1-49" id="h1-1-49" class="i">+12V
+</a><a href="#h1-1-50" id="h1-1-50" class="i">+Text GLabel 4200 3850 0    50   Input ~ 0
+</a><a href="#h1-1-51" id="h1-1-51" class="i">+3,3V
+</a><a href="#h1-1-52" id="h1-1-52" class="i">+$Comp
+</a><a href="#h1-1-53" id="h1-1-53" class="i">+L power:GND #PWR08
+</a><a href="#h1-1-54" id="h1-1-54" class="i">+U 1 1 5D97BCC9
+</a><a href="#h1-1-55" id="h1-1-55" class="i">+P 9700 2450
+</a><a href="#h1-1-56" id="h1-1-56" class="i">+F 0 &quot;#PWR08&quot; H 9700 2200 50  0001 C CNN
+</a><a href="#h1-1-57" id="h1-1-57" class="i">+F 1 &quot;GND&quot; V 9705 2322 50  0000 R CNN
+</a><a href="#h1-1-58" id="h1-1-58" class="i">+F 2 &quot;&quot; H 9700 2450 50  0001 C CNN
+</a><a href="#h1-1-59" id="h1-1-59" class="i">+F 3 &quot;&quot; H 9700 2450 50  0001 C CNN
+</a><a href="#h1-1-60" id="h1-1-60" class="i">+	1    9700 2450
+</a><a href="#h1-1-61" id="h1-1-61" class="i">+	0    -1   -1   0   
+</a><a href="#h1-1-62" id="h1-1-62" class="i">+$EndComp
+</a><a href="#h1-1-63" id="h1-1-63" class="i">+Text GLabel 8300 2350 0    50   Input ~ 0
+</a><a href="#h1-1-64" id="h1-1-64" class="i">+5V
+</a><a href="#h1-1-65" id="h1-1-65" class="i">+$Comp
+</a><a href="#h1-1-66" id="h1-1-66" class="i">+L power:GND #PWR05
+</a><a href="#h1-1-67" id="h1-1-67" class="i">+U 1 1 5D947D01
+</a><a href="#h1-1-68" id="h1-1-68" class="i">+P 8050 2450
+</a><a href="#h1-1-69" id="h1-1-69" class="i">+F 0 &quot;#PWR05&quot; H 8050 2200 50  0001 C CNN
+</a><a href="#h1-1-70" id="h1-1-70" class="i">+F 1 &quot;GND&quot; V 8055 2322 50  0000 R CNN
+</a><a href="#h1-1-71" id="h1-1-71" class="i">+F 2 &quot;&quot; H 8050 2450 50  0001 C CNN
+</a><a href="#h1-1-72" id="h1-1-72" class="i">+F 3 &quot;&quot; H 8050 2450 50  0001 C CNN
+</a><a href="#h1-1-73" id="h1-1-73" class="i">+	1    8050 2450
+</a><a href="#h1-1-74" id="h1-1-74" class="i">+	0    1    1    0   
+</a><a href="#h1-1-75" id="h1-1-75" class="i">+$EndComp
+</a><a href="#h1-1-76" id="h1-1-76" class="i">+Wire Wire Line
+</a><a href="#h1-1-77" id="h1-1-77" class="i">+	8050 2450 8300 2450
+</a><a href="#h1-1-78" id="h1-1-78" class="i">+$Comp
+</a><a href="#h1-1-79" id="h1-1-79" class="i">+L OpenSourceCelluloid:TMC2660-BOB-SOCKET U4
+</a><a href="#h1-1-80" id="h1-1-80" class="i">+U 1 1 5D941F1A
+</a><a href="#h1-1-81" id="h1-1-81" class="i">+P 8800 2250
+</a><a href="#h1-1-82" id="h1-1-82" class="i">+F 0 &quot;U4&quot; H 8800 2415 50  0000 C CNN
+</a><a href="#h1-1-83" id="h1-1-83" class="i">+F 1 &quot;TMC2660-BOB-SOCKET&quot; H 8800 2324 50  0000 C CNN
+</a><a href="#h1-1-84" id="h1-1-84" class="i">+F 2 &quot;&quot; H 8650 2200 50  0001 C CNN
+</a><a href="#h1-1-85" id="h1-1-85" class="i">+F 3 &quot;&quot; H 8650 2200 50  0001 C CNN
+</a><a href="#h1-1-86" id="h1-1-86" class="i">+	1    8800 2250
+</a><a href="#h1-1-87" id="h1-1-87" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-88" id="h1-1-88" class="i">+$EndComp
+</a><a href="#h1-1-89" id="h1-1-89" class="i">+$Comp
+</a><a href="#h1-1-90" id="h1-1-90" class="i">+L power:+24V #PWR06
+</a><a href="#h1-1-91" id="h1-1-91" class="i">+U 1 1 5D949180
+</a><a href="#h1-1-92" id="h1-1-92" class="i">+P 9500 2350
+</a><a href="#h1-1-93" id="h1-1-93" class="i">+F 0 &quot;#PWR06&quot; H 9500 2200 50  0001 C CNN
+</a><a href="#h1-1-94" id="h1-1-94" class="i">+F 1 &quot;+24V&quot; H 9515 2523 50  0000 C CNN
+</a><a href="#h1-1-95" id="h1-1-95" class="i">+F 2 &quot;&quot; H 9500 2350 50  0001 C CNN
+</a><a href="#h1-1-96" id="h1-1-96" class="i">+F 3 &quot;&quot; H 9500 2350 50  0001 C CNN
+</a><a href="#h1-1-97" id="h1-1-97" class="i">+	1    9500 2350
+</a><a href="#h1-1-98" id="h1-1-98" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-99" id="h1-1-99" class="i">+$EndComp
+</a><a href="#h1-1-100" id="h1-1-100" class="i">+Wire Wire Line
+</a><a href="#h1-1-101" id="h1-1-101" class="i">+	9300 2350 9500 2350
+</a><a href="#h1-1-102" id="h1-1-102" class="i">+Wire Wire Line
+</a><a href="#h1-1-103" id="h1-1-103" class="i">+	9300 2450 9700 2450
+</a><a href="#h1-1-104" id="h1-1-104" class="i">+Text GLabel 8300 2650 0    50   Input ~ 0
+</a><a href="#h1-1-105" id="h1-1-105" class="i">+MOSI-SDI
+</a><a href="#h1-1-106" id="h1-1-106" class="i">+Text GLabel 8300 2550 0    50   Input ~ 0
+</a><a href="#h1-1-107" id="h1-1-107" class="i">+MISO-SDO
+</a><a href="#h1-1-108" id="h1-1-108" class="i">+Text GLabel 8300 2750 0    50   Input ~ 0
+</a><a href="#h1-1-109" id="h1-1-109" class="i">+CLOCK
+</a><a href="#h1-1-110" id="h1-1-110" class="i">+Text GLabel 6800 3050 2    50   Input ~ 0
+</a><a href="#h1-1-111" id="h1-1-111" class="i">+CHIP-SELECT
+</a><a href="#h1-1-112" id="h1-1-112" class="i">+Text GLabel 8300 2850 0    50   Input ~ 0
+</a><a href="#h1-1-113" id="h1-1-113" class="i">+CHIP-SELECT
+</a><a href="#h1-1-114" id="h1-1-114" class="i">+$Comp
+</a><a href="#h1-1-115" id="h1-1-115" class="i">+L power:GND #PWR09
+</a><a href="#h1-1-116" id="h1-1-116" class="i">+U 1 1 5D9A04F4
+</a><a href="#h1-1-117" id="h1-1-117" class="i">+P 9700 3250
+</a><a href="#h1-1-118" id="h1-1-118" class="i">+F 0 &quot;#PWR09&quot; H 9700 3000 50  0001 C CNN
+</a><a href="#h1-1-119" id="h1-1-119" class="i">+F 1 &quot;GND&quot; V 9705 3122 50  0000 R CNN
+</a><a href="#h1-1-120" id="h1-1-120" class="i">+F 2 &quot;&quot; H 9700 3250 50  0001 C CNN
+</a><a href="#h1-1-121" id="h1-1-121" class="i">+F 3 &quot;&quot; H 9700 3250 50  0001 C CNN
+</a><a href="#h1-1-122" id="h1-1-122" class="i">+	1    9700 3250
+</a><a href="#h1-1-123" id="h1-1-123" class="i">+	0    -1   -1   0   
+</a><a href="#h1-1-124" id="h1-1-124" class="i">+$EndComp
+</a><a href="#h1-1-125" id="h1-1-125" class="i">+Wire Wire Line
+</a><a href="#h1-1-126" id="h1-1-126" class="i">+	9700 3250 9300 3250
+</a><a href="#h1-1-127" id="h1-1-127" class="i">+$Comp
+</a><a href="#h1-1-128" id="h1-1-128" class="i">+L power:GND #PWR03
+</a><a href="#h1-1-129" id="h1-1-129" class="i">+U 1 1 5D9A099D
+</a><a href="#h1-1-130" id="h1-1-130" class="i">+P 7900 2950
+</a><a href="#h1-1-131" id="h1-1-131" class="i">+F 0 &quot;#PWR03&quot; H 7900 2700 50  0001 C CNN
+</a><a href="#h1-1-132" id="h1-1-132" class="i">+F 1 &quot;GND&quot; V 7905 2822 50  0000 R CNN
+</a><a href="#h1-1-133" id="h1-1-133" class="i">+F 2 &quot;&quot; H 7900 2950 50  0001 C CNN
+</a><a href="#h1-1-134" id="h1-1-134" class="i">+F 3 &quot;&quot; H 7900 2950 50  0001 C CNN
+</a><a href="#h1-1-135" id="h1-1-135" class="i">+	1    7900 2950
+</a><a href="#h1-1-136" id="h1-1-136" class="i">+	0    1    1    0   
+</a><a href="#h1-1-137" id="h1-1-137" class="i">+$EndComp
+</a><a href="#h1-1-138" id="h1-1-138" class="i">+Text GLabel 8300 3050 0    50   Input ~ 0
+</a><a href="#h1-1-139" id="h1-1-139" class="i">+ENABLE
+</a><a href="#h1-1-140" id="h1-1-140" class="i">+Text GLabel 8300 3150 0    50   Input ~ 0
+</a><a href="#h1-1-141" id="h1-1-141" class="i">+CLOCK
+</a><a href="#h1-1-142" id="h1-1-142" class="i">+$Comp
+</a><a href="#h1-1-143" id="h1-1-143" class="i">+L power:GND #PWR04
+</a><a href="#h1-1-144" id="h1-1-144" class="i">+U 1 1 5D9A2E1B
+</a><a href="#h1-1-145" id="h1-1-145" class="i">+P 7950 3250
+</a><a href="#h1-1-146" id="h1-1-146" class="i">+F 0 &quot;#PWR04&quot; H 7950 3000 50  0001 C CNN
+</a><a href="#h1-1-147" id="h1-1-147" class="i">+F 1 &quot;GND&quot; V 7955 3122 50  0000 R CNN
+</a><a href="#h1-1-148" id="h1-1-148" class="i">+F 2 &quot;&quot; H 7950 3250 50  0001 C CNN
+</a><a href="#h1-1-149" id="h1-1-149" class="i">+F 3 &quot;&quot; H 7950 3250 50  0001 C CNN
+</a><a href="#h1-1-150" id="h1-1-150" class="i">+	1    7950 3250
+</a><a href="#h1-1-151" id="h1-1-151" class="i">+	0    1    1    0   
+</a><a href="#h1-1-152" id="h1-1-152" class="i">+$EndComp
+</a><a href="#h1-1-153" id="h1-1-153" class="i">+Wire Wire Line
+</a><a href="#h1-1-154" id="h1-1-154" class="i">+	7900 2950 8300 2950
+</a><a href="#h1-1-155" id="h1-1-155" class="i">+Wire Wire Line
+</a><a href="#h1-1-156" id="h1-1-156" class="i">+	7950 3250 8300 3250
+</a><a href="#h1-1-157" id="h1-1-157" class="i">+$Comp
+</a><a href="#h1-1-158" id="h1-1-158" class="i">+L power:GND #PWR07
+</a><a href="#h1-1-159" id="h1-1-159" class="i">+U 1 1 5D9A3759
+</a><a href="#h1-1-160" id="h1-1-160" class="i">+P 9550 2950
+</a><a href="#h1-1-161" id="h1-1-161" class="i">+F 0 &quot;#PWR07&quot; H 9550 2700 50  0001 C CNN
+</a><a href="#h1-1-162" id="h1-1-162" class="i">+F 1 &quot;GND&quot; V 9555 2822 50  0000 R CNN
+</a><a href="#h1-1-163" id="h1-1-163" class="i">+F 2 &quot;&quot; H 9550 2950 50  0001 C CNN
+</a><a href="#h1-1-164" id="h1-1-164" class="i">+F 3 &quot;&quot; H 9550 2950 50  0001 C CNN
+</a><a href="#h1-1-165" id="h1-1-165" class="i">+	1    9550 2950
+</a><a href="#h1-1-166" id="h1-1-166" class="i">+	0    -1   -1   0   
+</a><a href="#h1-1-167" id="h1-1-167" class="i">+$EndComp
+</a><a href="#h1-1-168" id="h1-1-168" class="i">+Wire Wire Line
+</a><a href="#h1-1-169" id="h1-1-169" class="i">+	9300 2950 9550 2950
+</a><a href="#h1-1-170" id="h1-1-170" class="i">+Text GLabel 9300 2550 2    50   Input ~ 0
+</a><a href="#h1-1-171" id="h1-1-171" class="i">+RED
+</a><a href="#h1-1-172" id="h1-1-172" class="i">+Text GLabel 9300 2650 2    50   Input ~ 0
+</a><a href="#h1-1-173" id="h1-1-173" class="i">+BLUE
+</a><a href="#h1-1-174" id="h1-1-174" class="i">+Text GLabel 9300 2750 2    50   Input ~ 0
+</a><a href="#h1-1-175" id="h1-1-175" class="i">+GREEN
+</a><a href="#h1-1-176" id="h1-1-176" class="i">+Text GLabel 9300 2850 2    50   Input ~ 0
+</a><a href="#h1-1-177" id="h1-1-177" class="i">+BLACK
+</a><a href="#h1-1-178" id="h1-1-178" class="i">+Text GLabel 9300 3150 2    50   Input ~ 0
+</a><a href="#h1-1-179" id="h1-1-179" class="i">+DIRECTION
+</a><a href="#h1-1-180" id="h1-1-180" class="i">+Text GLabel 9300 3050 2    50   Input ~ 0
+</a><a href="#h1-1-181" id="h1-1-181" class="i">+STEP
+</a><a href="#h1-1-182" id="h1-1-182" class="i">+$Comp
+</a><a href="#h1-1-183" id="h1-1-183" class="i">+L power:GND #PWR02
+</a><a href="#h1-1-184" id="h1-1-184" class="i">+U 1 1 5D9A9EBC
+</a><a href="#h1-1-185" id="h1-1-185" class="i">+P 10450 5600
+</a><a href="#h1-1-186" id="h1-1-186" class="i">+F 0 &quot;#PWR02&quot; H 10450 5350 50  0001 C CNN
+</a><a href="#h1-1-187" id="h1-1-187" class="i">+F 1 &quot;GND&quot; V 10455 5472 50  0000 R CNN
+</a><a href="#h1-1-188" id="h1-1-188" class="i">+F 2 &quot;&quot; H 10450 5600 50  0001 C CNN
+</a><a href="#h1-1-189" id="h1-1-189" class="i">+F 3 &quot;&quot; H 10450 5600 50  0001 C CNN
+</a><a href="#h1-1-190" id="h1-1-190" class="i">+	1    10450 5600
+</a><a href="#h1-1-191" id="h1-1-191" class="i">+	0    -1   -1   0   
+</a><a href="#h1-1-192" id="h1-1-192" class="i">+$EndComp
+</a><a href="#h1-1-193" id="h1-1-193" class="i">+$Comp
+</a><a href="#h1-1-194" id="h1-1-194" class="i">+L OpenSourceCelluloid:LDH-45B-1050 U1
+</a><a href="#h1-1-195" id="h1-1-195" class="i">+U 1 1 5D9AC50C
+</a><a href="#h1-1-196" id="h1-1-196" class="i">+P 7100 5300
+</a><a href="#h1-1-197" id="h1-1-197" class="i">+F 0 &quot;U1&quot; H 7400 5465 50  0000 C CNN
+</a><a href="#h1-1-198" id="h1-1-198" class="i">+F 1 &quot;LDH-45B-1050&quot; H 7400 5374 50  0000 C CNN
+</a><a href="#h1-1-199" id="h1-1-199" class="i">+F 2 &quot;&quot; H 7100 5300 50  0001 C CNN
+</a><a href="#h1-1-200" id="h1-1-200" class="i">+F 3 &quot;&quot; H 7100 5300 50  0001 C CNN
+</a><a href="#h1-1-201" id="h1-1-201" class="i">+	1    7100 5300
+</a><a href="#h1-1-202" id="h1-1-202" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-203" id="h1-1-203" class="i">+$EndComp
+</a><a href="#h1-1-204" id="h1-1-204" class="i">+NoConn ~ 6900 5800
+</a><a href="#h1-1-205" id="h1-1-205" class="i">+Text GLabel 9250 5600 0    50   Input ~ 0
+</a><a href="#h1-1-206" id="h1-1-206" class="i">+5V
+</a><a href="#h1-1-207" id="h1-1-207" class="i">+Text GLabel 9600 5950 3    50   Input ~ 0
+</a><a href="#h1-1-208" id="h1-1-208" class="i">+POTI
+</a><a href="#h1-1-209" id="h1-1-209" class="i">+Text GLabel 6900 5700 0    50   Input ~ 0
+</a><a href="#h1-1-210" id="h1-1-210" class="i">+POTI
+</a><a href="#h1-1-211" id="h1-1-211" class="i">+$Comp
+</a><a href="#h1-1-212" id="h1-1-212" class="i">+L power:GND #PWR01
+</a><a href="#h1-1-213" id="h1-1-213" class="i">+U 1 1 5D9B4BBE
+</a><a href="#h1-1-214" id="h1-1-214" class="i">+P 6450 5600
+</a><a href="#h1-1-215" id="h1-1-215" class="i">+F 0 &quot;#PWR01&quot; H 6450 5350 50  0001 C CNN
+</a><a href="#h1-1-216" id="h1-1-216" class="i">+F 1 &quot;GND&quot; H 6455 5427 50  0000 C CNN
+</a><a href="#h1-1-217" id="h1-1-217" class="i">+F 2 &quot;&quot; H 6450 5600 50  0001 C CNN
+</a><a href="#h1-1-218" id="h1-1-218" class="i">+F 3 &quot;&quot; H 6450 5600 50  0001 C CNN
+</a><a href="#h1-1-219" id="h1-1-219" class="i">+	1    6450 5600
+</a><a href="#h1-1-220" id="h1-1-220" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-221" id="h1-1-221" class="i">+$EndComp
+</a><a href="#h1-1-222" id="h1-1-222" class="i">+Wire Wire Line
+</a><a href="#h1-1-223" id="h1-1-223" class="i">+	6450 5600 6900 5600
+</a><a href="#h1-1-224" id="h1-1-224" class="i">+$Comp
+</a><a href="#h1-1-225" id="h1-1-225" class="i">+L Device:C Murata-Ceramic-Capacitor-50v1
+</a><a href="#h1-1-226" id="h1-1-226" class="i">+U 1 1 5D9BC72F
+</a><a href="#h1-1-227" id="h1-1-227" class="i">+P 9500 4250
+</a><a href="#h1-1-228" id="h1-1-228" class="i">+F 0 &quot;Murata-Ceramic-Capacitor-50v1&quot; H 8600 4000 50  0000 L CNN
+</a><a href="#h1-1-229" id="h1-1-229" class="i">+F 1 &quot;C&quot; H 9615 4205 50  0000 L CNN
+</a><a href="#h1-1-230" id="h1-1-230" class="i">+F 2 &quot;&quot; H 9538 4100 50  0001 C CNN
+</a><a href="#h1-1-231" id="h1-1-231" class="i">+F 3 &quot;~&quot; H 9500 4250 50  0001 C CNN
+</a><a href="#h1-1-232" id="h1-1-232" class="i">+	1    9500 4250
+</a><a href="#h1-1-233" id="h1-1-233" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-234" id="h1-1-234" class="i">+$EndComp
+</a><a href="#h1-1-235" id="h1-1-235" class="i">+Wire Wire Line
+</a><a href="#h1-1-236" id="h1-1-236" class="i">+	9850 4100 9500 4100
+</a><a href="#h1-1-237" id="h1-1-237" class="i">+$Comp
+</a><a href="#h1-1-238" id="h1-1-238" class="i">+L power:+24V #PWR013
+</a><a href="#h1-1-239" id="h1-1-239" class="i">+U 1 1 5D9CE65E
+</a><a href="#h1-1-240" id="h1-1-240" class="i">+P 9200 4100
+</a><a href="#h1-1-241" id="h1-1-241" class="i">+F 0 &quot;#PWR013&quot; H 9200 3950 50  0001 C CNN
+</a><a href="#h1-1-242" id="h1-1-242" class="i">+F 1 &quot;+24V&quot; H 9215 4273 50  0000 C CNN
+</a><a href="#h1-1-243" id="h1-1-243" class="i">+F 2 &quot;&quot; H 9200 4100 50  0001 C CNN
+</a><a href="#h1-1-244" id="h1-1-244" class="i">+F 3 &quot;&quot; H 9200 4100 50  0001 C CNN
+</a><a href="#h1-1-245" id="h1-1-245" class="i">+	1    9200 4100
+</a><a href="#h1-1-246" id="h1-1-246" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-247" id="h1-1-247" class="i">+$EndComp
+</a><a href="#h1-1-248" id="h1-1-248" class="i">+Wire Wire Line
+</a><a href="#h1-1-249" id="h1-1-249" class="i">+	9200 4100 9500 4100
+</a><a href="#h1-1-250" id="h1-1-250" class="i">+Connection ~ 9500 4100
+</a><a href="#h1-1-251" id="h1-1-251" class="i">+Wire Wire Line
+</a><a href="#h1-1-252" id="h1-1-252" class="i">+	10450 5600 10000 5600
+</a><a href="#h1-1-253" id="h1-1-253" class="i">+$Comp
+</a><a href="#h1-1-254" id="h1-1-254" class="i">+L OpenSourceCelluloid:POTENTIOMETER U2
+</a><a href="#h1-1-255" id="h1-1-255" class="i">+U 1 1 5D9A8B2C
+</a><a href="#h1-1-256" id="h1-1-256" class="i">+P 9400 5500
+</a><a href="#h1-1-257" id="h1-1-257" class="i">+F 0 &quot;U2&quot; H 9625 5665 50  0000 C CNN
+</a><a href="#h1-1-258" id="h1-1-258" class="i">+F 1 &quot;POTENTIOMETER&quot; H 9625 5574 50  0000 C CNN
+</a><a href="#h1-1-259" id="h1-1-259" class="i">+F 2 &quot;&quot; H 9400 5500 50  0001 C CNN
+</a><a href="#h1-1-260" id="h1-1-260" class="i">+F 3 &quot;&quot; H 9400 5500 50  0001 C CNN
+</a><a href="#h1-1-261" id="h1-1-261" class="i">+	1    9400 5500
+</a><a href="#h1-1-262" id="h1-1-262" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-263" id="h1-1-263" class="i">+$EndComp
+</a><a href="#h1-1-264" id="h1-1-264" class="i">+$Comp
+</a><a href="#h1-1-265" id="h1-1-265" class="i">+L power:+24V #PWR011
+</a><a href="#h1-1-266" id="h1-1-266" class="i">+U 1 1 5D9EDF19
+</a><a href="#h1-1-267" id="h1-1-267" class="i">+P 6400 5400
+</a><a href="#h1-1-268" id="h1-1-268" class="i">+F 0 &quot;#PWR011&quot; H 6400 5250 50  0001 C CNN
+</a><a href="#h1-1-269" id="h1-1-269" class="i">+F 1 &quot;+24V&quot; H 6415 5573 50  0000 C CNN
+</a><a href="#h1-1-270" id="h1-1-270" class="i">+F 2 &quot;&quot; H 6400 5400 50  0001 C CNN
+</a><a href="#h1-1-271" id="h1-1-271" class="i">+F 3 &quot;&quot; H 6400 5400 50  0001 C CNN
+</a><a href="#h1-1-272" id="h1-1-272" class="i">+	1    6400 5400
+</a><a href="#h1-1-273" id="h1-1-273" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-274" id="h1-1-274" class="i">+$EndComp
+</a><a href="#h1-1-275" id="h1-1-275" class="i">+Wire Wire Line
+</a><a href="#h1-1-276" id="h1-1-276" class="i">+	6400 5400 6900 5400
+</a><a href="#h1-1-277" id="h1-1-277" class="i">+$Comp
+</a><a href="#h1-1-278" id="h1-1-278" class="i">+L power:GND #PWR012
+</a><a href="#h1-1-279" id="h1-1-279" class="i">+U 1 1 5D9EEE05
+</a><a href="#h1-1-280" id="h1-1-280" class="i">+P 6400 5500
+</a><a href="#h1-1-281" id="h1-1-281" class="i">+F 0 &quot;#PWR012&quot; H 6400 5250 50  0001 C CNN
+</a><a href="#h1-1-282" id="h1-1-282" class="i">+F 1 &quot;GND&quot; V 6405 5372 50  0000 R CNN
+</a><a href="#h1-1-283" id="h1-1-283" class="i">+F 2 &quot;&quot; H 6400 5500 50  0001 C CNN
+</a><a href="#h1-1-284" id="h1-1-284" class="i">+F 3 &quot;&quot; H 6400 5500 50  0001 C CNN
+</a><a href="#h1-1-285" id="h1-1-285" class="i">+	1    6400 5500
+</a><a href="#h1-1-286" id="h1-1-286" class="i">+	0    1    1    0   
+</a><a href="#h1-1-287" id="h1-1-287" class="i">+$EndComp
+</a><a href="#h1-1-288" id="h1-1-288" class="i">+Wire Wire Line
+</a><a href="#h1-1-289" id="h1-1-289" class="i">+	6400 5500 6900 5500
+</a><a href="#h1-1-290" id="h1-1-290" class="i">+$Comp
+</a><a href="#h1-1-291" id="h1-1-291" class="i">+L OpenSourceCelluloid:Connector-LED U5
+</a><a href="#h1-1-292" id="h1-1-292" class="i">+U 1 1 5D9F5B71
+</a><a href="#h1-1-293" id="h1-1-293" class="i">+P 8350 5150
+</a><a href="#h1-1-294" id="h1-1-294" class="i">+F 0 &quot;U5&quot; H 8400 5225 50  0000 C CNN
+</a><a href="#h1-1-295" id="h1-1-295" class="i">+F 1 &quot;Connector-LED&quot; H 8400 5134 50  0000 C CNN
+</a><a href="#h1-1-296" id="h1-1-296" class="i">+F 2 &quot;&quot; H 8350 5150 50  0001 C CNN
+</a><a href="#h1-1-297" id="h1-1-297" class="i">+F 3 &quot;&quot; H 8350 5150 50  0001 C CNN
+</a><a href="#h1-1-298" id="h1-1-298" class="i">+	1    8350 5150
+</a><a href="#h1-1-299" id="h1-1-299" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-300" id="h1-1-300" class="i">+$EndComp
+</a><a href="#h1-1-301" id="h1-1-301" class="i">+Text GLabel 7900 5700 2    50   Input ~ 0
+</a><a href="#h1-1-302" id="h1-1-302" class="i">+LED+
+</a><a href="#h1-1-303" id="h1-1-303" class="i">+Text GLabel 7900 5800 2    50   Input ~ 0
+</a><a href="#h1-1-304" id="h1-1-304" class="i">+LED-
+</a><a href="#h1-1-305" id="h1-1-305" class="i">+Text GLabel 8200 5300 3    50   Input ~ 0
+</a><a href="#h1-1-306" id="h1-1-306" class="i">+LED+
+</a><a href="#h1-1-307" id="h1-1-307" class="i">+Text GLabel 8600 5300 3    50   Input ~ 0
+</a><a href="#h1-1-308" id="h1-1-308" class="i">+LED-
+</a><a href="#h1-1-309" id="h1-1-309" class="i">+$Comp
+</a><a href="#h1-1-310" id="h1-1-310" class="i">+L power:GND #PWR010
+</a><a href="#h1-1-311" id="h1-1-311" class="i">+U 1 1 5D9FC153
+</a><a href="#h1-1-312" id="h1-1-312" class="i">+P 3750 3650
+</a><a href="#h1-1-313" id="h1-1-313" class="i">+F 0 &quot;#PWR010&quot; H 3750 3400 50  0001 C CNN
+</a><a href="#h1-1-314" id="h1-1-314" class="i">+F 1 &quot;GND&quot; H 3755 3477 50  0000 C CNN
+</a><a href="#h1-1-315" id="h1-1-315" class="i">+F 2 &quot;&quot; H 3750 3650 50  0001 C CNN
+</a><a href="#h1-1-316" id="h1-1-316" class="i">+F 3 &quot;&quot; H 3750 3650 50  0001 C CNN
+</a><a href="#h1-1-317" id="h1-1-317" class="i">+	1    3750 3650
+</a><a href="#h1-1-318" id="h1-1-318" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-319" id="h1-1-319" class="i">+$EndComp
+</a><a href="#h1-1-320" id="h1-1-320" class="i">+Wire Wire Line
+</a><a href="#h1-1-321" id="h1-1-321" class="i">+	3750 3650 4200 3650
+</a><a href="#h1-1-322" id="h1-1-322" class="i">+Wire Wire Line
+</a><a href="#h1-1-323" id="h1-1-323" class="i">+	4200 3750 4200 3650
+</a><a href="#h1-1-324" id="h1-1-324" class="i">+Connection ~ 4200 3650
+</a><a href="#h1-1-325" id="h1-1-325" class="i">+Wire Wire Line
+</a><a href="#h1-1-326" id="h1-1-326" class="i">+	10150 4500 9500 4500
+</a><a href="#h1-1-327" id="h1-1-327" class="i">+Wire Wire Line
+</a><a href="#h1-1-328" id="h1-1-328" class="i">+	9500 4500 9500 4400
+</a><a href="#h1-1-329" id="h1-1-329" class="i">+$Comp
+</a><a href="#h1-1-330" id="h1-1-330" class="i">+L power:GND #PWR014
+</a><a href="#h1-1-331" id="h1-1-331" class="i">+U 1 1 5DA094CD
+</a><a href="#h1-1-332" id="h1-1-332" class="i">+P 10150 4700
+</a><a href="#h1-1-333" id="h1-1-333" class="i">+F 0 &quot;#PWR014&quot; H 10150 4450 50  0001 C CNN
+</a><a href="#h1-1-334" id="h1-1-334" class="i">+F 1 &quot;GND&quot; H 10155 4527 50  0000 C CNN
+</a><a href="#h1-1-335" id="h1-1-335" class="i">+F 2 &quot;&quot; H 10150 4700 50  0001 C CNN
+</a><a href="#h1-1-336" id="h1-1-336" class="i">+F 3 &quot;&quot; H 10150 4700 50  0001 C CNN
+</a><a href="#h1-1-337" id="h1-1-337" class="i">+	1    10150 4700
+</a><a href="#h1-1-338" id="h1-1-338" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-339" id="h1-1-339" class="i">+$EndComp
+</a><a href="#h1-1-340" id="h1-1-340" class="i">+Wire Wire Line
+</a><a href="#h1-1-341" id="h1-1-341" class="i">+	10150 4500 10150 4700
+</a><a href="#h1-1-342" id="h1-1-342" class="i">+Connection ~ 10150 4500
+</a><a href="#h1-1-343" id="h1-1-343" class="i">+$Comp
+</a><a href="#h1-1-344" id="h1-1-344" class="i">+L OpenSourceCelluloid:Motor-Connector U6
+</a><a href="#h1-1-345" id="h1-1-345" class="i">+U 1 1 5DA0DAEF
+</a><a href="#h1-1-346" id="h1-1-346" class="i">+P 9800 1350
+</a><a href="#h1-1-347" id="h1-1-347" class="i">+F 0 &quot;U6&quot; H 9975 1515 50  0000 C CNN
+</a><a href="#h1-1-348" id="h1-1-348" class="i">+F 1 &quot;Motor-Connector&quot; H 9975 1424 50  0000 C CNN
+</a><a href="#h1-1-349" id="h1-1-349" class="i">+F 2 &quot;&quot; H 9800 1350 50  0001 C CNN
+</a><a href="#h1-1-350" id="h1-1-350" class="i">+F 3 &quot;&quot; H 9800 1350 50  0001 C CNN
+</a><a href="#h1-1-351" id="h1-1-351" class="i">+	1    9800 1350
+</a><a href="#h1-1-352" id="h1-1-352" class="i">+	1    0    0    -1  
+</a><a href="#h1-1-353" id="h1-1-353" class="i">+$EndComp
+</a><a href="#h1-1-354" id="h1-1-354" class="i">+Text GLabel 9600 1450 0    50   Input ~ 0
+</a><a href="#h1-1-355" id="h1-1-355" class="i">+RED
+</a><a href="#h1-1-356" id="h1-1-356" class="i">+Text GLabel 9600 1550 0    50   Input ~ 0
+</a><a href="#h1-1-357" id="h1-1-357" class="i">+BLUE
+</a><a href="#h1-1-358" id="h1-1-358" class="i">+Text GLabel 10350 1550 2    50   Input ~ 0
+</a><a href="#h1-1-359" id="h1-1-359" class="i">+GREEN
+</a><a href="#h1-1-360" id="h1-1-360" class="i">+Text GLabel 10350 1450 2    50   Input ~ 0
+</a><a href="#h1-1-361" id="h1-1-361" class="i">+BLACK
+</a> $EndSCHEMATC
+<b>diff --git a/<a id="h2" href="../file/upuaut.net.html">upuaut.net</a> b/<a href="../file/upuaut.net.html">upuaut.net</a></b>
+<a href="#h2-0" id="h2-0" class="h">@@ -0,0 +1,296 @@
+</a><a href="#h2-0-0" id="h2-0-0" class="i">+(export (version D)
+</a><a href="#h2-0-1" id="h2-0-1" class="i">+  (design
+</a><a href="#h2-0-2" id="h2-0-2" class="i">+    (source /home/antonio/OpenSourceCelluloid/pcb/upuaut/upuaut/upuaut.sch)
+</a><a href="#h2-0-3" id="h2-0-3" class="i">+    (date &quot;Di 01 Okt 2019 17:48:14 CEST&quot;)
+</a><a href="#h2-0-4" id="h2-0-4" class="i">+    (tool &quot;Eeschema 5.1.2-f72e74a~84~ubuntu19.04.1&quot;)
+</a><a href="#h2-0-5" id="h2-0-5" class="i">+    (sheet (number 1) (name /) (tstamps /)
+</a><a href="#h2-0-6" id="h2-0-6" class="i">+      (title_block
+</a><a href="#h2-0-7" id="h2-0-7" class="i">+        (title)
+</a><a href="#h2-0-8" id="h2-0-8" class="i">+        (company)
+</a><a href="#h2-0-9" id="h2-0-9" class="i">+        (rev)
+</a><a href="#h2-0-10" id="h2-0-10" class="i">+        (date 2019-09-28)
+</a><a href="#h2-0-11" id="h2-0-11" class="i">+        (source upuaut.sch)
+</a><a href="#h2-0-12" id="h2-0-12" class="i">+        (comment (number 1) (value &quot;&quot;))
+</a><a href="#h2-0-13" id="h2-0-13" class="i">+        (comment (number 2) (value &quot;&quot;))
+</a><a href="#h2-0-14" id="h2-0-14" class="i">+        (comment (number 3) (value &quot;&quot;))
+</a><a href="#h2-0-15" id="h2-0-15" class="i">+        (comment (number 4) (value &quot;&quot;)))))
+</a><a href="#h2-0-16" id="h2-0-16" class="i">+  (components
+</a><a href="#h2-0-17" id="h2-0-17" class="i">+    (comp (ref XA1)
+</a><a href="#h2-0-18" id="h2-0-18" class="i">+      (value Arduino_Nano_Socket)
+</a><a href="#h2-0-19" id="h2-0-19" class="i">+      (datasheet https://store.arduino.cc/arduino-nano)
+</a><a href="#h2-0-20" id="h2-0-20" class="i">+      (libsource (lib OpenSourceCelluloid-arduino) (part Arduino_Nano_Socket) (description &quot;Socket for Arduino Nano&quot;))
+</a><a href="#h2-0-21" id="h2-0-21" class="i">+      (sheetpath (names /) (tstamps /))
+</a><a href="#h2-0-22" id="h2-0-22" class="i">+      (tstamp 5D926447))
+</a><a href="#h2-0-23" id="h2-0-23" class="i">+    (comp (ref U3)
+</a><a href="#h2-0-24" id="h2-0-24" class="i">+      (value OKI-78SR-12v)
+</a><a href="#h2-0-25" id="h2-0-25" class="i">+      (libsource (lib OpenSourceCelluloid) (part OKI-78SR-12v) (description &quot;&quot;))
+</a><a href="#h2-0-26" id="h2-0-26" class="i">+      (sheetpath (names /) (tstamps /))
+</a><a href="#h2-0-27" id="h2-0-27" class="i">+      (tstamp 5D950615))
+</a><a href="#h2-0-28" id="h2-0-28" class="i">+    (comp (ref U4)
+</a><a href="#h2-0-29" id="h2-0-29" class="i">+      (value TMC2660-BOB-SOCKET)
+</a><a href="#h2-0-30" id="h2-0-30" class="i">+      (libsource (lib OpenSourceCelluloid) (part TMC2660-BOB-SOCKET) (description &quot;&quot;))
+</a><a href="#h2-0-31" id="h2-0-31" class="i">+      (sheetpath (names /) (tstamps /))
+</a><a href="#h2-0-32" id="h2-0-32" class="i">+      (tstamp 5D941F1A))
+</a><a href="#h2-0-33" id="h2-0-33" class="i">+    (comp (ref U1)
+</a><a href="#h2-0-34" id="h2-0-34" class="i">+      (value LDH-45B-1050)
+</a><a href="#h2-0-35" id="h2-0-35" class="i">+      (libsource (lib OpenSourceCelluloid) (part LDH-45B-1050) (description &quot;&quot;))
+</a><a href="#h2-0-36" id="h2-0-36" class="i">+      (sheetpath (names /) (tstamps /))
+</a><a href="#h2-0-37" id="h2-0-37" class="i">+      (tstamp 5D9AC50C))
+</a><a href="#h2-0-38" id="h2-0-38" class="i">+    (comp (ref Murata-Ceramic-Capacitor-50v1)
+</a><a href="#h2-0-39" id="h2-0-39" class="i">+      (value C)
+</a><a href="#h2-0-40" id="h2-0-40" class="i">+      (datasheet ~)
+</a><a href="#h2-0-41" id="h2-0-41" class="i">+      (libsource (lib Device) (part C) (description &quot;Unpolarized capacitor&quot;))
+</a><a href="#h2-0-42" id="h2-0-42" class="i">+      (sheetpath (names /) (tstamps /))
+</a><a href="#h2-0-43" id="h2-0-43" class="i">+      (tstamp 5D9BC72F))
+</a><a href="#h2-0-44" id="h2-0-44" class="i">+    (comp (ref U2)
+</a><a href="#h2-0-45" id="h2-0-45" class="i">+      (value POTENTIOMETER)
+</a><a href="#h2-0-46" id="h2-0-46" class="i">+      (libsource (lib OpenSourceCelluloid) (part POTENTIOMETER) (description &quot;&quot;))
+</a><a href="#h2-0-47" id="h2-0-47" class="i">+      (sheetpath (names /) (tstamps /))
+</a><a href="#h2-0-48" id="h2-0-48" class="i">+      (tstamp 5D9A8B2C))
+</a><a href="#h2-0-49" id="h2-0-49" class="i">+    (comp (ref U5)
+</a><a href="#h2-0-50" id="h2-0-50" class="i">+      (value Connector-LED)
+</a><a href="#h2-0-51" id="h2-0-51" class="i">+      (libsource (lib OpenSourceCelluloid) (part Connector-LED) (description &quot;&quot;))
+</a><a href="#h2-0-52" id="h2-0-52" class="i">+      (sheetpath (names /) (tstamps /))
+</a><a href="#h2-0-53" id="h2-0-53" class="i">+      (tstamp 5D9F5B71))
+</a><a href="#h2-0-54" id="h2-0-54" class="i">+    (comp (ref U6)
+</a><a href="#h2-0-55" id="h2-0-55" class="i">+      (value Motor-Connector)
+</a><a href="#h2-0-56" id="h2-0-56" class="i">+      (libsource (lib OpenSourceCelluloid) (part Motor-Connector) (description &quot;&quot;))
+</a><a href="#h2-0-57" id="h2-0-57" class="i">+      (sheetpath (names /) (tstamps /))
+</a><a href="#h2-0-58" id="h2-0-58" class="i">+      (tstamp 5DA0DAEF)))
+</a><a href="#h2-0-59" id="h2-0-59" class="i">+  (libparts
+</a><a href="#h2-0-60" id="h2-0-60" class="i">+    (libpart (lib Device) (part C)
+</a><a href="#h2-0-61" id="h2-0-61" class="i">+      (description &quot;Unpolarized capacitor&quot;)
+</a><a href="#h2-0-62" id="h2-0-62" class="i">+      (docs ~)
+</a><a href="#h2-0-63" id="h2-0-63" class="i">+      (footprints
+</a><a href="#h2-0-64" id="h2-0-64" class="i">+        (fp C_*))
+</a><a href="#h2-0-65" id="h2-0-65" class="i">+      (fields
+</a><a href="#h2-0-66" id="h2-0-66" class="i">+        (field (name Reference) C)
+</a><a href="#h2-0-67" id="h2-0-67" class="i">+        (field (name Value) C))
+</a><a href="#h2-0-68" id="h2-0-68" class="i">+      (pins
+</a><a href="#h2-0-69" id="h2-0-69" class="i">+        (pin (num 1) (name ~) (type passive))
+</a><a href="#h2-0-70" id="h2-0-70" class="i">+        (pin (num 2) (name ~) (type passive))))
+</a><a href="#h2-0-71" id="h2-0-71" class="i">+    (libpart (lib OpenSourceCelluloid) (part Connector-LED)
+</a><a href="#h2-0-72" id="h2-0-72" class="i">+      (fields
+</a><a href="#h2-0-73" id="h2-0-73" class="i">+        (field (name Reference) U)
+</a><a href="#h2-0-74" id="h2-0-74" class="i">+        (field (name Value) Connector-LED))
+</a><a href="#h2-0-75" id="h2-0-75" class="i">+      (pins
+</a><a href="#h2-0-76" id="h2-0-76" class="i">+        (pin (num 1) (name +) (type input))
+</a><a href="#h2-0-77" id="h2-0-77" class="i">+        (pin (num 2) (name -) (type input))))
+</a><a href="#h2-0-78" id="h2-0-78" class="i">+    (libpart (lib OpenSourceCelluloid) (part LDH-45B-1050)
+</a><a href="#h2-0-79" id="h2-0-79" class="i">+      (fields
+</a><a href="#h2-0-80" id="h2-0-80" class="i">+        (field (name Reference) U)
+</a><a href="#h2-0-81" id="h2-0-81" class="i">+        (field (name Value) LDH-45B-1050))
+</a><a href="#h2-0-82" id="h2-0-82" class="i">+      (pins
+</a><a href="#h2-0-83" id="h2-0-83" class="i">+        (pin (num 1) (name VIN) (type input))
+</a><a href="#h2-0-84" id="h2-0-84" class="i">+        (pin (num 2) (name VIN-) (type input))
+</a><a href="#h2-0-85" id="h2-0-85" class="i">+        (pin (num 3) (name DIM-) (type input))
+</a><a href="#h2-0-86" id="h2-0-86" class="i">+        (pin (num 4) (name A-DIM) (type input))
+</a><a href="#h2-0-87" id="h2-0-87" class="i">+        (pin (num 5) (name PWM-DIM) (type input))
+</a><a href="#h2-0-88" id="h2-0-88" class="i">+        (pin (num 6) (name VOUT-) (type input))
+</a><a href="#h2-0-89" id="h2-0-89" class="i">+        (pin (num 7) (name VOUT+) (type input))))
+</a><a href="#h2-0-90" id="h2-0-90" class="i">+    (libpart (lib OpenSourceCelluloid) (part Motor-Connector)
+</a><a href="#h2-0-91" id="h2-0-91" class="i">+      (fields
+</a><a href="#h2-0-92" id="h2-0-92" class="i">+        (field (name Reference) U)
+</a><a href="#h2-0-93" id="h2-0-93" class="i">+        (field (name Value) Motor-Connector))
+</a><a href="#h2-0-94" id="h2-0-94" class="i">+      (pins
+</a><a href="#h2-0-95" id="h2-0-95" class="i">+        (pin (num 1) (name RED) (type input))
+</a><a href="#h2-0-96" id="h2-0-96" class="i">+        (pin (num 2) (name BLUE) (type input))
+</a><a href="#h2-0-97" id="h2-0-97" class="i">+        (pin (num 3) (name GREEN) (type input))
+</a><a href="#h2-0-98" id="h2-0-98" class="i">+        (pin (num 4) (name BLACK) (type input))))
+</a><a href="#h2-0-99" id="h2-0-99" class="i">+    (libpart (lib OpenSourceCelluloid) (part OKI-78SR-12v)
+</a><a href="#h2-0-100" id="h2-0-100" class="i">+      (fields
+</a><a href="#h2-0-101" id="h2-0-101" class="i">+        (field (name Reference) U)
+</a><a href="#h2-0-102" id="h2-0-102" class="i">+        (field (name Value) OKI-78SR-12v))
+</a><a href="#h2-0-103" id="h2-0-103" class="i">+      (pins
+</a><a href="#h2-0-104" id="h2-0-104" class="i">+        (pin (num 1) (name VIN) (type input))
+</a><a href="#h2-0-105" id="h2-0-105" class="i">+        (pin (num 2) (name GND) (type input))
+</a><a href="#h2-0-106" id="h2-0-106" class="i">+        (pin (num 3) (name VOUT) (type input))))
+</a><a href="#h2-0-107" id="h2-0-107" class="i">+    (libpart (lib OpenSourceCelluloid) (part POTENTIOMETER)
+</a><a href="#h2-0-108" id="h2-0-108" class="i">+      (fields
+</a><a href="#h2-0-109" id="h2-0-109" class="i">+        (field (name Reference) U)
+</a><a href="#h2-0-110" id="h2-0-110" class="i">+        (field (name Value) POTENTIOMETER))
+</a><a href="#h2-0-111" id="h2-0-111" class="i">+      (pins
+</a><a href="#h2-0-112" id="h2-0-112" class="i">+        (pin (num 1) (name 5V) (type input))
+</a><a href="#h2-0-113" id="h2-0-113" class="i">+        (pin (num 2) (name SIGNAL) (type input))
+</a><a href="#h2-0-114" id="h2-0-114" class="i">+        (pin (num 3) (name GND) (type input))))
+</a><a href="#h2-0-115" id="h2-0-115" class="i">+    (libpart (lib OpenSourceCelluloid) (part TMC2660-BOB-SOCKET)
+</a><a href="#h2-0-116" id="h2-0-116" class="i">+      (fields
+</a><a href="#h2-0-117" id="h2-0-117" class="i">+        (field (name Reference) U)
+</a><a href="#h2-0-118" id="h2-0-118" class="i">+        (field (name Value) TMC2660-BOB-SOCKET))
+</a><a href="#h2-0-119" id="h2-0-119" class="i">+      (pins
+</a><a href="#h2-0-120" id="h2-0-120" class="i">+        (pin (num 1) (name VCC_IO) (type input))
+</a><a href="#h2-0-121" id="h2-0-121" class="i">+        (pin (num 2) (name GND) (type input))
+</a><a href="#h2-0-122" id="h2-0-122" class="i">+        (pin (num 3) (name SDO) (type input))
+</a><a href="#h2-0-123" id="h2-0-123" class="i">+        (pin (num 4) (name SDI) (type input))
+</a><a href="#h2-0-124" id="h2-0-124" class="i">+        (pin (num 5) (name SCK) (type input))
+</a><a href="#h2-0-125" id="h2-0-125" class="i">+        (pin (num 6) (name CSN) (type input))
+</a><a href="#h2-0-126" id="h2-0-126" class="i">+        (pin (num 7) (name GND) (type input))
+</a><a href="#h2-0-127" id="h2-0-127" class="i">+        (pin (num 8) (name DRV_ENV) (type input))
+</a><a href="#h2-0-128" id="h2-0-128" class="i">+        (pin (num 9) (name CLK16) (type input))
+</a><a href="#h2-0-129" id="h2-0-129" class="i">+        (pin (num 10) (name SG_TST) (type input))
+</a><a href="#h2-0-130" id="h2-0-130" class="i">+        (pin (num 11) (name GND) (type input))
+</a><a href="#h2-0-131" id="h2-0-131" class="i">+        (pin (num 12) (name DIR) (type input))
+</a><a href="#h2-0-132" id="h2-0-132" class="i">+        (pin (num 13) (name STEP) (type input))
+</a><a href="#h2-0-133" id="h2-0-133" class="i">+        (pin (num 14) (name GND) (type input))
+</a><a href="#h2-0-134" id="h2-0-134" class="i">+        (pin (num 15) (name B2) (type input))
+</a><a href="#h2-0-135" id="h2-0-135" class="i">+        (pin (num 16) (name B1) (type input))
+</a><a href="#h2-0-136" id="h2-0-136" class="i">+        (pin (num 17) (name A2) (type input))
+</a><a href="#h2-0-137" id="h2-0-137" class="i">+        (pin (num 18) (name A1) (type input))
+</a><a href="#h2-0-138" id="h2-0-138" class="i">+        (pin (num 19) (name GND) (type input))
+</a><a href="#h2-0-139" id="h2-0-139" class="i">+        (pin (num 20) (name VS) (type input))))
+</a><a href="#h2-0-140" id="h2-0-140" class="i">+    (libpart (lib OpenSourceCelluloid-arduino) (part Arduino_Nano_Socket)
+</a><a href="#h2-0-141" id="h2-0-141" class="i">+      (description &quot;Socket for Arduino Nano&quot;)
+</a><a href="#h2-0-142" id="h2-0-142" class="i">+      (docs https://store.arduino.cc/arduino-nano)
+</a><a href="#h2-0-143" id="h2-0-143" class="i">+      (footprints
+</a><a href="#h2-0-144" id="h2-0-144" class="i">+        (fp Arduino_Nano_Socket))
+</a><a href="#h2-0-145" id="h2-0-145" class="i">+      (fields
+</a><a href="#h2-0-146" id="h2-0-146" class="i">+        (field (name Reference) XA)
+</a><a href="#h2-0-147" id="h2-0-147" class="i">+        (field (name Value) Arduino_Nano_Socket))
+</a><a href="#h2-0-148" id="h2-0-148" class="i">+      (pins
+</a><a href="#h2-0-149" id="h2-0-149" class="i">+        (pin (num 5V) (name 5V) (type power_in))
+</a><a href="#h2-0-150" id="h2-0-150" class="i">+        (pin (num 3V3) (name 3.3V) (type power_in))
+</a><a href="#h2-0-151" id="h2-0-151" class="i">+        (pin (num A0) (name A0) (type BiDi))
+</a><a href="#h2-0-152" id="h2-0-152" class="i">+        (pin (num A1) (name A1) (type BiDi))
+</a><a href="#h2-0-153" id="h2-0-153" class="i">+        (pin (num A2) (name A2) (type BiDi))
+</a><a href="#h2-0-154" id="h2-0-154" class="i">+        (pin (num A3) (name A3) (type BiDi))
+</a><a href="#h2-0-155" id="h2-0-155" class="i">+        (pin (num A4) (name A4_SDA) (type BiDi))
+</a><a href="#h2-0-156" id="h2-0-156" class="i">+        (pin (num A5) (name A5_SCL) (type BiDi))
+</a><a href="#h2-0-157" id="h2-0-157" class="i">+        (pin (num A6) (name A6) (type input))
+</a><a href="#h2-0-158" id="h2-0-158" class="i">+        (pin (num A7) (name A7) (type input))
+</a><a href="#h2-0-159" id="h2-0-159" class="i">+        (pin (num AREF) (name AREF) (type input))
+</a><a href="#h2-0-160" id="h2-0-160" class="i">+        (pin (num D0) (name D0_RX0) (type BiDi))
+</a><a href="#h2-0-161" id="h2-0-161" class="i">+        (pin (num D1) (name D1_TX0) (type BiDi))
+</a><a href="#h2-0-162" id="h2-0-162" class="i">+        (pin (num D2) (name D2_INT0) (type BiDi))
+</a><a href="#h2-0-163" id="h2-0-163" class="i">+        (pin (num D3) (name D3_INT1) (type BiDi))
+</a><a href="#h2-0-164" id="h2-0-164" class="i">+        (pin (num D4) (name D4) (type BiDi))
+</a><a href="#h2-0-165" id="h2-0-165" class="i">+        (pin (num D5) (name D5) (type BiDi))
+</a><a href="#h2-0-166" id="h2-0-166" class="i">+        (pin (num D6) (name D6) (type BiDi))
+</a><a href="#h2-0-167" id="h2-0-167" class="i">+        (pin (num D7) (name D7) (type BiDi))
+</a><a href="#h2-0-168" id="h2-0-168" class="i">+        (pin (num D8) (name D8) (type BiDi))
+</a><a href="#h2-0-169" id="h2-0-169" class="i">+        (pin (num D9) (name D9) (type BiDi))
+</a><a href="#h2-0-170" id="h2-0-170" class="i">+        (pin (num D10) (name D10_CS) (type BiDi))
+</a><a href="#h2-0-171" id="h2-0-171" class="i">+        (pin (num D11) (name D11_MOSI) (type BiDi))
+</a><a href="#h2-0-172" id="h2-0-172" class="i">+        (pin (num D12) (name D12_MISO) (type BiDi))
+</a><a href="#h2-0-173" id="h2-0-173" class="i">+        (pin (num D13) (name D13_SCK) (type BiDi))
+</a><a href="#h2-0-174" id="h2-0-174" class="i">+        (pin (num GND1) (name GND) (type power_in))
+</a><a href="#h2-0-175" id="h2-0-175" class="i">+        (pin (num GND2) (name GND) (type power_in))
+</a><a href="#h2-0-176" id="h2-0-176" class="i">+        (pin (num RST1) (name RESET) (type openCol))
+</a><a href="#h2-0-177" id="h2-0-177" class="i">+        (pin (num RST2) (name RESET) (type openCol))
+</a><a href="#h2-0-178" id="h2-0-178" class="i">+        (pin (num VIN) (name VIN) (type power_in)))))
+</a><a href="#h2-0-179" id="h2-0-179" class="i">+  (libraries
+</a><a href="#h2-0-180" id="h2-0-180" class="i">+    (library (logical Device)
+</a><a href="#h2-0-181" id="h2-0-181" class="i">+      (uri /usr/share/kicad/library/Device.lib))
+</a><a href="#h2-0-182" id="h2-0-182" class="i">+    (library (logical OpenSourceCelluloid)
+</a><a href="#h2-0-183" id="h2-0-183" class="i">+      (uri /home/antonio/OpenSourceCelluloid/pcb/polaria/OpenSourceCelluloid.lib))
+</a><a href="#h2-0-184" id="h2-0-184" class="i">+    (library (logical OpenSourceCelluloid-arduino)
+</a><a href="#h2-0-185" id="h2-0-185" class="i">+      (uri /home/antonio/OpenSourceCelluloid/pcb/upuaut/upuaut/arduino-kicad-library/arduino.lib)))
+</a><a href="#h2-0-186" id="h2-0-186" class="i">+  (nets
+</a><a href="#h2-0-187" id="h2-0-187" class="i">+    (net (code 1) (name &quot;Net-(U1-Pad5)&quot;)
+</a><a href="#h2-0-188" id="h2-0-188" class="i">+      (node (ref U1) (pin 5)))
+</a><a href="#h2-0-189" id="h2-0-189" class="i">+    (net (code 2) (name GND)
+</a><a href="#h2-0-190" id="h2-0-190" class="i">+      (node (ref U4) (pin 7))
+</a><a href="#h2-0-191" id="h2-0-191" class="i">+      (node (ref U2) (pin 3))
+</a><a href="#h2-0-192" id="h2-0-192" class="i">+      (node (ref U4) (pin 2))
+</a><a href="#h2-0-193" id="h2-0-193" class="i">+      (node (ref U4) (pin 19))
+</a><a href="#h2-0-194" id="h2-0-194" class="i">+      (node (ref U3) (pin 2))
+</a><a href="#h2-0-195" id="h2-0-195" class="i">+      (node (ref XA1) (pin GND1))
+</a><a href="#h2-0-196" id="h2-0-196" class="i">+      (node (ref XA1) (pin GND2))
+</a><a href="#h2-0-197" id="h2-0-197" class="i">+      (node (ref U1) (pin 2))
+</a><a href="#h2-0-198" id="h2-0-198" class="i">+      (node (ref U1) (pin 3))
+</a><a href="#h2-0-199" id="h2-0-199" class="i">+      (node (ref U4) (pin 14))
+</a><a href="#h2-0-200" id="h2-0-200" class="i">+      (node (ref Murata-Ceramic-Capacitor-50v1) (pin 2))
+</a><a href="#h2-0-201" id="h2-0-201" class="i">+      (node (ref U4) (pin 11))
+</a><a href="#h2-0-202" id="h2-0-202" class="i">+      (node (ref U4) (pin 10)))
+</a><a href="#h2-0-203" id="h2-0-203" class="i">+    (net (code 3) (name LED+)
+</a><a href="#h2-0-204" id="h2-0-204" class="i">+      (node (ref U5) (pin 1))
+</a><a href="#h2-0-205" id="h2-0-205" class="i">+      (node (ref U1) (pin 7)))
+</a><a href="#h2-0-206" id="h2-0-206" class="i">+    (net (code 4) (name +24V)
+</a><a href="#h2-0-207" id="h2-0-207" class="i">+      (node (ref U4) (pin 20))
+</a><a href="#h2-0-208" id="h2-0-208" class="i">+      (node (ref U1) (pin 1))
+</a><a href="#h2-0-209" id="h2-0-209" class="i">+      (node (ref U3) (pin 1))
+</a><a href="#h2-0-210" id="h2-0-210" class="i">+      (node (ref Murata-Ceramic-Capacitor-50v1) (pin 1)))
+</a><a href="#h2-0-211" id="h2-0-211" class="i">+    (net (code 5) (name 5V)
+</a><a href="#h2-0-212" id="h2-0-212" class="i">+      (node (ref U4) (pin 1))
+</a><a href="#h2-0-213" id="h2-0-213" class="i">+      (node (ref XA1) (pin 5V))
+</a><a href="#h2-0-214" id="h2-0-214" class="i">+      (node (ref U2) (pin 1)))
+</a><a href="#h2-0-215" id="h2-0-215" class="i">+    (net (code 6) (name POTI)
+</a><a href="#h2-0-216" id="h2-0-216" class="i">+      (node (ref U2) (pin 2))
+</a><a href="#h2-0-217" id="h2-0-217" class="i">+      (node (ref U1) (pin 4)))
+</a><a href="#h2-0-218" id="h2-0-218" class="i">+    (net (code 7) (name LED-)
+</a><a href="#h2-0-219" id="h2-0-219" class="i">+      (node (ref U5) (pin 2))
+</a><a href="#h2-0-220" id="h2-0-220" class="i">+      (node (ref U1) (pin 6)))
+</a><a href="#h2-0-221" id="h2-0-221" class="i">+    (net (code 8) (name &quot;Net-(XA1-PadAREF)&quot;)
+</a><a href="#h2-0-222" id="h2-0-222" class="i">+      (node (ref XA1) (pin AREF)))
+</a><a href="#h2-0-223" id="h2-0-223" class="i">+    (net (code 9) (name MOSI-SDI)
+</a><a href="#h2-0-224" id="h2-0-224" class="i">+      (node (ref U4) (pin 4))
+</a><a href="#h2-0-225" id="h2-0-225" class="i">+      (node (ref XA1) (pin D11)))
+</a><a href="#h2-0-226" id="h2-0-226" class="i">+    (net (code 10) (name MISO-SDO)
+</a><a href="#h2-0-227" id="h2-0-227" class="i">+      (node (ref U4) (pin 3))
+</a><a href="#h2-0-228" id="h2-0-228" class="i">+      (node (ref XA1) (pin D12)))
+</a><a href="#h2-0-229" id="h2-0-229" class="i">+    (net (code 11) (name 3,3V)
+</a><a href="#h2-0-230" id="h2-0-230" class="i">+      (node (ref XA1) (pin 3V3)))
+</a><a href="#h2-0-231" id="h2-0-231" class="i">+    (net (code 12) (name &quot;Net-(XA1-PadRST1)&quot;)
+</a><a href="#h2-0-232" id="h2-0-232" class="i">+      (node (ref XA1) (pin RST1)))
+</a><a href="#h2-0-233" id="h2-0-233" class="i">+    (net (code 13) (name &quot;Net-(XA1-PadRST2)&quot;)
+</a><a href="#h2-0-234" id="h2-0-234" class="i">+      (node (ref XA1) (pin RST2)))
+</a><a href="#h2-0-235" id="h2-0-235" class="i">+    (net (code 14) (name CHIP-SELECT)
+</a><a href="#h2-0-236" id="h2-0-236" class="i">+      (node (ref XA1) (pin D10))
+</a><a href="#h2-0-237" id="h2-0-237" class="i">+      (node (ref U4) (pin 6)))
+</a><a href="#h2-0-238" id="h2-0-238" class="i">+    (net (code 15) (name 12V)
+</a><a href="#h2-0-239" id="h2-0-239" class="i">+      (node (ref XA1) (pin VIN))
+</a><a href="#h2-0-240" id="h2-0-240" class="i">+      (node (ref U3) (pin 3)))
+</a><a href="#h2-0-241" id="h2-0-241" class="i">+    (net (code 16) (name &quot;Net-(XA1-PadA5)&quot;)
+</a><a href="#h2-0-242" id="h2-0-242" class="i">+      (node (ref XA1) (pin A5)))
+</a><a href="#h2-0-243" id="h2-0-243" class="i">+    (net (code 17) (name &quot;Net-(XA1-PadD0)&quot;)
+</a><a href="#h2-0-244" id="h2-0-244" class="i">+      (node (ref XA1) (pin D0)))
+</a><a href="#h2-0-245" id="h2-0-245" class="i">+    (net (code 18) (name &quot;Net-(XA1-PadA1)&quot;)
+</a><a href="#h2-0-246" id="h2-0-246" class="i">+      (node (ref XA1) (pin A1)))
+</a><a href="#h2-0-247" id="h2-0-247" class="i">+    (net (code 19) (name &quot;Net-(XA1-PadD1)&quot;)
+</a><a href="#h2-0-248" id="h2-0-248" class="i">+      (node (ref XA1) (pin D1)))
+</a><a href="#h2-0-249" id="h2-0-249" class="i">+    (net (code 20) (name &quot;Net-(XA1-PadA2)&quot;)
+</a><a href="#h2-0-250" id="h2-0-250" class="i">+      (node (ref XA1) (pin A2)))
+</a><a href="#h2-0-251" id="h2-0-251" class="i">+    (net (code 21) (name &quot;Net-(XA1-PadD2)&quot;)
+</a><a href="#h2-0-252" id="h2-0-252" class="i">+      (node (ref XA1) (pin D2)))
+</a><a href="#h2-0-253" id="h2-0-253" class="i">+    (net (code 22) (name &quot;Net-(XA1-PadA3)&quot;)
+</a><a href="#h2-0-254" id="h2-0-254" class="i">+      (node (ref XA1) (pin A3)))
+</a><a href="#h2-0-255" id="h2-0-255" class="i">+    (net (code 23) (name &quot;Net-(XA1-PadD3)&quot;)
+</a><a href="#h2-0-256" id="h2-0-256" class="i">+      (node (ref XA1) (pin D3)))
+</a><a href="#h2-0-257" id="h2-0-257" class="i">+    (net (code 24) (name &quot;Net-(XA1-PadA4)&quot;)
+</a><a href="#h2-0-258" id="h2-0-258" class="i">+      (node (ref XA1) (pin A4)))
+</a><a href="#h2-0-259" id="h2-0-259" class="i">+    (net (code 25) (name &quot;Net-(XA1-PadA6)&quot;)
+</a><a href="#h2-0-260" id="h2-0-260" class="i">+      (node (ref XA1) (pin A6)))
+</a><a href="#h2-0-261" id="h2-0-261" class="i">+    (net (code 26) (name &quot;Net-(XA1-PadA7)&quot;)
+</a><a href="#h2-0-262" id="h2-0-262" class="i">+      (node (ref XA1) (pin A7)))
+</a><a href="#h2-0-263" id="h2-0-263" class="i">+    (net (code 27) (name &quot;Net-(XA1-PadD7)&quot;)
+</a><a href="#h2-0-264" id="h2-0-264" class="i">+      (node (ref XA1) (pin D7)))
+</a><a href="#h2-0-265" id="h2-0-265" class="i">+    (net (code 28) (name &quot;Net-(XA1-PadD8)&quot;)
+</a><a href="#h2-0-266" id="h2-0-266" class="i">+      (node (ref XA1) (pin D8)))
+</a><a href="#h2-0-267" id="h2-0-267" class="i">+    (net (code 29) (name &quot;Net-(XA1-PadD9)&quot;)
+</a><a href="#h2-0-268" id="h2-0-268" class="i">+      (node (ref XA1) (pin D9)))
+</a><a href="#h2-0-269" id="h2-0-269" class="i">+    (net (code 30) (name CLOCK)
+</a><a href="#h2-0-270" id="h2-0-270" class="i">+      (node (ref U4) (pin 9))
+</a><a href="#h2-0-271" id="h2-0-271" class="i">+      (node (ref XA1) (pin D13))
+</a><a href="#h2-0-272" id="h2-0-272" class="i">+      (node (ref U4) (pin 5)))
+</a><a href="#h2-0-273" id="h2-0-273" class="i">+    (net (code 31) (name ENABLE)
+</a><a href="#h2-0-274" id="h2-0-274" class="i">+      (node (ref U4) (pin 8))
+</a><a href="#h2-0-275" id="h2-0-275" class="i">+      (node (ref XA1) (pin D6)))
+</a><a href="#h2-0-276" id="h2-0-276" class="i">+    (net (code 32) (name RED)
+</a><a href="#h2-0-277" id="h2-0-277" class="i">+      (node (ref U4) (pin 18))
+</a><a href="#h2-0-278" id="h2-0-278" class="i">+      (node (ref U6) (pin 1)))
+</a><a href="#h2-0-279" id="h2-0-279" class="i">+    (net (code 33) (name &quot;Net-(XA1-PadA0)&quot;)
+</a><a href="#h2-0-280" id="h2-0-280" class="i">+      (node (ref XA1) (pin A0)))
+</a><a href="#h2-0-281" id="h2-0-281" class="i">+    (net (code 34) (name DIRECTION)
+</a><a href="#h2-0-282" id="h2-0-282" class="i">+      (node (ref U4) (pin 12))
+</a><a href="#h2-0-283" id="h2-0-283" class="i">+      (node (ref XA1) (pin D4)))
+</a><a href="#h2-0-284" id="h2-0-284" class="i">+    (net (code 35) (name STEP)
+</a><a href="#h2-0-285" id="h2-0-285" class="i">+      (node (ref U4) (pin 13))
+</a><a href="#h2-0-286" id="h2-0-286" class="i">+      (node (ref XA1) (pin D5)))
+</a><a href="#h2-0-287" id="h2-0-287" class="i">+    (net (code 36) (name BLACK)
+</a><a href="#h2-0-288" id="h2-0-288" class="i">+      (node (ref U4) (pin 15))
+</a><a href="#h2-0-289" id="h2-0-289" class="i">+      (node (ref U6) (pin 4)))
+</a><a href="#h2-0-290" id="h2-0-290" class="i">+    (net (code 37) (name GREEN)
+</a><a href="#h2-0-291" id="h2-0-291" class="i">+      (node (ref U4) (pin 16))
+</a><a href="#h2-0-292" id="h2-0-292" class="i">+      (node (ref U6) (pin 3)))
+</a><a href="#h2-0-293" id="h2-0-293" class="i">+    (net (code 38) (name BLUE)
+</a><a href="#h2-0-294" id="h2-0-294" class="i">+      (node (ref U4) (pin 17))
+</a><a href="#h2-0-295" id="h2-0-295" class="i">+      (node (ref U6) (pin 2)))))</a><a href="#h2-0-296" id="h2-0-296" class="i">+
+\ No newline at end of file
+</a><b>diff --git a/<a id="h3" href="../file/upuaut.sch.html">upuaut.sch</a> b/<a href="../file/upuaut.sch.html">upuaut.sch</a></b>
+<a href="#h3-0" id="h3-0" class="h">@@ -15,14 +15,355 @@ Comment3 &quot;&quot;
+</a> Comment4 &quot;&quot;
+ $EndDescr
+ $Comp
+<a href="#h3-0-3" id="h3-0-3" class="d">-L OpenSourceCelluloid-arduino:Arduino_Nano_Socket XA?
+</a><a href="#h3-0-4" id="h3-0-4" class="i">+L OpenSourceCelluloid-arduino:Arduino_Nano_Socket XA1
+</a> U 1 1 5D926447
+<a href="#h3-0-6" id="h3-0-6" class="d">-P 2600 6150
+</a><a href="#h3-0-7" id="h3-0-7" class="d">-F 0 &quot;XA?&quot; H 2600 7387 60  0000 C CNN
+</a><a href="#h3-0-8" id="h3-0-8" class="d">-F 1 &quot;Arduino_Nano_Socket&quot; H 2600 7281 60  0000 C CNN
+</a><a href="#h3-0-9" id="h3-0-9" class="d">-F 2 &quot;&quot; H 4400 9900 60  0001 C CNN
+</a><a href="#h3-0-10" id="h3-0-10" class="d">-F 3 &quot;https://store.arduino.cc/arduino-nano&quot; H 4400 9900 60  0001 C CNN
+</a><a href="#h3-0-11" id="h3-0-11" class="d">-	1    2600 6150
+</a><a href="#h3-0-12" id="h3-0-12" class="i">+P 5500 3150
+</a><a href="#h3-0-13" id="h3-0-13" class="i">+F 0 &quot;XA1&quot; H 5500 4387 60  0000 C CNN
+</a><a href="#h3-0-14" id="h3-0-14" class="i">+F 1 &quot;Arduino_Nano_Socket&quot; H 5500 4281 60  0000 C CNN
+</a><a href="#h3-0-15" id="h3-0-15" class="i">+F 2 &quot;&quot; H 7300 6900 60  0001 C CNN
+</a><a href="#h3-0-16" id="h3-0-16" class="i">+F 3 &quot;https://store.arduino.cc/arduino-nano&quot; H 7300 6900 60  0001 C CNN
+</a><a href="#h3-0-17" id="h3-0-17" class="i">+	1    5500 3150
+</a> 	1    0    0    -1  
+ $EndComp
+<a href="#h3-0-20" id="h3-0-20" class="i">+Text GLabel 6800 2450 2    50   Input ~ 0
+</a><a href="#h3-0-21" id="h3-0-21" class="i">+DIRECTION
+</a><a href="#h3-0-22" id="h3-0-22" class="i">+Text GLabel 6800 2550 2    50   Input ~ 0
+</a><a href="#h3-0-23" id="h3-0-23" class="i">+STEP
+</a><a href="#h3-0-24" id="h3-0-24" class="i">+Text GLabel 6800 2650 2    50   Input ~ 0
+</a><a href="#h3-0-25" id="h3-0-25" class="i">+ENABLE
+</a><a href="#h3-0-26" id="h3-0-26" class="i">+Text GLabel 6800 3150 2    50   Input ~ 0
+</a><a href="#h3-0-27" id="h3-0-27" class="i">+MOSI-SDI
+</a><a href="#h3-0-28" id="h3-0-28" class="i">+Text GLabel 6800 3250 2    50   Input ~ 0
+</a><a href="#h3-0-29" id="h3-0-29" class="i">+MISO-SDO
+</a><a href="#h3-0-30" id="h3-0-30" class="i">+Text GLabel 6800 3350 2    50   Input ~ 0
+</a><a href="#h3-0-31" id="h3-0-31" class="i">+CLOCK
+</a><a href="#h3-0-32" id="h3-0-32" class="i">+$Comp
+</a><a href="#h3-0-33" id="h3-0-33" class="i">+L OpenSourceCelluloid:OKI-78SR-12v U3
+</a><a href="#h3-0-34" id="h3-0-34" class="i">+U 1 1 5D950615
+</a><a href="#h3-0-35" id="h3-0-35" class="i">+P 10150 4150
+</a><a href="#h3-0-36" id="h3-0-36" class="i">+F 0 &quot;U3&quot; H 10150 4465 50  0000 C CNN
+</a><a href="#h3-0-37" id="h3-0-37" class="i">+F 1 &quot;OKI-78SR-12v&quot; H 10150 4374 50  0000 C CNN
+</a><a href="#h3-0-38" id="h3-0-38" class="i">+F 2 &quot;&quot; H 10150 4100 50  0001 C CNN
+</a><a href="#h3-0-39" id="h3-0-39" class="i">+F 3 &quot;&quot; H 10150 4050 50  0001 C CNN
+</a><a href="#h3-0-40" id="h3-0-40" class="i">+	1    10150 4150
+</a><a href="#h3-0-41" id="h3-0-41" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-42" id="h3-0-42" class="i">+$EndComp
+</a><a href="#h3-0-43" id="h3-0-43" class="i">+Text GLabel 10450 4100 2    50   Input ~ 0
+</a><a href="#h3-0-44" id="h3-0-44" class="i">+12V
+</a><a href="#h3-0-45" id="h3-0-45" class="i">+Text GLabel 4200 3950 0    50   Input ~ 0
+</a><a href="#h3-0-46" id="h3-0-46" class="i">+5V
+</a><a href="#h3-0-47" id="h3-0-47" class="i">+Text GLabel 4200 4050 0    50   Input ~ 0
+</a><a href="#h3-0-48" id="h3-0-48" class="i">+12V
+</a><a href="#h3-0-49" id="h3-0-49" class="i">+Text GLabel 4200 3850 0    50   Input ~ 0
+</a><a href="#h3-0-50" id="h3-0-50" class="i">+3,3V
+</a><a href="#h3-0-51" id="h3-0-51" class="i">+$Comp
+</a><a href="#h3-0-52" id="h3-0-52" class="i">+L power:GND #PWR08
+</a><a href="#h3-0-53" id="h3-0-53" class="i">+U 1 1 5D97BCC9
+</a><a href="#h3-0-54" id="h3-0-54" class="i">+P 9700 2450
+</a><a href="#h3-0-55" id="h3-0-55" class="i">+F 0 &quot;#PWR08&quot; H 9700 2200 50  0001 C CNN
+</a><a href="#h3-0-56" id="h3-0-56" class="i">+F 1 &quot;GND&quot; V 9705 2322 50  0000 R CNN
+</a><a href="#h3-0-57" id="h3-0-57" class="i">+F 2 &quot;&quot; H 9700 2450 50  0001 C CNN
+</a><a href="#h3-0-58" id="h3-0-58" class="i">+F 3 &quot;&quot; H 9700 2450 50  0001 C CNN
+</a><a href="#h3-0-59" id="h3-0-59" class="i">+	1    9700 2450
+</a><a href="#h3-0-60" id="h3-0-60" class="i">+	0    -1   -1   0   
+</a><a href="#h3-0-61" id="h3-0-61" class="i">+$EndComp
+</a><a href="#h3-0-62" id="h3-0-62" class="i">+Text GLabel 8300 2350 0    50   Input ~ 0
+</a><a href="#h3-0-63" id="h3-0-63" class="i">+5V
+</a><a href="#h3-0-64" id="h3-0-64" class="i">+$Comp
+</a><a href="#h3-0-65" id="h3-0-65" class="i">+L power:GND #PWR05
+</a><a href="#h3-0-66" id="h3-0-66" class="i">+U 1 1 5D947D01
+</a><a href="#h3-0-67" id="h3-0-67" class="i">+P 8050 2450
+</a><a href="#h3-0-68" id="h3-0-68" class="i">+F 0 &quot;#PWR05&quot; H 8050 2200 50  0001 C CNN
+</a><a href="#h3-0-69" id="h3-0-69" class="i">+F 1 &quot;GND&quot; V 8055 2322 50  0000 R CNN
+</a><a href="#h3-0-70" id="h3-0-70" class="i">+F 2 &quot;&quot; H 8050 2450 50  0001 C CNN
+</a><a href="#h3-0-71" id="h3-0-71" class="i">+F 3 &quot;&quot; H 8050 2450 50  0001 C CNN
+</a><a href="#h3-0-72" id="h3-0-72" class="i">+	1    8050 2450
+</a><a href="#h3-0-73" id="h3-0-73" class="i">+	0    1    1    0   
+</a><a href="#h3-0-74" id="h3-0-74" class="i">+$EndComp
+</a><a href="#h3-0-75" id="h3-0-75" class="i">+Wire Wire Line
+</a><a href="#h3-0-76" id="h3-0-76" class="i">+	8050 2450 8300 2450
+</a><a href="#h3-0-77" id="h3-0-77" class="i">+$Comp
+</a><a href="#h3-0-78" id="h3-0-78" class="i">+L OpenSourceCelluloid:TMC2660-BOB-SOCKET U4
+</a><a href="#h3-0-79" id="h3-0-79" class="i">+U 1 1 5D941F1A
+</a><a href="#h3-0-80" id="h3-0-80" class="i">+P 8800 2250
+</a><a href="#h3-0-81" id="h3-0-81" class="i">+F 0 &quot;U4&quot; H 8800 2415 50  0000 C CNN
+</a><a href="#h3-0-82" id="h3-0-82" class="i">+F 1 &quot;TMC2660-BOB-SOCKET&quot; H 8800 2324 50  0000 C CNN
+</a><a href="#h3-0-83" id="h3-0-83" class="i">+F 2 &quot;&quot; H 8650 2200 50  0001 C CNN
+</a><a href="#h3-0-84" id="h3-0-84" class="i">+F 3 &quot;&quot; H 8650 2200 50  0001 C CNN
+</a><a href="#h3-0-85" id="h3-0-85" class="i">+	1    8800 2250
+</a><a href="#h3-0-86" id="h3-0-86" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-87" id="h3-0-87" class="i">+$EndComp
+</a><a href="#h3-0-88" id="h3-0-88" class="i">+$Comp
+</a><a href="#h3-0-89" id="h3-0-89" class="i">+L power:+24V #PWR06
+</a><a href="#h3-0-90" id="h3-0-90" class="i">+U 1 1 5D949180
+</a><a href="#h3-0-91" id="h3-0-91" class="i">+P 9500 2350
+</a><a href="#h3-0-92" id="h3-0-92" class="i">+F 0 &quot;#PWR06&quot; H 9500 2200 50  0001 C CNN
+</a><a href="#h3-0-93" id="h3-0-93" class="i">+F 1 &quot;+24V&quot; H 9515 2523 50  0000 C CNN
+</a><a href="#h3-0-94" id="h3-0-94" class="i">+F 2 &quot;&quot; H 9500 2350 50  0001 C CNN
+</a><a href="#h3-0-95" id="h3-0-95" class="i">+F 3 &quot;&quot; H 9500 2350 50  0001 C CNN
+</a><a href="#h3-0-96" id="h3-0-96" class="i">+	1    9500 2350
+</a><a href="#h3-0-97" id="h3-0-97" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-98" id="h3-0-98" class="i">+$EndComp
+</a><a href="#h3-0-99" id="h3-0-99" class="i">+Wire Wire Line
+</a><a href="#h3-0-100" id="h3-0-100" class="i">+	9300 2350 9500 2350
+</a><a href="#h3-0-101" id="h3-0-101" class="i">+Wire Wire Line
+</a><a href="#h3-0-102" id="h3-0-102" class="i">+	9300 2450 9700 2450
+</a><a href="#h3-0-103" id="h3-0-103" class="i">+Text GLabel 8300 2650 0    50   Input ~ 0
+</a><a href="#h3-0-104" id="h3-0-104" class="i">+MOSI-SDI
+</a><a href="#h3-0-105" id="h3-0-105" class="i">+Text GLabel 8300 2550 0    50   Input ~ 0
+</a><a href="#h3-0-106" id="h3-0-106" class="i">+MISO-SDO
+</a><a href="#h3-0-107" id="h3-0-107" class="i">+Text GLabel 8300 2750 0    50   Input ~ 0
+</a><a href="#h3-0-108" id="h3-0-108" class="i">+CLOCK
+</a><a href="#h3-0-109" id="h3-0-109" class="i">+Text GLabel 6800 3050 2    50   Input ~ 0
+</a><a href="#h3-0-110" id="h3-0-110" class="i">+CHIP-SELECT
+</a><a href="#h3-0-111" id="h3-0-111" class="i">+Text GLabel 8300 2850 0    50   Input ~ 0
+</a><a href="#h3-0-112" id="h3-0-112" class="i">+CHIP-SELECT
+</a><a href="#h3-0-113" id="h3-0-113" class="i">+$Comp
+</a><a href="#h3-0-114" id="h3-0-114" class="i">+L power:GND #PWR09
+</a><a href="#h3-0-115" id="h3-0-115" class="i">+U 1 1 5D9A04F4
+</a><a href="#h3-0-116" id="h3-0-116" class="i">+P 9700 3250
+</a><a href="#h3-0-117" id="h3-0-117" class="i">+F 0 &quot;#PWR09&quot; H 9700 3000 50  0001 C CNN
+</a><a href="#h3-0-118" id="h3-0-118" class="i">+F 1 &quot;GND&quot; V 9705 3122 50  0000 R CNN
+</a><a href="#h3-0-119" id="h3-0-119" class="i">+F 2 &quot;&quot; H 9700 3250 50  0001 C CNN
+</a><a href="#h3-0-120" id="h3-0-120" class="i">+F 3 &quot;&quot; H 9700 3250 50  0001 C CNN
+</a><a href="#h3-0-121" id="h3-0-121" class="i">+	1    9700 3250
+</a><a href="#h3-0-122" id="h3-0-122" class="i">+	0    -1   -1   0   
+</a><a href="#h3-0-123" id="h3-0-123" class="i">+$EndComp
+</a><a href="#h3-0-124" id="h3-0-124" class="i">+Wire Wire Line
+</a><a href="#h3-0-125" id="h3-0-125" class="i">+	9700 3250 9300 3250
+</a><a href="#h3-0-126" id="h3-0-126" class="i">+$Comp
+</a><a href="#h3-0-127" id="h3-0-127" class="i">+L power:GND #PWR03
+</a><a href="#h3-0-128" id="h3-0-128" class="i">+U 1 1 5D9A099D
+</a><a href="#h3-0-129" id="h3-0-129" class="i">+P 7900 2950
+</a><a href="#h3-0-130" id="h3-0-130" class="i">+F 0 &quot;#PWR03&quot; H 7900 2700 50  0001 C CNN
+</a><a href="#h3-0-131" id="h3-0-131" class="i">+F 1 &quot;GND&quot; V 7905 2822 50  0000 R CNN
+</a><a href="#h3-0-132" id="h3-0-132" class="i">+F 2 &quot;&quot; H 7900 2950 50  0001 C CNN
+</a><a href="#h3-0-133" id="h3-0-133" class="i">+F 3 &quot;&quot; H 7900 2950 50  0001 C CNN
+</a><a href="#h3-0-134" id="h3-0-134" class="i">+	1    7900 2950
+</a><a href="#h3-0-135" id="h3-0-135" class="i">+	0    1    1    0   
+</a><a href="#h3-0-136" id="h3-0-136" class="i">+$EndComp
+</a><a href="#h3-0-137" id="h3-0-137" class="i">+Text GLabel 8300 3050 0    50   Input ~ 0
+</a><a href="#h3-0-138" id="h3-0-138" class="i">+ENABLE
+</a><a href="#h3-0-139" id="h3-0-139" class="i">+Text GLabel 8300 3150 0    50   Input ~ 0
+</a><a href="#h3-0-140" id="h3-0-140" class="i">+CLOCK
+</a><a href="#h3-0-141" id="h3-0-141" class="i">+$Comp
+</a><a href="#h3-0-142" id="h3-0-142" class="i">+L power:GND #PWR04
+</a><a href="#h3-0-143" id="h3-0-143" class="i">+U 1 1 5D9A2E1B
+</a><a href="#h3-0-144" id="h3-0-144" class="i">+P 7950 3250
+</a><a href="#h3-0-145" id="h3-0-145" class="i">+F 0 &quot;#PWR04&quot; H 7950 3000 50  0001 C CNN
+</a><a href="#h3-0-146" id="h3-0-146" class="i">+F 1 &quot;GND&quot; V 7955 3122 50  0000 R CNN
+</a><a href="#h3-0-147" id="h3-0-147" class="i">+F 2 &quot;&quot; H 7950 3250 50  0001 C CNN
+</a><a href="#h3-0-148" id="h3-0-148" class="i">+F 3 &quot;&quot; H 7950 3250 50  0001 C CNN
+</a><a href="#h3-0-149" id="h3-0-149" class="i">+	1    7950 3250
+</a><a href="#h3-0-150" id="h3-0-150" class="i">+	0    1    1    0   
+</a><a href="#h3-0-151" id="h3-0-151" class="i">+$EndComp
+</a><a href="#h3-0-152" id="h3-0-152" class="i">+Wire Wire Line
+</a><a href="#h3-0-153" id="h3-0-153" class="i">+	7900 2950 8300 2950
+</a><a href="#h3-0-154" id="h3-0-154" class="i">+Wire Wire Line
+</a><a href="#h3-0-155" id="h3-0-155" class="i">+	7950 3250 8300 3250
+</a><a href="#h3-0-156" id="h3-0-156" class="i">+$Comp
+</a><a href="#h3-0-157" id="h3-0-157" class="i">+L power:GND #PWR07
+</a><a href="#h3-0-158" id="h3-0-158" class="i">+U 1 1 5D9A3759
+</a><a href="#h3-0-159" id="h3-0-159" class="i">+P 9550 2950
+</a><a href="#h3-0-160" id="h3-0-160" class="i">+F 0 &quot;#PWR07&quot; H 9550 2700 50  0001 C CNN
+</a><a href="#h3-0-161" id="h3-0-161" class="i">+F 1 &quot;GND&quot; V 9555 2822 50  0000 R CNN
+</a><a href="#h3-0-162" id="h3-0-162" class="i">+F 2 &quot;&quot; H 9550 2950 50  0001 C CNN
+</a><a href="#h3-0-163" id="h3-0-163" class="i">+F 3 &quot;&quot; H 9550 2950 50  0001 C CNN
+</a><a href="#h3-0-164" id="h3-0-164" class="i">+	1    9550 2950
+</a><a href="#h3-0-165" id="h3-0-165" class="i">+	0    -1   -1   0   
+</a><a href="#h3-0-166" id="h3-0-166" class="i">+$EndComp
+</a><a href="#h3-0-167" id="h3-0-167" class="i">+Wire Wire Line
+</a><a href="#h3-0-168" id="h3-0-168" class="i">+	9300 2950 9550 2950
+</a><a href="#h3-0-169" id="h3-0-169" class="i">+Text GLabel 9300 2550 2    50   Input ~ 0
+</a><a href="#h3-0-170" id="h3-0-170" class="i">+RED
+</a><a href="#h3-0-171" id="h3-0-171" class="i">+Text GLabel 9300 2650 2    50   Input ~ 0
+</a><a href="#h3-0-172" id="h3-0-172" class="i">+BLUE
+</a><a href="#h3-0-173" id="h3-0-173" class="i">+Text GLabel 9300 2750 2    50   Input ~ 0
+</a><a href="#h3-0-174" id="h3-0-174" class="i">+GREEN
+</a><a href="#h3-0-175" id="h3-0-175" class="i">+Text GLabel 9300 2850 2    50   Input ~ 0
+</a><a href="#h3-0-176" id="h3-0-176" class="i">+BLACK
+</a><a href="#h3-0-177" id="h3-0-177" class="i">+Text GLabel 9300 3150 2    50   Input ~ 0
+</a><a href="#h3-0-178" id="h3-0-178" class="i">+DIRECTION
+</a><a href="#h3-0-179" id="h3-0-179" class="i">+Text GLabel 9300 3050 2    50   Input ~ 0
+</a><a href="#h3-0-180" id="h3-0-180" class="i">+STEP
+</a><a href="#h3-0-181" id="h3-0-181" class="i">+$Comp
+</a><a href="#h3-0-182" id="h3-0-182" class="i">+L power:GND #PWR02
+</a><a href="#h3-0-183" id="h3-0-183" class="i">+U 1 1 5D9A9EBC
+</a><a href="#h3-0-184" id="h3-0-184" class="i">+P 10450 5600
+</a><a href="#h3-0-185" id="h3-0-185" class="i">+F 0 &quot;#PWR02&quot; H 10450 5350 50  0001 C CNN
+</a><a href="#h3-0-186" id="h3-0-186" class="i">+F 1 &quot;GND&quot; V 10455 5472 50  0000 R CNN
+</a><a href="#h3-0-187" id="h3-0-187" class="i">+F 2 &quot;&quot; H 10450 5600 50  0001 C CNN
+</a><a href="#h3-0-188" id="h3-0-188" class="i">+F 3 &quot;&quot; H 10450 5600 50  0001 C CNN
+</a><a href="#h3-0-189" id="h3-0-189" class="i">+	1    10450 5600
+</a><a href="#h3-0-190" id="h3-0-190" class="i">+	0    -1   -1   0   
+</a><a href="#h3-0-191" id="h3-0-191" class="i">+$EndComp
+</a><a href="#h3-0-192" id="h3-0-192" class="i">+$Comp
+</a><a href="#h3-0-193" id="h3-0-193" class="i">+L OpenSourceCelluloid:LDH-45B-1050 U1
+</a><a href="#h3-0-194" id="h3-0-194" class="i">+U 1 1 5D9AC50C
+</a><a href="#h3-0-195" id="h3-0-195" class="i">+P 7100 5300
+</a><a href="#h3-0-196" id="h3-0-196" class="i">+F 0 &quot;U1&quot; H 7400 5465 50  0000 C CNN
+</a><a href="#h3-0-197" id="h3-0-197" class="i">+F 1 &quot;LDH-45B-1050&quot; H 7400 5374 50  0000 C CNN
+</a><a href="#h3-0-198" id="h3-0-198" class="i">+F 2 &quot;&quot; H 7100 5300 50  0001 C CNN
+</a><a href="#h3-0-199" id="h3-0-199" class="i">+F 3 &quot;&quot; H 7100 5300 50  0001 C CNN
+</a><a href="#h3-0-200" id="h3-0-200" class="i">+	1    7100 5300
+</a><a href="#h3-0-201" id="h3-0-201" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-202" id="h3-0-202" class="i">+$EndComp
+</a><a href="#h3-0-203" id="h3-0-203" class="i">+NoConn ~ 6900 5800
+</a><a href="#h3-0-204" id="h3-0-204" class="i">+Text GLabel 9250 5600 0    50   Input ~ 0
+</a><a href="#h3-0-205" id="h3-0-205" class="i">+5V
+</a><a href="#h3-0-206" id="h3-0-206" class="i">+Text GLabel 9600 5950 3    50   Input ~ 0
+</a><a href="#h3-0-207" id="h3-0-207" class="i">+POTI
+</a><a href="#h3-0-208" id="h3-0-208" class="i">+Text GLabel 6900 5700 0    50   Input ~ 0
+</a><a href="#h3-0-209" id="h3-0-209" class="i">+POTI
+</a><a href="#h3-0-210" id="h3-0-210" class="i">+$Comp
+</a><a href="#h3-0-211" id="h3-0-211" class="i">+L power:GND #PWR01
+</a><a href="#h3-0-212" id="h3-0-212" class="i">+U 1 1 5D9B4BBE
+</a><a href="#h3-0-213" id="h3-0-213" class="i">+P 6450 5600
+</a><a href="#h3-0-214" id="h3-0-214" class="i">+F 0 &quot;#PWR01&quot; H 6450 5350 50  0001 C CNN
+</a><a href="#h3-0-215" id="h3-0-215" class="i">+F 1 &quot;GND&quot; H 6455 5427 50  0000 C CNN
+</a><a href="#h3-0-216" id="h3-0-216" class="i">+F 2 &quot;&quot; H 6450 5600 50  0001 C CNN
+</a><a href="#h3-0-217" id="h3-0-217" class="i">+F 3 &quot;&quot; H 6450 5600 50  0001 C CNN
+</a><a href="#h3-0-218" id="h3-0-218" class="i">+	1    6450 5600
+</a><a href="#h3-0-219" id="h3-0-219" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-220" id="h3-0-220" class="i">+$EndComp
+</a><a href="#h3-0-221" id="h3-0-221" class="i">+Wire Wire Line
+</a><a href="#h3-0-222" id="h3-0-222" class="i">+	6450 5600 6900 5600
+</a><a href="#h3-0-223" id="h3-0-223" class="i">+$Comp
+</a><a href="#h3-0-224" id="h3-0-224" class="i">+L Device:C Murata-Ceramic-Capacitor-50v1
+</a><a href="#h3-0-225" id="h3-0-225" class="i">+U 1 1 5D9BC72F
+</a><a href="#h3-0-226" id="h3-0-226" class="i">+P 9500 4250
+</a><a href="#h3-0-227" id="h3-0-227" class="i">+F 0 &quot;Murata-Ceramic-Capacitor-50v1&quot; H 8600 4000 50  0000 L CNN
+</a><a href="#h3-0-228" id="h3-0-228" class="i">+F 1 &quot;C&quot; H 9615 4205 50  0000 L CNN
+</a><a href="#h3-0-229" id="h3-0-229" class="i">+F 2 &quot;&quot; H 9538 4100 50  0001 C CNN
+</a><a href="#h3-0-230" id="h3-0-230" class="i">+F 3 &quot;~&quot; H 9500 4250 50  0001 C CNN
+</a><a href="#h3-0-231" id="h3-0-231" class="i">+	1    9500 4250
+</a><a href="#h3-0-232" id="h3-0-232" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-233" id="h3-0-233" class="i">+$EndComp
+</a><a href="#h3-0-234" id="h3-0-234" class="i">+Wire Wire Line
+</a><a href="#h3-0-235" id="h3-0-235" class="i">+	9850 4100 9500 4100
+</a><a href="#h3-0-236" id="h3-0-236" class="i">+$Comp
+</a><a href="#h3-0-237" id="h3-0-237" class="i">+L power:+24V #PWR013
+</a><a href="#h3-0-238" id="h3-0-238" class="i">+U 1 1 5D9CE65E
+</a><a href="#h3-0-239" id="h3-0-239" class="i">+P 9200 4100
+</a><a href="#h3-0-240" id="h3-0-240" class="i">+F 0 &quot;#PWR013&quot; H 9200 3950 50  0001 C CNN
+</a><a href="#h3-0-241" id="h3-0-241" class="i">+F 1 &quot;+24V&quot; H 9215 4273 50  0000 C CNN
+</a><a href="#h3-0-242" id="h3-0-242" class="i">+F 2 &quot;&quot; H 9200 4100 50  0001 C CNN
+</a><a href="#h3-0-243" id="h3-0-243" class="i">+F 3 &quot;&quot; H 9200 4100 50  0001 C CNN
+</a><a href="#h3-0-244" id="h3-0-244" class="i">+	1    9200 4100
+</a><a href="#h3-0-245" id="h3-0-245" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-246" id="h3-0-246" class="i">+$EndComp
+</a><a href="#h3-0-247" id="h3-0-247" class="i">+Wire Wire Line
+</a><a href="#h3-0-248" id="h3-0-248" class="i">+	9200 4100 9500 4100
+</a><a href="#h3-0-249" id="h3-0-249" class="i">+Connection ~ 9500 4100
+</a><a href="#h3-0-250" id="h3-0-250" class="i">+Wire Wire Line
+</a><a href="#h3-0-251" id="h3-0-251" class="i">+	10450 5600 10000 5600
+</a><a href="#h3-0-252" id="h3-0-252" class="i">+$Comp
+</a><a href="#h3-0-253" id="h3-0-253" class="i">+L OpenSourceCelluloid:POTENTIOMETER U2
+</a><a href="#h3-0-254" id="h3-0-254" class="i">+U 1 1 5D9A8B2C
+</a><a href="#h3-0-255" id="h3-0-255" class="i">+P 9400 5500
+</a><a href="#h3-0-256" id="h3-0-256" class="i">+F 0 &quot;U2&quot; H 9625 5665 50  0000 C CNN
+</a><a href="#h3-0-257" id="h3-0-257" class="i">+F 1 &quot;POTENTIOMETER&quot; H 9625 5574 50  0000 C CNN
+</a><a href="#h3-0-258" id="h3-0-258" class="i">+F 2 &quot;&quot; H 9400 5500 50  0001 C CNN
+</a><a href="#h3-0-259" id="h3-0-259" class="i">+F 3 &quot;&quot; H 9400 5500 50  0001 C CNN
+</a><a href="#h3-0-260" id="h3-0-260" class="i">+	1    9400 5500
+</a><a href="#h3-0-261" id="h3-0-261" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-262" id="h3-0-262" class="i">+$EndComp
+</a><a href="#h3-0-263" id="h3-0-263" class="i">+$Comp
+</a><a href="#h3-0-264" id="h3-0-264" class="i">+L power:+24V #PWR011
+</a><a href="#h3-0-265" id="h3-0-265" class="i">+U 1 1 5D9EDF19
+</a><a href="#h3-0-266" id="h3-0-266" class="i">+P 6400 5400
+</a><a href="#h3-0-267" id="h3-0-267" class="i">+F 0 &quot;#PWR011&quot; H 6400 5250 50  0001 C CNN
+</a><a href="#h3-0-268" id="h3-0-268" class="i">+F 1 &quot;+24V&quot; H 6415 5573 50  0000 C CNN
+</a><a href="#h3-0-269" id="h3-0-269" class="i">+F 2 &quot;&quot; H 6400 5400 50  0001 C CNN
+</a><a href="#h3-0-270" id="h3-0-270" class="i">+F 3 &quot;&quot; H 6400 5400 50  0001 C CNN
+</a><a href="#h3-0-271" id="h3-0-271" class="i">+	1    6400 5400
+</a><a href="#h3-0-272" id="h3-0-272" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-273" id="h3-0-273" class="i">+$EndComp
+</a><a href="#h3-0-274" id="h3-0-274" class="i">+Wire Wire Line
+</a><a href="#h3-0-275" id="h3-0-275" class="i">+	6400 5400 6900 5400
+</a><a href="#h3-0-276" id="h3-0-276" class="i">+$Comp
+</a><a href="#h3-0-277" id="h3-0-277" class="i">+L power:GND #PWR012
+</a><a href="#h3-0-278" id="h3-0-278" class="i">+U 1 1 5D9EEE05
+</a><a href="#h3-0-279" id="h3-0-279" class="i">+P 6400 5500
+</a><a href="#h3-0-280" id="h3-0-280" class="i">+F 0 &quot;#PWR012&quot; H 6400 5250 50  0001 C CNN
+</a><a href="#h3-0-281" id="h3-0-281" class="i">+F 1 &quot;GND&quot; V 6405 5372 50  0000 R CNN
+</a><a href="#h3-0-282" id="h3-0-282" class="i">+F 2 &quot;&quot; H 6400 5500 50  0001 C CNN
+</a><a href="#h3-0-283" id="h3-0-283" class="i">+F 3 &quot;&quot; H 6400 5500 50  0001 C CNN
+</a><a href="#h3-0-284" id="h3-0-284" class="i">+	1    6400 5500
+</a><a href="#h3-0-285" id="h3-0-285" class="i">+	0    1    1    0   
+</a><a href="#h3-0-286" id="h3-0-286" class="i">+$EndComp
+</a><a href="#h3-0-287" id="h3-0-287" class="i">+Wire Wire Line
+</a><a href="#h3-0-288" id="h3-0-288" class="i">+	6400 5500 6900 5500
+</a><a href="#h3-0-289" id="h3-0-289" class="i">+$Comp
+</a><a href="#h3-0-290" id="h3-0-290" class="i">+L OpenSourceCelluloid:Connector-LED U5
+</a><a href="#h3-0-291" id="h3-0-291" class="i">+U 1 1 5D9F5B71
+</a><a href="#h3-0-292" id="h3-0-292" class="i">+P 8350 5150
+</a><a href="#h3-0-293" id="h3-0-293" class="i">+F 0 &quot;U5&quot; H 8400 5225 50  0000 C CNN
+</a><a href="#h3-0-294" id="h3-0-294" class="i">+F 1 &quot;Connector-LED&quot; H 8400 5134 50  0000 C CNN
+</a><a href="#h3-0-295" id="h3-0-295" class="i">+F 2 &quot;&quot; H 8350 5150 50  0001 C CNN
+</a><a href="#h3-0-296" id="h3-0-296" class="i">+F 3 &quot;&quot; H 8350 5150 50  0001 C CNN
+</a><a href="#h3-0-297" id="h3-0-297" class="i">+	1    8350 5150
+</a><a href="#h3-0-298" id="h3-0-298" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-299" id="h3-0-299" class="i">+$EndComp
+</a><a href="#h3-0-300" id="h3-0-300" class="i">+Text GLabel 7900 5700 2    50   Input ~ 0
+</a><a href="#h3-0-301" id="h3-0-301" class="i">+LED+
+</a><a href="#h3-0-302" id="h3-0-302" class="i">+Text GLabel 7900 5800 2    50   Input ~ 0
+</a><a href="#h3-0-303" id="h3-0-303" class="i">+LED-
+</a><a href="#h3-0-304" id="h3-0-304" class="i">+Text GLabel 8200 5300 3    50   Input ~ 0
+</a><a href="#h3-0-305" id="h3-0-305" class="i">+LED+
+</a><a href="#h3-0-306" id="h3-0-306" class="i">+Text GLabel 8600 5300 3    50   Input ~ 0
+</a><a href="#h3-0-307" id="h3-0-307" class="i">+LED-
+</a><a href="#h3-0-308" id="h3-0-308" class="i">+$Comp
+</a><a href="#h3-0-309" id="h3-0-309" class="i">+L power:GND #PWR010
+</a><a href="#h3-0-310" id="h3-0-310" class="i">+U 1 1 5D9FC153
+</a><a href="#h3-0-311" id="h3-0-311" class="i">+P 3750 3650
+</a><a href="#h3-0-312" id="h3-0-312" class="i">+F 0 &quot;#PWR010&quot; H 3750 3400 50  0001 C CNN
+</a><a href="#h3-0-313" id="h3-0-313" class="i">+F 1 &quot;GND&quot; H 3755 3477 50  0000 C CNN
+</a><a href="#h3-0-314" id="h3-0-314" class="i">+F 2 &quot;&quot; H 3750 3650 50  0001 C CNN
+</a><a href="#h3-0-315" id="h3-0-315" class="i">+F 3 &quot;&quot; H 3750 3650 50  0001 C CNN
+</a><a href="#h3-0-316" id="h3-0-316" class="i">+	1    3750 3650
+</a><a href="#h3-0-317" id="h3-0-317" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-318" id="h3-0-318" class="i">+$EndComp
+</a><a href="#h3-0-319" id="h3-0-319" class="i">+Wire Wire Line
+</a><a href="#h3-0-320" id="h3-0-320" class="i">+	3750 3650 4200 3650
+</a><a href="#h3-0-321" id="h3-0-321" class="i">+Wire Wire Line
+</a><a href="#h3-0-322" id="h3-0-322" class="i">+	4200 3750 4200 3650
+</a><a href="#h3-0-323" id="h3-0-323" class="i">+Connection ~ 4200 3650
+</a><a href="#h3-0-324" id="h3-0-324" class="i">+Wire Wire Line
+</a><a href="#h3-0-325" id="h3-0-325" class="i">+	10150 4500 9500 4500
+</a><a href="#h3-0-326" id="h3-0-326" class="i">+Wire Wire Line
+</a><a href="#h3-0-327" id="h3-0-327" class="i">+	9500 4500 9500 4400
+</a><a href="#h3-0-328" id="h3-0-328" class="i">+$Comp
+</a><a href="#h3-0-329" id="h3-0-329" class="i">+L power:GND #PWR014
+</a><a href="#h3-0-330" id="h3-0-330" class="i">+U 1 1 5DA094CD
+</a><a href="#h3-0-331" id="h3-0-331" class="i">+P 10150 4700
+</a><a href="#h3-0-332" id="h3-0-332" class="i">+F 0 &quot;#PWR014&quot; H 10150 4450 50  0001 C CNN
+</a><a href="#h3-0-333" id="h3-0-333" class="i">+F 1 &quot;GND&quot; H 10155 4527 50  0000 C CNN
+</a><a href="#h3-0-334" id="h3-0-334" class="i">+F 2 &quot;&quot; H 10150 4700 50  0001 C CNN
+</a><a href="#h3-0-335" id="h3-0-335" class="i">+F 3 &quot;&quot; H 10150 4700 50  0001 C CNN
+</a><a href="#h3-0-336" id="h3-0-336" class="i">+	1    10150 4700
+</a><a href="#h3-0-337" id="h3-0-337" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-338" id="h3-0-338" class="i">+$EndComp
+</a><a href="#h3-0-339" id="h3-0-339" class="i">+Wire Wire Line
+</a><a href="#h3-0-340" id="h3-0-340" class="i">+	10150 4500 10150 4700
+</a><a href="#h3-0-341" id="h3-0-341" class="i">+Connection ~ 10150 4500
+</a><a href="#h3-0-342" id="h3-0-342" class="i">+$Comp
+</a><a href="#h3-0-343" id="h3-0-343" class="i">+L OpenSourceCelluloid:Motor-Connector U6
+</a><a href="#h3-0-344" id="h3-0-344" class="i">+U 1 1 5DA0DAEF
+</a><a href="#h3-0-345" id="h3-0-345" class="i">+P 9800 1350
+</a><a href="#h3-0-346" id="h3-0-346" class="i">+F 0 &quot;U6&quot; H 9975 1515 50  0000 C CNN
+</a><a href="#h3-0-347" id="h3-0-347" class="i">+F 1 &quot;Motor-Connector&quot; H 9975 1424 50  0000 C CNN
+</a><a href="#h3-0-348" id="h3-0-348" class="i">+F 2 &quot;&quot; H 9800 1350 50  0001 C CNN
+</a><a href="#h3-0-349" id="h3-0-349" class="i">+F 3 &quot;&quot; H 9800 1350 50  0001 C CNN
+</a><a href="#h3-0-350" id="h3-0-350" class="i">+	1    9800 1350
+</a><a href="#h3-0-351" id="h3-0-351" class="i">+	1    0    0    -1  
+</a><a href="#h3-0-352" id="h3-0-352" class="i">+$EndComp
+</a><a href="#h3-0-353" id="h3-0-353" class="i">+Text GLabel 9600 1450 0    50   Input ~ 0
+</a><a href="#h3-0-354" id="h3-0-354" class="i">+RED
+</a><a href="#h3-0-355" id="h3-0-355" class="i">+Text GLabel 9600 1550 0    50   Input ~ 0
+</a><a href="#h3-0-356" id="h3-0-356" class="i">+BLUE
+</a><a href="#h3-0-357" id="h3-0-357" class="i">+Text GLabel 10350 1550 2    50   Input ~ 0
+</a><a href="#h3-0-358" id="h3-0-358" class="i">+GREEN
+</a><a href="#h3-0-359" id="h3-0-359" class="i">+Text GLabel 10350 1450 2    50   Input ~ 0
+</a><a href="#h3-0-360" id="h3-0-360" class="i">+BLACK
+</a> $EndSCHEMATC
+</pre>
+</div>
+</body>
+</html>

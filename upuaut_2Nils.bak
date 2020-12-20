@@ -1,0 +1,1144 @@
+EESchema Schematic File Version 4
+LIBS:upuaut_2Nils-cache
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2019-09-28"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 8700 5550 2    50   Input ~ 0
+12V
+$Comp
+L power:GND #PWR015
+U 1 1 5D9A9EBC
+P 7600 4200
+F 0 "#PWR015" H 7600 3950 50  0001 C CNN
+F 1 "GND" V 7605 4072 50  0000 R CNN
+F 2 "" H 7600 4200 50  0001 C CNN
+F 3 "" H 7600 4200 50  0001 C CNN
+	1    7600 4200
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3550 4100
+Text GLabel 6000 4200 0    50   Input ~ 0
+5V
+Text GLabel 6750 4550 3    50   Input ~ 0
+POTI-LED
+Text GLabel 3950 4200 0    50   Input ~ 0
+POTI-LED
+$Comp
+L power:GND #PWR05
+U 1 1 5D9B4BBE
+P 3500 4300
+F 0 "#PWR05" H 3500 4050 50  0001 C CNN
+F 1 "GND" H 3505 4127 50  0000 C CNN
+F 2 "" H 3500 4300 50  0001 C CNN
+F 3 "" H 3500 4300 50  0001 C CNN
+	1    3500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4300 3950 4300
+$Comp
+L Device:C Murata-Ceramic-Capacitor-50v1
+U 1 1 5D9BC72F
+P 7750 5700
+F 0 "Murata-Ceramic-Capacitor-50v1" H 6850 5300 50  0000 L CNN
+F 1 "C" H 7865 5655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 7788 5550 50  0001 C CNN
+F 3 "~" H 7750 5700 50  0001 C CNN
+	1    7750 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 5550 7750 5550
+Wire Wire Line
+	7450 5550 7750 5550
+Connection ~ 7750 5550
+Wire Wire Line
+	7600 4200 7150 4200
+$Comp
+L upuaut-rescue:POTENTIOMETER-OpenSourceCelluloid U5
+U 1 1 5D9A8B2C
+P 6550 4100
+F 0 "U5" H 6775 4265 50  0000 C CNN
+F 1 "POTENTIOMETER-LED" H 6775 4174 50  0000 C CNN
+F 2 "OpenCelluloid:PDB12-H4301-Potentiometer" H 6550 4100 50  0001 C CNN
+F 3 "" H 6550 4100 50  0001 C CNN
+	1    6550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5D9EEE05
+P 3950 4400
+F 0 "#PWR04" H 3950 4150 50  0001 C CNN
+F 1 "GND" V 3955 4272 50  0000 R CNN
+F 2 "" H 3950 4400 50  0001 C CNN
+F 3 "" H 3950 4400 50  0001 C CNN
+	1    3950 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L upuaut-rescue:Connector-LED-OpenSourceCelluloid U3
+U 1 1 5D9F5B71
+P 5400 3850
+F 0 "U3" H 5450 3925 50  0000 C CNN
+F 1 "Connector-LED" H 5450 3834 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 5400 3850 50  0001 C CNN
+F 3 "" H 5400 3850 50  0001 C CNN
+	1    5400 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 4400 2    50   Input ~ 0
+LED+
+Text GLabel 4950 4500 2    50   Input ~ 0
+LED-
+Text GLabel 5250 4000 3    50   Input ~ 0
+LED+
+Text GLabel 5650 4000 3    50   Input ~ 0
+LED-
+Wire Wire Line
+	8400 5950 7750 5950
+Wire Wire Line
+	7750 5950 7750 5850
+$Comp
+L power:GND #PWR014
+U 1 1 5DA094CD
+P 8400 6150
+F 0 "#PWR014" H 8400 5900 50  0001 C CNN
+F 1 "GND" H 8405 5977 50  0000 C CNN
+F 2 "" H 8400 6150 50  0001 C CNN
+F 3 "" H 8400 6150 50  0001 C CNN
+	1    8400 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5950 8400 6150
+Connection ~ 8400 5950
+$Comp
+L upuaut-rescue:Motor-Connector-OpenSourceCelluloid U6
+U 1 1 5DA0DAEF
+P 1200 3500
+F 0 "U6" H 1375 3665 50  0000 C CNN
+F 1 "Motor-Connector" H 1375 3574 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal" H 1200 3500 50  0001 C CNN
+F 3 "" H 1200 3500 50  0001 C CNN
+	1    1200 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 3600 0    50   Input ~ 0
+RED
+Text GLabel 1000 3700 0    50   Input ~ 0
+BLUE
+Text GLabel 1750 3700 2    50   Input ~ 0
+GREEN
+Text GLabel 1750 3600 2    50   Input ~ 0
+BLACK
+$Comp
+L power:GND #PWR02
+U 1 1 5D953271
+P 1100 4400
+F 0 "#PWR02" H 1100 4150 50  0001 C CNN
+F 1 "GND" V 1105 4272 50  0000 R CNN
+F 2 "" H 1100 4400 50  0001 C CNN
+F 3 "" H 1100 4400 50  0001 C CNN
+	1    1100 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L upuaut-rescue:Connector-Sensor-OpenSourceCelluloid U1
+U 1 1 5D952343
+P 1250 4250
+F 0 "U1" H 1475 4465 50  0000 C CNN
+F 1 "Connector-Sensor" H 1475 4374 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 1250 4250 50  0001 C CNN
+F 3 "" H 1250 4250 50  0001 C CNN
+	1    1250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L upuaut-rescue:OKI-78SR-5v-OpenSourceCelluloid U8
+U 1 1 5D96AD8D
+P 7900 2400
+F 0 "U8" H 7900 2715 50  0000 C CNN
+F 1 "OKI-78SR-5v" H 7900 2624 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 7900 2350 50  0001 C CNN
+F 3 "" H 7900 2300 50  0001 C CNN
+	1    7900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C Murata-Ceramic-Capacitor-50v2
+U 1 1 5D96B0C0
+P 7250 2500
+F 0 "Murata-Ceramic-Capacitor-50v2" H 6400 2100 50  0000 L CNN
+F 1 "C" H 7365 2455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 7288 2350 50  0001 C CNN
+F 3 "~" H 7250 2500 50  0001 C CNN
+	1    7250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2350 7250 2350
+Wire Wire Line
+	7900 2750 7250 2750
+Wire Wire Line
+	7250 2750 7250 2650
+Wire Wire Line
+	7100 2350 7250 2350
+Connection ~ 7250 2350
+$Comp
+L power:GND #PWR0102
+U 1 1 5D96F501
+P 7900 3000
+F 0 "#PWR0102" H 7900 2750 50  0001 C CNN
+F 1 "GND" H 7905 2827 50  0000 C CNN
+F 2 "" H 7900 3000 50  0001 C CNN
+F 3 "" H 7900 3000 50  0001 C CNN
+	1    7900 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 7900 2750
+Wire Wire Line
+	7900 2750 7900 3000
+Text GLabel 8200 2350 2    50   Input ~ 0
+5V
+$Comp
+L Device:R R1
+U 1 1 5DA2303C
+P 9300 1200
+F 0 "R1" V 9507 1200 50  0000 C CNN
+F 1 "10K" V 9400 1200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9230 1200 50  0001 C CNN
+F 3 "~" H 9300 1200 50  0001 C CNN
+	1    9300 1200
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9650 1200 1    50   Input ~ 0
+CHANNEL-A
+$Comp
+L Device:C C1
+U 1 1 5DA2DBC6
+P 9850 1050
+F 0 "C1" H 9965 1096 50  0000 L CNN
+F 1 "0.01uF" H 9965 1005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 9888 900 50  0001 C CNN
+F 3 "~" H 9850 1050 50  0001 C CNN
+	1    9850 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5DA44D27
+P 9850 1550
+F 0 "C2" H 9965 1596 50  0000 L CNN
+F 1 "0.01uF" H 9965 1505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 9888 1400 50  0001 C CNN
+F 3 "~" H 9850 1550 50  0001 C CNN
+	1    9850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5DA4D034
+P 9850 900
+F 0 "#PWR0105" H 9850 650 50  0001 C CNN
+F 1 "GND" H 9855 727 50  0000 C CNN
+F 2 "" H 9850 900 50  0001 C CNN
+F 3 "" H 9850 900 50  0001 C CNN
+	1    9850 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5DA4D1C2
+P 9850 1700
+F 0 "#PWR0106" H 9850 1450 50  0001 C CNN
+F 1 "GND" H 9850 1550 50  0000 C CNN
+F 2 "" H 9850 1700 50  0001 C CNN
+F 3 "" H 9850 1700 50  0001 C CNN
+	1    9850 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1200 9150 1200
+Wire Wire Line
+	9450 1200 9850 1200
+Connection ~ 9850 1200
+$Comp
+L power:GND #PWR0107
+U 1 1 5DA50EF9
+P 9900 1300
+F 0 "#PWR0107" H 9900 1050 50  0001 C CNN
+F 1 "GND" V 9905 1172 50  0000 R CNN
+F 2 "" H 9900 1300 50  0001 C CNN
+F 3 "" H 9900 1300 50  0001 C CNN
+	1    9900 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L upuaut-rescue:OKI-78SR-12v-OpenSourceCelluloid U7
+U 1 1 5D950615
+P 8400 5600
+F 0 "U7" H 8400 5915 50  0000 C CNN
+F 1 "OKI-78SR-12v" H 8400 5824 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 8400 5550 50  0001 C CNN
+F 3 "" H 8400 5500 50  0001 C CNN
+	1    8400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L upuaut-rescue:POTENTIOMETER-OpenSourceCelluloid U9
+U 1 1 5DA6EAC8
+P 8600 4150
+F 0 "U9" H 8825 4315 50  0000 C CNN
+F 1 "POTENTIOMETER-SPEED" H 8825 4224 50  0000 C CNN
+F 2 "OpenCelluloid:PDB12-H4301-Potentiometer" H 8600 4150 50  0001 C CNN
+F 3 "" H 8600 4150 50  0001 C CNN
+	1    8600 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 8450 4250 0    50   Input ~ 0
+5V
+$Comp
+L power:GND #PWR0109
+U 1 1 5DA70241
+P 9600 4250
+F 0 "#PWR0109" H 9600 4000 50  0001 C CNN
+F 1 "GND" V 9605 4122 50  0000 R CNN
+F 2 "" H 9600 4250 50  0001 C CNN
+F 3 "" H 9600 4250 50  0001 C CNN
+	1    9600 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 4250 9200 4250
+Text GLabel 8800 4600 3    50   Input ~ 0
+POTI-SPEED
+Text GLabel 9500 1400 3    50   Input ~ 0
+CHANNEL-B
+$Comp
+L Device:R R9
+U 1 1 5DA2729B
+P 9200 1400
+F 0 "R9" V 9407 1400 50  0000 C CNN
+F 1 "10K" V 9300 1400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9130 1400 50  0001 C CNN
+F 3 "~" H 9200 1400 50  0001 C CNN
+	1    9200 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 3150 9600 3150
+$Comp
+L Device:R R8
+U 1 1 5DA88D5A
+P 9250 3150
+F 0 "R8" V 9043 3150 50  0000 C CNN
+F 1 "10k" V 9134 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9180 3150 50  0001 C CNN
+F 3 "~" H 9250 3150 50  0001 C CNN
+	1    9250 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 3150 9100 3150
+Wire Wire Line
+	9600 3250 9600 3450
+Wire Wire Line
+	9800 2850 9800 2400
+Wire Wire Line
+	9800 2400 9600 2400
+Wire Wire Line
+	9600 2400 9600 3050
+$Comp
+L power:GND #PWR0103
+U 1 1 5DA94094
+P 8950 2400
+F 0 "#PWR0103" H 8950 2150 50  0001 C CNN
+F 1 "GND" H 8955 2227 50  0000 C CNN
+F 2 "" H 8950 2400 50  0001 C CNN
+F 3 "" H 8950 2400 50  0001 C CNN
+	1    8950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 2400 8950 2400
+Connection ~ 9600 2400
+$Comp
+L Device:R_POT RV1
+U 1 1 5DA9B5DE
+P 10000 2200
+F 0 "RV1" V 9793 2200 50  0000 C CNN
+F 1 "R_POT" V 9884 2200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 10000 2200 50  0001 C CNN
+F 3 "~" H 10000 2200 50  0001 C CNN
+	1    10000 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 2350 10000 2850
+Text GLabel 10150 2200 2    50   Input ~ 0
+SOUND-TRIGGER
+Wire Wire Line
+	8950 2200 8950 2400
+Wire Wire Line
+	8950 2200 9850 2200
+Connection ~ 8950 2400
+Wire Wire Line
+	10600 3050 10200 3050
+$Comp
+L Device:C C6
+U 1 1 5DAB1103
+P 10350 3150
+F 0 "C6" V 10602 3150 50  0000 C CNN
+F 1 "10uF" V 10511 3150 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 10388 3000 50  0001 C CNN
+F 3 "~" H 10350 3150 50  0001 C CNN
+	1    10350 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10500 3150 10500 3500
+Wire Wire Line
+	8700 3750 8700 2400
+Wire Wire Line
+	8700 2400 8950 2400
+$Comp
+L Amplifier_Audio:LM386 U11
+U 1 1 5D9FF0BC
+P 9900 3150
+F 0 "U11" H 10244 3196 50  0000 L CNN
+F 1 "LM386" V 10000 3250 50  0000 L CNN
+F 2 "OpenCelluloid:LM386" H 10000 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 10100 3350 50  0001 C CNN
+	1    9900 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C5
+U 1 1 5DAC79EF
+P 9800 3850
+F 0 "C5" V 10052 3850 50  0000 C CNN
+F 1 "CP1" V 9961 3850 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9800 3850 50  0001 C CNN
+F 3 "~" H 9800 3850 50  0001 C CNN
+	1    9800 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 3450 9650 3450
+Wire Wire Line
+	9650 3450 9650 3600
+$Comp
+L Device:C C4
+U 1 1 5DACA11A
+P 9500 3600
+F 0 "C4" V 9248 3600 50  0000 C CNN
+F 1 "10pF" V 9339 3600 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 9538 3450 50  0001 C CNN
+F 3 "~" H 9500 3600 50  0001 C CNN
+	1    9500 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 3450 9600 3450
+Wire Wire Line
+	8700 3750 8950 3750
+Connection ~ 9650 3600
+Wire Wire Line
+	9650 3600 9650 3850
+$Comp
+L Device:R R7
+U 1 1 5DACC5FA
+P 9100 3600
+F 0 "R7" V 8893 3600 50  0000 C CNN
+F 1 "10k" V 8984 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9030 3600 50  0001 C CNN
+F 3 "~" H 9100 3600 50  0001 C CNN
+	1    9100 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 3600 8950 3750
+Connection ~ 8950 3750
+Wire Wire Line
+	9250 3600 9350 3600
+Wire Wire Line
+	8950 3750 10500 3750
+Wire Wire Line
+	9950 3850 10500 3850
+Text GLabel 5300 6250 1    50   Input ~ 0
+5V
+Text GLabel 5050 6750 0    50   Input ~ 0
+START-STOP
+$Comp
+L Device:R R4
+U 1 1 5DB19830
+P 5300 6600
+F 0 "R4" V 5093 6600 50  0000 C CNN
+F 1 "10K" V 5184 6600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5230 6600 50  0001 C CNN
+F 3 "~" H 5300 6600 50  0001 C CNN
+	1    5300 6600
+	-1   0    0    1   
+$EndComp
+Text GLabel 7650 6350 1    50   Input ~ 0
+5V
+$Comp
+L Device:R R5
+U 1 1 5DB215D6
+P 7650 6700
+F 0 "R5" V 7443 6700 50  0000 C CNN
+F 1 "10K" V 7534 6700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7580 6700 50  0001 C CNN
+F 3 "~" H 7650 6700 50  0001 C CNN
+	1    7650 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5DB21989
+P 8750 6850
+F 0 "#PWR0108" H 8750 6600 50  0001 C CNN
+F 1 "GND" H 8755 6677 50  0000 C CNN
+F 2 "" H 8750 6850 50  0001 C CNN
+F 3 "" H 8750 6850 50  0001 C CNN
+	1    8750 6850
+	1    0    0    -1  
+$EndComp
+Text GLabel 7550 6850 0    50   Input ~ 0
+DIRECTION-SWITCH
+$Comp
+L Device:LED D2
+U 1 1 5DB3B71E
+P 5750 5250
+F 0 "D2" H 5743 4995 50  0000 C CNN
+F 1 "LED" H 5743 5086 50  0000 C CNN
+F 2 "LED_THT:LED_Rectangular_W3.0mm_H2.0mm" H 5750 5250 50  0001 C CNN
+F 3 "~" H 5750 5250 50  0001 C CNN
+	1    5750 5250
+	-1   0    0    1   
+$EndComp
+Text GLabel 5250 5250 0    50   Input ~ 0
+LED
+Wire Wire Line
+	5250 5250 5600 5250
+$Comp
+L Device:R R6
+U 1 1 5DB4004C
+P 6300 5250
+F 0 "R6" V 6093 5250 50  0000 C CNN
+F 1 "10K" V 6184 5250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6230 5250 50  0001 C CNN
+F 3 "~" H 6300 5250 50  0001 C CNN
+	1    6300 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 5250 6150 5250
+$Comp
+L power:GND #PWR0110
+U 1 1 5DB41C95
+P 6800 5250
+F 0 "#PWR0110" H 6800 5000 50  0001 C CNN
+F 1 "GND" H 6805 5077 50  0000 C CNN
+F 2 "" H 6800 5250 50  0001 C CNN
+F 3 "" H 6800 5250 50  0001 C CNN
+	1    6800 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5250 6800 5250
+$Comp
+L Transistor_FET:IRF7606PBF Q1
+U 1 1 5DABAE8B
+P 10250 5400
+F 0 "Q1" V 10593 5400 50  0000 C CNN
+F 1 "IRF5305" V 10502 5400 50  0000 C CNN
+F 2 "OpenCelluloid:IRF5305" H 10450 5325 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf7606pbf.pdf" V 10250 5400 50  0001 L CNN
+	1    10250 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10250 5800 10250 6000
+$Comp
+L power:GND #PWR0112
+U 1 1 5DAD1300
+P 9500 5900
+F 0 "#PWR0112" H 9500 5650 50  0001 C CNN
+F 1 "GND" V 9505 5772 50  0000 R CNN
+F 2 "" H 9500 5900 50  0001 C CNN
+F 3 "" H 9500 5900 50  0001 C CNN
+	1    9500 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10050 5500 9650 5500
+Wire Wire Line
+	10250 6350 9650 6350
+Wire Wire Line
+	10250 6350 10750 6350
+Wire Wire Line
+	10750 6350 10750 5900
+Connection ~ 10250 6350
+Wire Wire Line
+	3950 4100 3550 4100
+Text GLabel 3950 4500 0    50   Input ~ 0
+24V
+Text GLabel 7100 2350 0    50   Input ~ 0
+24V
+Text GLabel 7450 5550 0    50   Input ~ 0
+24V
+Text GLabel 8950 1200 0    50   Input ~ 0
+5V
+Wire Wire Line
+	9050 1400 8900 1400
+Text GLabel 8900 1400 0    50   Input ~ 0
+5V
+Text GLabel 10600 3050 2    50   Input ~ 0
+5V
+$Comp
+L Device:C C3
+U 1 1 5DBF7288
+P 9000 3300
+F 0 "C3" H 9115 3346 50  0000 L CNN
+F 1 "10uF" H 9115 3255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9038 3150 50  0001 C CNN
+F 3 "~" H 9000 3300 50  0001 C CNN
+	1    9000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L upuaut-rescue:STEPSTICK-OpenSourceCelluloid U12
+U 1 1 5DB37A4E
+P 5900 1750
+F 0 "U12" H 5900 2481 50  0000 C CNN
+F 1 "STEPSTICK" H 5900 2390 50  0000 C CNN
+F 2 "OpenCelluloidArduino:STEPSTICK" H 5900 1750 50  0001 C CNN
+F 3 "" H 5900 1750 50  0001 C CNN
+	1    5900 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 5300 1900 0    50   Input ~ 0
+MOSI-SDI
+Text GLabel 5300 2000 0    50   Input ~ 0
+MISO-SDO
+Text GLabel 5300 2100 0    50   Input ~ 0
+CHIP-SELECT
+Text GLabel 5300 1800 0    50   Input ~ 0
+CLOCK
+Text GLabel 5300 1700 0    50   Input ~ 0
+ENABLE
+Text GLabel 5300 1600 0    50   Input ~ 0
+DIRECTION
+Text GLabel 5300 1500 0    50   Input ~ 0
+STEP
+Text GLabel 5800 1200 0    50   Input ~ 0
+5V
+Text GLabel 6000 1200 2    50   Input ~ 0
+24V
+Text GLabel 6500 1650 2    50   Input ~ 0
+RED
+Text GLabel 6500 1750 2    50   Input ~ 0
+BLUE
+Text GLabel 6500 1850 2    50   Input ~ 0
+GREEN
+Text GLabel 6500 1950 2    50   Input ~ 0
+BLACK
+$Comp
+L power:GND #PWR0114
+U 1 1 5DBA2843
+P 5950 2400
+F 0 "#PWR0114" H 5950 2150 50  0001 C CNN
+F 1 "GND" V 5955 2272 50  0000 R CNN
+F 2 "" H 5950 2400 50  0001 C CNN
+F 3 "" H 5950 2400 50  0001 C CNN
+	1    5950 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5DBA2D1F
+P 5850 2400
+F 0 "#PWR0115" H 5850 2150 50  0001 C CNN
+F 1 "GND" V 5855 2272 50  0000 R CNN
+F 2 "" H 5850 2400 50  0001 C CNN
+F 3 "" H 5850 2400 50  0001 C CNN
+	1    5850 2400
+	0    1    1    0   
+$EndComp
+Text GLabel 10500 3850 2    50   Input ~ 0
+AUDIO-SIGNAL
+Text GLabel 10450 4500 0    50   Input ~ 0
+AUDIO-SIGNAL
+Text GLabel 10100 4750 0    50   Input ~ 0
+AUDIO-SIGNAL
+Text GLabel 4300 5250 3    50   Input ~ 0
+SHUTTER
+Wire Wire Line
+	4300 5250 4150 5250
+Wire Wire Line
+	3200 5000 3000 5000
+$Comp
+L upuaut-rescue:Connector-LED-OpenSourceCelluloid U14
+U 1 1 5DC134F1
+P 2750 4850
+F 0 "U14" H 2800 4925 50  0000 C CNN
+F 1 "Connector-Trigger" H 2800 4834 50  0000 C CNN
+F 2 "OpenCelluloid:WAGO_PCB_Klemme_2Pol" H 2750 4850 50  0001 C CNN
+F 3 "" H 2750 4850 50  0001 C CNN
+	1    2750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 5500 10550 5500
+$Comp
+L power:GND #PWR0113
+U 1 1 5DAEDA37
+P 10750 5900
+F 0 "#PWR0113" H 10750 5650 50  0001 C CNN
+F 1 "GND" V 10755 5772 50  0000 R CNN
+F 2 "" H 10750 5900 50  0001 C CNN
+F 3 "" H 10750 5900 50  0001 C CNN
+	1    10750 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L upuaut-rescue:Connector-LED-OpenSourceCelluloid U15
+U 1 1 5DC41745
+P 9800 5650
+F 0 "U15" H 9850 5725 50  0000 C CNN
+F 1 "Connector-POWER" H 9850 5634 50  0000 C CNN
+F 2 "OpenCelluloid:WAGO_PCB_Klemme_2Pol" H 9800 5650 50  0001 C CNN
+F 3 "" H 9800 5650 50  0001 C CNN
+	1    9800 5650
+	0    1    1    0   
+$EndComp
+Text GLabel 10750 5500 2    50   Input ~ 0
+24V
+$Comp
+L power:+24V #PWR0111
+U 1 1 5DC59167
+P 9450 5500
+F 0 "#PWR0111" H 9450 5350 50  0001 C CNN
+F 1 "+24V" H 9450 5650 50  0000 C CNN
+F 2 "" H 9450 5500 50  0001 C CNN
+F 3 "" H 9450 5500 50  0001 C CNN
+	1    9450 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 9650 5500
+Wire Wire Line
+	9650 6350 9650 5900
+Wire Wire Line
+	9650 5900 9500 5900
+Connection ~ 9650 5900
+Wire Wire Line
+	9450 5500 9650 5500
+$Comp
+L upuaut-rescue:Connector-LED-OpenSourceCelluloid U17
+U 1 1 5DC6E526
+P 8000 6700
+F 0 "U17" H 8050 6775 50  0000 C CNN
+F 1 "Connector-DIRECTION" H 8050 6684 50  0000 C CNN
+F 2 "OpenCelluloid:WAGO_PCB_Klemme_2Pol" H 8000 6700 50  0001 C CNN
+F 3 "" H 8000 6700 50  0001 C CNN
+	1    8000 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L upuaut-rescue:Connector-LED-OpenSourceCelluloid U16
+U 1 1 5DC6E925
+P 5700 6600
+F 0 "U16" H 5750 6675 50  0000 C CNN
+F 1 "Connector-START" H 5750 6584 50  0000 C CNN
+F 2 "OpenCelluloid:WAGO_PCB_Klemme_2Pol" H 5700 6600 50  0001 C CNN
+F 3 "" H 5700 6600 50  0001 C CNN
+	1    5700 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5DAFCC9E
+P 10250 6150
+F 0 "R11" V 10043 6150 50  0000 C CNN
+F 1 "10K" V 10134 6150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 10180 6150 50  0001 C CNN
+F 3 "~" H 10250 6150 50  0001 C CNN
+	1    10250 6150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10250 6300 10250 6350
+$Comp
+L Device:D_Zener D4
+U 1 1 5DB00E0C
+P 10550 5650
+F 0 "D4" H 10550 5400 50  0000 C CNN
+F 1 "10,1V" H 10550 5500 50  0000 C CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 10550 5650 50  0001 C CNN
+F 3 "~" H 10550 5650 50  0001 C CNN
+	1    10550 5650
+	0    1    1    0   
+$EndComp
+Connection ~ 10550 5500
+Wire Wire Line
+	10550 5500 10750 5500
+Wire Wire Line
+	2600 5000 2600 5300
+Wire Wire Line
+	2600 5300 3200 5300
+$Comp
+L power:GND #PWR03
+U 1 1 5DB19D59
+P 3800 4900
+F 0 "#PWR03" H 3800 4650 50  0001 C CNN
+F 1 "GND" H 3805 4727 50  0000 C CNN
+F 2 "" H 3800 4900 50  0001 C CNN
+F 3 "" H 3800 4900 50  0001 C CNN
+	1    3800 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5DB1A166
+P 4000 5250
+F 0 "R10" V 3793 5250 50  0000 C CNN
+F 1 "220" V 3884 5250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3930 5250 50  0001 C CNN
+F 3 "~" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Isolator:PC817 U18
+U 1 1 5DB1D19A
+P 3500 5150
+F 0 "U18" H 3500 4833 50  0000 C CNN
+F 1 "PC817" H 3500 4924 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 3300 4950 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3500 5150 50  0001 L CNN
+	1    3500 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 5050 3800 4900
+Wire Wire Line
+	3850 5250 3800 5250
+Wire Wire Line
+	3200 5300 3200 5250
+Wire Wire Line
+	3200 5050 3200 5000
+$Comp
+L upuaut-rescue:LDH-45B-1050-OpenSourceCelluloid U2
+U 1 1 5DB766BC
+P 4150 4000
+F 0 "U2" H 4450 4165 50  0000 C CNN
+F 1 "LDH-45B-1050" H 4450 4074 50  0000 C CNN
+F 2 "OpenCelluloid:MeanWell-LDH-45B-1050" H 4150 4000 50  0001 C CNN
+F 3 "" H 4150 4000 50  0001 C CNN
+	1    4150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L upuaut-rescue:Connector-Sensor-OpenSourceCelluloid U13
+U 1 1 5DBEC6B0
+P 10700 4900
+F 0 "U13" H 10925 5115 50  0000 C CNN
+F 1 "Connector-AudioJack" H 10925 5024 50  0000 C CNN
+F 2 "OpenCelluloid:WAGO_PCB_Klemme_3Pol" H 10700 4900 50  0001 C CNN
+F 3 "" H 10700 4900 50  0001 C CNN
+	1    10700 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10850 4750 10850 3500
+Wire Wire Line
+	10850 3500 10500 3500
+Connection ~ 10500 3500
+Wire Wire Line
+	10500 3500 10500 3750
+$Comp
+L Device:R R12
+U 1 1 5DD0D1A6
+P 6200 4200
+F 0 "R12" V 5993 4200 50  0000 C CNN
+F 1 "33k" V 6084 4200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6130 4200 50  0001 C CNN
+F 3 "~" H 6200 4200 50  0001 C CNN
+	1    6200 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 4200 6400 4200
+Wire Wire Line
+	6050 4200 6000 4200
+Text GLabel 1850 4400 2    50   Input ~ 0
+5V
+$Comp
+L upuaut-rescue:Connector-LED-OpenSourceCelluloid U19
+U 1 1 5DD1768C
+P 2000 6550
+F 0 "U19" H 2000 6150 50  0000 C CNN
+F 1 "Connector-FAN" H 1950 6250 50  0000 C CNN
+F 2 "OpenCelluloid:WAGO_PCB_Klemme_2Pol" H 2000 6550 50  0001 C CNN
+F 3 "" H 2000 6550 50  0001 C CNN
+	1    2000 6550
+	-1   0    0    1   
+$EndComp
+Text GLabel 2100 6750 0    50   Input ~ 0
+12V
+$Comp
+L power:GND #PWR09
+U 1 1 5DD17D66
+P 1750 6200
+F 0 "#PWR09" H 1750 5950 50  0001 C CNN
+F 1 "GND" H 1755 6027 50  0000 C CNN
+F 2 "" H 1750 6200 50  0001 C CNN
+F 3 "" H 1750 6200 50  0001 C CNN
+	1    1750 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:PC817 U4
+U 1 1 5DD4FC81
+P 2650 6650
+F 0 "U4" H 2650 6333 50  0000 C CNN
+F 1 "PC817" H 2650 6424 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 2450 6450 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2650 6650 50  0001 L CNN
+	1    2650 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5DD504DF
+P 3050 6500
+F 0 "#PWR0101" H 3050 6250 50  0001 C CNN
+F 1 "GND" H 3055 6327 50  0000 C CNN
+F 2 "" H 3050 6500 50  0001 C CNN
+F 3 "" H 3050 6500 50  0001 C CNN
+	1    3050 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DD50902
+P 3200 6750
+F 0 "R2" V 2993 6750 50  0000 C CNN
+F 1 "220" V 3084 6750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3130 6750 50  0001 C CNN
+F 3 "~" H 3200 6750 50  0001 C CNN
+	1    3200 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 6750 2950 6750
+Wire Wire Line
+	3050 6500 3050 6550
+Wire Wire Line
+	3050 6550 2950 6550
+Wire Wire Line
+	3450 6750 3350 6750
+Wire Wire Line
+	2350 6750 2100 6750
+Wire Wire Line
+	2150 6400 2350 6400
+Wire Wire Line
+	2350 6400 2350 6550
+Wire Wire Line
+	1750 6400 1750 6200
+Text GLabel 3450 6750 2    50   Input ~ 0
+FAN
+$Comp
+L upuaut-rescue:Connector-Sensor-OpenSourceCelluloid U20
+U 1 1 5DE2D389
+P 900 5300
+F 0 "U20" H 1125 5515 50  0000 C CNN
+F 1 "Connector_FAN_PWM" H 1125 5424 50  0000 C CNN
+F 2 "OpenCelluloid:WAGO_PCB_Klemme_3Pol" H 900 5300 50  0001 C CNN
+F 3 "" H 900 5300 50  0001 C CNN
+	1    900  5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5DE2D621
+P 750 5450
+F 0 "#PWR0116" H 750 5200 50  0001 C CNN
+F 1 "GND" H 755 5277 50  0000 C CNN
+F 2 "" H 750 5450 50  0001 C CNN
+F 3 "" H 750 5450 50  0001 C CNN
+	1    750  5450
+	0    1    1    0   
+$EndComp
+Text GLabel 1150 5700 3    50   Input ~ 0
+STEP
+Wire Wire Line
+	10250 5800 10550 5800
+Wire Wire Line
+	10250 5200 11100 5200
+Wire Wire Line
+	11100 5200 11100 5800
+Wire Wire Line
+	11100 5800 10550 5800
+Connection ~ 10550 5800
+$Comp
+L openCelluloid:PEC12R-ENCODER U10
+U 1 1 5E202B1B
+P 10500 1100
+F 0 "U10" H 10625 1225 50  0000 C CNN
+F 1 "PEC12R-ENCODER" H 10625 1134 50  0000 C CNN
+F 2 "OpenCelluloid:Potentiometer-BOURNS" H 10500 1100 50  0001 C CNN
+F 3 "" H 10500 1100 50  0001 C CNN
+	1    10500 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 11850 1200 2    50   Input ~ 0
+ENCO-BUTTON
+Text GLabel 11350 1300 2    50   Input ~ 0
+5V
+Wire Wire Line
+	9850 1400 9350 1400
+Connection ~ 9850 1400
+Wire Wire Line
+	9850 1200 9900 1200
+Wire Wire Line
+	9850 1400 9900 1400
+$Comp
+L Device:R R3
+U 1 1 5E239A6A
+P 11600 1050
+F 0 "R3" V 11807 1050 50  0000 C CNN
+F 1 "10K" V 11700 1050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 11530 1050 50  0001 C CNN
+F 3 "~" H 11600 1050 50  0001 C CNN
+	1    11600 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E239EFA
+P 11600 900
+F 0 "#PWR0104" H 11600 650 50  0001 C CNN
+F 1 "GND" H 11600 750 50  0000 C CNN
+F 2 "" H 11600 900 50  0001 C CNN
+F 3 "" H 11600 900 50  0001 C CNN
+	1    11600 900 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11850 1200 11600 1200
+Wire Wire Line
+	11600 1200 11350 1200
+Connection ~ 11600 1200
+$Comp
+L extra-kicad-libraries:TEENSY_3.2 TEENSY1
+U 1 1 5E26D477
+P 7300 8500
+F 0 "TEENSY1" H 7300 9497 60  0000 C CNN
+F 1 "TEENSY_3.2" H 7300 9391 60  0000 C CNN
+F 2 "footprints:TEENSY_3.2" H 7300 9550 60  0001 C CNN
+F 3 "" H 7350 11250 60  0000 C CNN
+F 4 "Digi-Key" H 7300 9650 60  0001 C CNN "Vendor"
+F 5 "1568-1231-ND" H 7300 9750 60  0001 C CNN "Vendor Part Number"
+F 6 "DEV TEENSY 3.2 13736" H 7300 9850 60  0001 C CNN "Description"
+	1    7300 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5E26FC7D
+P 5400 7850
+F 0 "#PWR0117" H 5400 7600 50  0001 C CNN
+F 1 "GND" H 5405 7677 50  0000 C CNN
+F 2 "" H 5400 7850 50  0001 C CNN
+F 3 "" H 5400 7850 50  0001 C CNN
+	1    5400 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 7850 6050 7850
+Text GLabel 6050 8150 0    50   Input ~ 0
+START-STOP
+Text GLabel 6050 8250 0    50   Input ~ 0
+STEP
+Text GLabel 6050 8350 0    50   Input ~ 0
+DIRECTION
+Text GLabel 6050 8450 0    50   Input ~ 0
+CHANNEL-B
+Text GLabel 6050 8550 0    50   Input ~ 0
+CHANNEL-A
+Text GLabel 6050 8650 0    50   Input ~ 0
+ENABLE
+Text GLabel 6050 8750 0    50   Input ~ 0
+DIRECTION-SWITCH
+Text GLabel 6050 8850 0    50   Input ~ 0
+SOUND-TRIGGER
+Text GLabel 6050 8950 0    50   Input ~ 0
+CHIP-SELECT
+Text GLabel 6050 9050 0    50   Input ~ 0
+MOSI-SDI
+Text GLabel 6050 9150 0    50   Input ~ 0
+MISO-SDO
+Text GLabel 8550 9150 2    50   Input ~ 0
+CLOCK
+Text GLabel 8550 8350 2    50   Input ~ 0
+SHUTTER
+Text GLabel 8550 8450 2    50   Input ~ 0
+ENCO-BUTTON
+Text GLabel 8550 8650 2    50   Input ~ 0
+POTI-SPEED
+Text GLabel 8550 8750 2    50   Input ~ 0
+LED
+Text GLabel 8550 8250 2    50   Input ~ 0
+FAN
+Text GLabel 8550 7850 2    50   Input ~ 0
+5V
+Text GLabel 1500 5450 2    50   Input ~ 0
+12V
+Text GLabel 1500 4650 3    50   Input ~ 0
+SENSOR
+Text GLabel 8550 8150 2    50   Input ~ 0
+SENSOR
+$Comp
+L power:GND #PWR0118
+U 1 1 5E2E49BF
+P 6250 6750
+F 0 "#PWR0118" H 6250 6500 50  0001 C CNN
+F 1 "GND" H 6255 6577 50  0000 C CNN
+F 2 "" H 6250 6750 50  0001 C CNN
+F 3 "" H 6250 6750 50  0001 C CNN
+	1    6250 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 6750 5300 6750
+Wire Wire Line
+	5300 6250 5300 6450
+Wire Wire Line
+	5550 6750 5300 6750
+Connection ~ 5300 6750
+Wire Wire Line
+	5950 6750 6250 6750
+Wire Wire Line
+	7550 6850 7650 6850
+Wire Wire Line
+	7850 6850 7650 6850
+Connection ~ 7650 6850
+Wire Wire Line
+	8250 6850 8750 6850
+Wire Wire Line
+	7650 6350 7650 6550
+$EndSCHEMATC
