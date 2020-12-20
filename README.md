@@ -51,6 +51,7 @@ volatile Request requestStream = checkInputStreamOF(Serial, prevRequest);
                 stateObj,
                 bounceStartStop);
      }
+     ```
 
 
 	Escribí una clase que se llama `Request`. Las funciones `checkInputStreamOF()` y `checkInputButtonsOF()` tienen como `return value` un `Request`. Existe de antes un `Request` llamado `prevRequest`. Este `Request` es el valor del último `Request` del cual el programa tiene conocimiento. Si las funciones dan como `return value` algo diferente al `Request` anterior, o sea `prevRequest`, se llama la función `switchStateOF()`. Esta función cambia el estado de la máquina: la pone en movimiento, la frena, le cambia la velocidad etc. Lo fundamental es que este cambio de estado depende de la clase de `Request` que se haga, que se hace con los botones de la máquina en el caso de `checkInputButtonsOF()` o de paquetes a través del `Serial` en `checkInputStreamOF()`. Cuando hay un cambio de estado de los botones `checkInputButtonOF()` genera un `Request` distinto a `prevRequest`, y los botones tienen que tener interrupt para poder guardar este cambio de nuevo valor sin importar en qué momento del loop suceda. 
